@@ -7,6 +7,10 @@ export type SiteConfig = {
   name: string
   description: string
   url: string
+  locationName: string
+  address: string
+  phone: string
+  email: string
   ogImage: string
   mailSupport: string
   links: {

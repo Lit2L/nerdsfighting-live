@@ -7,6 +7,10 @@ export const siteConfig: SiteConfig = {
   name: 'Nerds Fighting',
   description: 'Taking our lunch money back.',
   url: site_url,
+  address: '8780 Warner Ave, suite 7, Fountain Valley, CA 92708',
+  phone: '714-866-6926',
+  email: 'larryl@nerdsfighting.com',
+  locationName: 'Williams MMA Academy',
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
     twitter: 'https://twitter.com/miickasmt',
