@@ -1,6 +1,14 @@
 import '@/styles/globals.css'
 
-import { fontGeist, fontHeading, fontSans, fontUrban } from '@/assets/fonts'
+import {
+  fontGeist,
+  fontHeading,
+  fontSans,
+  fontUrban,
+  genosFont,
+  headingFont,
+  logoFont
+} from '@/assets/fonts'
 import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider } from 'next-themes'
 
@@ -24,9 +32,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
           fontSans.variable,
-          fontUrban.variable,
+          headingFont.variable,
           fontHeading.variable,
-          fontGeist.variable
+          fontGeist.variable,
+          fontUrban.variable,
+          logoFont.variable,
+          genosFont.variable
         )}
       >
         <SessionProvider>

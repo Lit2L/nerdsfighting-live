@@ -1,4 +1,9 @@
-import { Black_Ops_One, Inter as FontSans, Genos as GenosFont, Urbanist } from 'next/font/google'
+import {
+  Black_Ops_One,
+  Inter as FontSans,
+  Genos as GenosFont,
+  Orbitron as Urbanist
+} from 'next/font/google'
 import localFont from 'next/font/local'
 
 export const fontSans = FontSans({

@@ -62,15 +62,10 @@ const classes = [
 
 export function Schedule() {
   return (
-    <section id='schedule' className='container relative'>
-      <Image
-        src='/bg-green.png'
-        alt='bg'
-        layout='fill'
-        objectFit='cover'
-        className='absolute -z-10 opacity-10'
-      />
-      <div className='font-genos bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
+    <section id='schedule' className='relative w-full'>
+      {/* <Image src='/bg1.png' alt='bg' layout='fill' className='absolute -z-10 opacity-10' /> */}
+      <div className='bgSchedule'></div>
+      <div className='font-genos container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />
 
@@ -79,8 +74,15 @@ export function Schedule() {
               classes.map((item) => (
                 <Card
                   key={item.id}
-                  className='flex h-52 w-64 flex-col rounded-xl border-zinc-700 bg-zinc-900/95 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
+                  className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
+                  <Image
+                    src='/bg-green.png'
+                    alt='bg'
+                    layout='fill'
+                    objectFit='cover'
+                    className='absolute z-0 opacity-5'
+                  />
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
@@ -95,7 +97,7 @@ export function Schedule() {
                     {item.schedule.map((schedule) => (
                       <div
                         key={schedule.id}
-                        className='flex w-full flex-col items-center gap-3 rounded-sm border border-white/10 bg-transparent/20 shadow-xl'
+                        className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-transparent/60 p-3 shadow-xl'
                       >
                         <p className='w-3/16 text-md font-genos m-1 flex border-b border-emerald-900 font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
                           {item.description}
@@ -114,7 +116,6 @@ export function Schedule() {
                       </div>
                     ))}
                   </div>
-                  <div className='mt-2 flex w-full flex-1 flex-col items-end justify-between'></div>
                 </Card>
               ))}
           </div>

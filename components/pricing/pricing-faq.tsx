@@ -46,8 +46,7 @@ export function PricingFaq() {
       <HeaderSection
         label='FAQ'
         title='Frequently Asked Questions'
-        subtitle="Explore our comprehensive FAQ to find quick answers to common
-          inquiries. If you need further assistance, don't hesitate to
+        subtitle="Explore our FAQ's to find quick answers to common questions. If you need further assistance, don't hesitate to
           contact us for personalized help."
       />
 

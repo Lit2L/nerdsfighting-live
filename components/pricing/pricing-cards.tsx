@@ -34,7 +34,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
     return (
       <div
         className={cn(
-          'relative flex flex-col overflow-hidden rounded-3xl border border-blue-500 shadow-sm',
+          'relative flex flex-col overflow-hidden rounded-3xl border-4 border-emerald-500 shadow-xl',
           offer.title.toLocaleLowerCase() === 'pro' ? '-m-0.5 border-2 border-purple-400' : ''
         )}
         key={offer.title}
@@ -72,7 +72,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           ) : null}
         </div>
 
-        <div className='flex h-full flex-col justify-between gap-16 p-6'>
+        <div className='flex h-full flex-col justify-between gap-16 bg-muted/70 p-6'>
           <ul className='space-y-2 text-left text-sm font-medium leading-normal'>
             {offer.benefits.map((feature) => (
               <li className='flex items-start gap-x-3' key={feature}>

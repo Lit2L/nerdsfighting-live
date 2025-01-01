@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette')
 
 const config = {
   darkMode: ['class'],
@@ -20,6 +21,13 @@ const config = {
       padding: '.8rem'
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+        heading: ['var(--font-heading)', ...fontFamily.sans],
+        logo: ['var(--font-logo)', ...fontFamily.sans],
+        genos: ['var(--font-genos)', ...fontFamily.sans],
+        urban: ['var(--font-urban)', ...fontFamily.sans]
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -60,13 +68,13 @@ const config = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
-      fontFamily: {
-        sans: ['var(--font-sans)', ...fontFamily.sans],
-        urban: ['var(--font-urban)', ...fontFamily.sans],
-        heading: ['var(--font-heading)', ...fontFamily.sans],
-        geist: ['var(--font-geist)', ...fontFamily.sans]
-      },
+
       keyframes: {
+        'text-gradient': {
+          to: {
+            backgroundPosition: '200% center'
+          }
+        },
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' }
@@ -75,6 +83,7 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' }
         },
+
         // Fade up and down
         'fade-up': {
           '0%': {
@@ -142,5 +151,15 @@ const config = {
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')]
 } satisfies Config
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme('colors'))
+  let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]))
+
+  addBase({
+    ':root': newVars
+  })
+}
 
 export default config

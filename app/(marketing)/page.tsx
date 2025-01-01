@@ -7,6 +7,7 @@ import Powered from '@/components/sections/powered'
 import PreviewLanding from '@/components/sections/preview-landing'
 import { Schedule } from '@/components/sections/schedule'
 import Testimonials from '@/components/sections/testimonials'
+import { TrainingCards } from '@/components/sections/TrainingCards'
 import {
   InfiniteSliderBasic,
   InfiniteSliderHoverSpeed,
@@ -17,16 +18,17 @@ export default function IndexPage() {
   return (
     <>
       <HeroLanding />
-      <InfiniteSliderHoverSpeed />
+      {/* <InfiniteSliderHoverSpeed /> */}
       {/* <InfiniteSliderVertical /> */}
-      {/* <PreviewLanding /> */}
-      <Schedule />
+      {/* <PreviewLanding />
+      <Features /> */}
+      <TrainingCards />
       <Testimonials />
+      <Schedule />
       {/* <Powered />
       <BentoGrid /> */}
       {/* <InfoLanding data={infos[0]} reverse={true} /> */}
       {/* <InfoLanding data={infos[1]} /> */}
-      <Features />
     </>
   )
 }
