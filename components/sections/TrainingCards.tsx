@@ -8,13 +8,18 @@ import {
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Private Lessons',
+      title: 'Use What Works',
       description: [
-        'Customized training with an experienced coach.',
-        'Accelerate progess and master techniques',
-        'Progress faster and see real results in  training'
+        'Battle tested techniques proven to work in competition and real life.',
+        'Training Style that sharpens technique and body mechanics for maximum power and effectiveness.'
       ],
       image: '/_static/photos/privatecoach.png'
+    },
+
+    {
+      title: 'Multiple Training Paths',
+      description: ['Fitness, Self-Defense, Competition, or just for fun.', 'At your own pace'],
+      image: '/_static/photos/nerds-handson.png'
     },
     {
       title: 'Video Analysis',
@@ -56,8 +61,8 @@ export function TrainingCards() {
     <section id='training' className='relative mx-auto w-full max-w-full'>
       <div className='bgTraining'></div>
       <div className='mx-auto max-w-6xl'>
-        <p className='mx-auto py-6 text-center font-heading text-3xl font-bold tracking-tight text-black dark:text-white lg:text-3xl lg:leading-tight'>
-          Invest in Yourself and Begin Your Journey
+        <p className='mx-auto py-6 text-center font-urban text-2xl font-thin'>
+          Train Hard, Train Smart, Live Well
         </p>
         <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
           <div className='relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>

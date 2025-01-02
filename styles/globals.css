@@ -86,8 +86,20 @@
   }
 }
 
-.text-gradient_indigo-purple {
+.logo {
+  src: url('/logoNF.png');
+  width: 100px;
+  height: 100px;
+}
+.text-gradient_greens {
   background: linear-gradient(90deg, #548f6f 50%, hsl(98 78 72) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient_yellows {
+  background: linear-gradient(90deg, #e01b6e 50%, hsl(198 78 72) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -127,10 +139,48 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.1;
-  z-index: 10;
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.yellow {
+  color: #efe102;
+}
+.green1 {
+  color: #548f6f;
+}
+.green2 {
+  color: #008000;
+}
+.green3 {
+  color: #00af66;
+}
+.green4 {
+  color: #18c071;
+}
+.smoke1 {
+  color: #262626;
+}
+.smoke2 {
+  color: #121212;
+}
+.smoke3 {
+  color: #191919;
+}
+.smoke4 {
+  color: #1c1c1c;
+}
+.smoke5 {
+  color: #303030;
+}
+
+.brown {
+  color: #523a34;
+}
+.red {
+  color: #b6111a;
 }
