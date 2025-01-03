@@ -67,14 +67,12 @@ export function TrainingCards() {
     }
   ]
   return (
-    <section id='training' className='relative mx-auto w-full max-w-full'>
+    <section id='training' className='relative mx-auto w-full max-w-full pt-20'>
       <div className='bgTraining'></div>
       <MaxWidthWrapper>
         <HeaderSection label='' title='Training' subtitle='' />
       </MaxWidthWrapper>
-      <p className='mx-auto py-6 text-center font-urban text-xl font-thin'>
-        Train Hard Live Peacefully
-      </p>
+      <p className='mx-auto py-6 text-center font-urban text-xl font-thin'>Be a Live Peacefully</p>
       <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
         <div className='relative grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>
           {cards.map((card, index) => (

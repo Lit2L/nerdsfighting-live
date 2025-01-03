@@ -18,7 +18,7 @@ export default function IndexPage() {
       {/* <InfiniteSliderHoverSpeed /> */}
       {/* <InfiniteSliderVertical /> */}
       {/* <PreviewLanding /> */}
-      <Features />
+      {/* <Features /> */}
       <TrainingCards />
       <Testimonials />
       <Schedule />
