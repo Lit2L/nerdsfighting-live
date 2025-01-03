@@ -11,7 +11,7 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Find Your FlowState',
+      title: 'Find Your Flowstate',
       description: [
         'Learn to Flow and Dance Circles Around Everyone.',
         'Develop your own style and rhythm.',
@@ -23,7 +23,6 @@ export function TrainingCards() {
     {
       title: 'Choose Your Path',
       description: [
-        'Be a Protector, Train to Be Strong for Others',
         'Live a Healthy Lifestyle and Increase Longevity',
         'Test Your Skills and Compete ',
         'Look Good, Feel Good, and Be Confident',
@@ -41,7 +40,7 @@ export function TrainingCards() {
       image: '/_static/photos/analysis.png'
     },
     {
-      title: 'Group Training',
+      title: 'Use Your Body',
       description: [
         'Supportive group of martial artists that train together',
         'Peak performance training involves calisthenics, drills, strength conditioning, and optional group sparring'

@@ -52,37 +52,39 @@ export const infos: InfoLdg[] = [
 export const features: FeatureLdg[] = [
   {
     title: 'Feature 1',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Take A Journey That Changes All Journeys.',
     link: '/',
     icon: 'nextjs'
   },
   {
     title: 'Feature 2',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description:
+      'Looking for a fun way to get fit? Burn calories while unleashing your fury during the heart pumping & challenging  classes!',
     link: '/',
     icon: 'google'
   },
   {
     title: 'Feature 3',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Find your flow and channel your inner warrior',
     link: '/',
     icon: 'gitHub'
   },
   {
     title: 'Feature 4',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Protect yourself and your loved ones with the power of martial arts',
     link: '/',
     icon: 'laptop'
   },
   {
     title: 'Feature 5',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description: 'Transform Your Day-to-Day Life and discover a new side.',
     link: '/',
     icon: 'user'
   },
   {
     title: 'Feature 6',
-    description: 'Amet praesentium deserunt ex commodi tempore fuga voluptatem. Sit, sapiente.',
+    description:
+      'I’ve lost weight, gained strength, and found a community that inspires me every day.',
     link: '/',
     icon: 'copy'
   }

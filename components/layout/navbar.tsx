@@ -103,7 +103,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           {session ? (
             <Link
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
-              className='hidden md:block'
+              className='hidden rounded-sm border-4 px-2 md:block'
             >
               <span className='text-gradient_greens font-urban text-lg font-medium tracking-wide'>
                 {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
