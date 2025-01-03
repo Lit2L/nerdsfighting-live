@@ -15,7 +15,7 @@ const classes = [
     title: 'Tuesday',
     description: 'Cardio Kickboxing',
     attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
-    schedule: [{ id: 1, day: 'Mon', time: '6:00am - 7:15am' }]
+    schedule: [{ id: 1, day: 'Tues', time: '6:00am - 7:15am' }]
   },
 
   {
@@ -26,7 +26,7 @@ const classes = [
     schedule: [
       {
         id: 1,
-        day: 'Thurs',
+        day: 'Thursday',
         time: '6:00am - 7:15am'
       }
     ]
@@ -39,7 +39,7 @@ const classes = [
     schedule: [
       {
         id: 1,
-        day: 'Thurs',
+        day: 'Friday',
         time: '6:00am - 7:15am'
       }
     ]
