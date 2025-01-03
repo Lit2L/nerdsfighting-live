@@ -25,8 +25,8 @@ export default function IndexPage() {
       <TrainingCards />
       <Testimonials />
       <Schedule />
-      {/* <Powered />
-      <BentoGrid /> */}
+      {/* <Powered /> */}
+      {/* <BentoGrid /> */}
       {/* <InfoLanding data={infos[0]} reverse={true} /> */}
       {/* <InfoLanding data={infos[1]} /> */}
     </>

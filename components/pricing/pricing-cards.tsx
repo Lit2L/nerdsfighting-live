@@ -41,7 +41,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
       >
         <div className='min-h-[150px] items-start space-y-4 bg-muted/50 p-6'>
           <p className='flex font-urban text-sm font-bold uppercase tracking-wider text-muted-foreground'>
-            {offer.title}
+            {offer.name}
           </p>
 
           <div className='flex flex-row'>

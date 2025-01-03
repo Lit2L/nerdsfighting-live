@@ -5,20 +5,30 @@ import {
   MinimalCardTitle
 } from '@/components/ui/minimal-card'
 
+import { HeaderSection } from '../shared/header-section'
+import MaxWidthWrapper from '../shared/max-width-wrapper'
+
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Use What Works',
+      title: 'Find Your FlowState',
       description: [
-        'Battle tested techniques proven to work in competition and real life.',
-        'Training Style that sharpens technique and body mechanics for maximum power and effectiveness.'
+        'Learn to Flow and Dance Circles Around Everyone.',
+        'Develop your own style and rhythm.',
+        'Strike with Rythym & Timing without Forcing Shots.'
       ],
       image: '/_static/photos/privatecoach.png'
     },
 
     {
-      title: 'Multiple Training Paths',
-      description: ['Fitness, Self-Defense, Competition, or just for fun.', 'At your own pace'],
+      title: 'Choose Your Path',
+      description: [
+        'Be a Protector, Train to Be Strong for Others',
+        'Live a Healthy Lifestyle and Increase Longevity',
+        'Test Your Skills and Compete ',
+        'Look Good, Feel Good, and Be Confident',
+        'Grow at your own pace'
+      ],
       image: '/_static/photos/nerds-handson.png'
     },
     {
@@ -60,27 +70,28 @@ export function TrainingCards() {
   return (
     <section id='training' className='relative mx-auto w-full max-w-full'>
       <div className='bgTraining'></div>
-      <div className='mx-auto max-w-6xl'>
-        <p className='mx-auto py-6 text-center font-urban text-2xl font-thin'>
-          Train Hard, Train Smart, Live Well
-        </p>
-        <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
-          <div className='relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-            {cards.map((card, index) => (
-              <MinimalCard key={index}>
-                <MinimalCardTitle>{card.title}</MinimalCardTitle>
-                <MinimalCardImage src={card.image} alt={card.title} />
-                {/* <MinimalCardTitle>{card.title}</MinimalCardTitle> */}
-                {Array.isArray(card.description) ? (
-                  card.description.map((desc, index) => (
-                    <MinimalCardDescription key={index}>• {desc}</MinimalCardDescription>
-                  ))
-                ) : (
-                  <MinimalCardDescription>{card.description}</MinimalCardDescription>
-                )}
-              </MinimalCard>
-            ))}
-          </div>
+      <MaxWidthWrapper>
+        <HeaderSection label='' title='Training' subtitle='' />
+      </MaxWidthWrapper>
+      <p className='mx-auto py-6 text-center font-urban text-xl font-thin'>
+        Train Hard Live Peacefully
+      </p>
+      <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
+        <div className='relative grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>
+          {cards.map((card, index) => (
+            <MinimalCard key={index}>
+              <MinimalCardTitle>{card.title}</MinimalCardTitle>
+              <MinimalCardImage src={card.image} alt={card.title} />
+              {/* <MinimalCardTitle>{card.title}</MinimalCardTitle> */}
+              {Array.isArray(card.description) ? (
+                card.description.map((desc, index) => (
+                  <MinimalCardDescription key={index}>• {desc}</MinimalCardDescription>
+                ))
+              ) : (
+                <MinimalCardDescription>{card.description}</MinimalCardDescription>
+              )}
+            </MinimalCard>
+          ))}
         </div>
       </div>
     </section>

@@ -50,16 +50,23 @@ export type DocsConfig = {
 // subcriptions
 export type SubscriptionPlan = {
   title: string
+  name: string
   description: string
   benefits: string[]
   limitations: string[]
   prices: {
+    single: number
+    triple: number
+    five: number
     monthly: number
     yearly: number
   }
   stripeIds: {
-    monthly: string | null
-    yearly: string | null
+    single: string
+    triple: string
+    five: string
+    monthly: string
+    yearly: string
   }
 }
 

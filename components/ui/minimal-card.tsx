@@ -11,7 +11,7 @@ const MinimalCard = React.forwardRef<
     ref={ref}
     className={cn(
       'rounded-[24px] p-2 transition-colors',
-      'bg-[#1c1c1c]',
+      'bg-[#191919]/50',
       'shadow-[0_1px_1px_rgba(0,0,0,0.05),0_1px_1px_rgba(255,252,240,0.5)_inset,0_0_0_1px_hsla(0,0%,100%,0.1)_inset,0_0_1px_rgba(28,27,26,0.5)]',
       'dark:shadow-[0_1px_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_0_1px_rgba(0,0,0,0.1),0_2px_rgba(0,0,0,0.1),0_4px_rgba(0,0,0,0.1),0_8px_rgba(0,0,0,0.1)]',
       className
@@ -56,7 +56,10 @@ const MinimalCardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h3
     ref={ref}
-    className={cn('bg-[#262626] p-3 text-center font-urban text-xl leading-tight', className)}
+    className={cn(
+      'text-md bg-[#303030] p-3 text-center font-urban font-bold tracking-widest text-[#f5f5f5]',
+      className
+    )}
     {...props}
   />
 ))
@@ -68,16 +71,14 @@ const MinimalCardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn('px-6 py-3 font-urban text-xs font-bold capitalize text-neutral-200', className)}
+    className={cn('px-6 py-2 font-urban text-xs font-bold capitalize text-neutral-200', className)}
     {...props}
   />
 ))
 MinimalCardDescription.displayName = 'MinimalCardDescription'
 
 const MinimalCardContent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({ className, ...props }, ref) => (
-    <div ref={ref} className={cn('p-6 pt-0', className)} {...props} />
-  )
+  ({ className, ...props }, ref) => <div ref={ref} className={cn('p-6', className)} {...props} />
 )
 MinimalCardContent.displayName = 'MinimalCardContent'
 

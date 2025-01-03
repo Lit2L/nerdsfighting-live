@@ -3,30 +3,33 @@ import { env } from '@/env.mjs'
 
 export const pricingData: SubscriptionPlan[] = [
   {
-    title: 'Drop In',
+    title: 'Starter',
+    name: 'Drop-In',
     description: 'For Beginners',
     benefits: [
       'Drop in for a single class',
       'Cardio, strength, and flexibility',
-      'Ultimate Stress Reliever'
+      'Claim your spot in class anytime'
     ],
-    limitations: [
-      'No priority access to new features.',
-      'Limited customer support',
-      'No custom branding',
-      'Limited access to business resources.'
-    ],
+    limitations: ['Access to one class only', 'No access to online resources'],
     prices: {
-      monthly: 15,
-      yearly: 90
+      single: 30,
+      triple: 85,
+      five: 125,
+      monthly: 0,
+      yearly: 0
     },
     stripeIds: {
-      monthly: 15,
-      yearly: 90
+      single: env.NEXT_PUBLIC_STRIPE_STARTER_SINGLE_PLAN_ID,
+      triple: env.NEXT_PUBLIC_STRIPE_STARTER_TRIPLE_PLAN_ID,
+      five: env.NEXT_PUBLIC_STRIPE_STARTER_FIVE_PLAN_ID,
+      monthly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
+      yearly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID
     }
   },
   {
-    title: 'NERD Membership',
+    title: 'Pro',
+    name: 'NERDS Membership',
     description: 'Become a NERD',
     benefits: [
       'Unlimited Access to Muay Thai Kickboxing Classes',
@@ -38,17 +41,24 @@ export const pricingData: SubscriptionPlan[] = [
     ],
     limitations: ['No Private Lessons included'],
     prices: {
+      single: 0,
+      triple: 0,
+      five: 0,
       monthly: 100,
       yearly: 1200
     },
     stripeIds: {
+      single: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
+      triple: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
+      five: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
       monthly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
       yearly: env.NEXT_PUBLIC_STRIPE_PRO_YEARLY_PLAN_ID
     }
   },
   {
-    title: 'NERD ENHANCEMENT Membership',
-    description: 'For Power Users',
+    title: 'Business',
+    name: 'NERD SUPERBOOST Plan',
+    description: 'For the Motivated NERDS',
     benefits: [
       'Included 4 Private Lessons per Month',
       'Unlimited Access to Muay Thai Kickboxing Classes',
@@ -60,10 +70,16 @@ export const pricingData: SubscriptionPlan[] = [
     ],
     limitations: [],
     prices: {
+      single: 0,
+      triple: 0,
+      five: 0,
       monthly: 250,
       yearly: 2400
     },
     stripeIds: {
+      single: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
+      triple: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
+      five: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
       monthly: env.NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PLAN_ID,
       yearly: env.NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PLAN_ID
     }

@@ -40,21 +40,23 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`sticky top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
+      className={`fixed top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
         scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b'
       }`}
     >
       <MaxWidthWrapper
-        className='flex h-14 items-center justify-between py-4'
+        className='flex h-20 items-center justify-between py-4'
         large={documentation}
       >
-        <div className='flex gap-6 md:gap-10'>
+        <div className='mt-3 flex gap-6 md:gap-10'>
           <Link
             href='/'
-            className='flex size-20 flex-col items-center rounded-full border-4 text-center'
+            className='flex size-16 flex-col items-center rounded-xl border-4 text-center'
           >
             <Logo />
-            <span className='font-urban text-sm font-bold'>{siteConfig.name}</span>
+            <span className='text-gradient_greens font-urban text-xs font-thin'>
+              {siteConfig.name}
+            </span>
           </Link>
 
           {links && links.length > 0 ? (
@@ -103,20 +105,20 @@ export function NavBar({ scroll = false }: NavBarProps) {
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
               className='hidden md:block'
             >
-              <Button className='gap-2 px-5' variant='default' size='sm' rounded='full'>
-                <span>Dashboard</span>
-              </Button>
+              <span className='text-gradient_greens font-urban text-lg font-medium tracking-wide'>
+                {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
+              </span>
             </Link>
           ) : status === 'unauthenticated' ? (
             <Button
-              className='hidden gap-2 px-5 md:flex'
-              variant='default'
+              className='hidden items-center gap-2 px-5 text-[#548f6f] md:flex'
+              variant='outline'
               size='sm'
-              rounded='full'
+              rounded='lg'
               onClick={() => setShowSignInModal(true)}
             >
-              <span>Sign In</span>
-              <Icons.arrowRight className='size-4' />
+              <Icons.user className='size-5' />
+              <span>Login</span>
             </Button>
           ) : (
             <Skeleton className='hidden h-9 w-28 rounded-full lg:flex' />

@@ -65,7 +65,7 @@ export function Schedule() {
     <section id='schedule' className='relative w-full'>
       {/* <Image src='/bg1.png' alt='bg' layout='fill' className='absolute -z-10 opacity-10' /> */}
       <div className='bgSchedule'></div>
-      <div className='font-genos container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
+      <div className='container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 font-genos dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />
 
@@ -77,7 +77,7 @@ export function Schedule() {
                   className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
                   <Image
-                    src='/bg-green.png'
+                    src='/bg15.png'
                     alt='bg'
                     layout='fill'
                     objectFit='cover'
@@ -99,7 +99,7 @@ export function Schedule() {
                         key={schedule.id}
                         className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-transparent/60 p-3 shadow-xl'
                       >
-                        <p className='w-3/16 text-md font-genos m-1 flex border-b border-emerald-900 font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
+                        <p className='w-3/16 text-md m-1 flex border-b border-emerald-900 font-genos font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
                           {item.description}
                         </p>
                         <div className='flex items-center'>

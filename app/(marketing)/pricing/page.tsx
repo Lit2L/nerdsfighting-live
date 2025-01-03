@@ -48,12 +48,13 @@ export default async function PricingPage() {
 
   return (
     <div className='relative flex flex-col gap-16 py-8 md:py-8'>
-      <Image
+      {/* <Image
         src='/bg10.png'
         alt='bg'
         layout='fill'
         className='absolute -z-10 object-contain opacity-10 blur-sm'
-      />
+      /> */}
+      <div className='bgPricing blur-md'></div>
       <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} />
       <hr className='container' />
       <ComparePlans />
