@@ -6,6 +6,7 @@ import { MdSportsMartialArts } from 'react-icons/md'
 import { HeaderSection } from '@/components/shared/header-section'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
+import { Holographic } from '../Holographic'
 import { Card, CardTitle } from '../ui/card'
 import { Separator } from '../ui/separator'
 
@@ -49,7 +50,7 @@ const classes = [
     title: 'Saturday',
     description: 'Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Saturday', time: '6:00am - 7:30am' }]
+    schedule: [{ id: 1, day: 'Saturday', time: '7:00am - 8:00am' }]
   },
   {
     id: 5,
@@ -81,7 +82,7 @@ export function Schedule() {
                     alt='bg'
                     layout='fill'
                     objectFit='cover'
-                    className='absolute z-0 opacity-5'
+                    className='absolute z-0 opacity-5 blur-[1px]'
                   />
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
@@ -97,7 +98,7 @@ export function Schedule() {
                     {item.schedule.map((schedule) => (
                       <div
                         key={schedule.id}
-                        className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-transparent/60 p-3 shadow-xl'
+                        className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-black p-3 shadow-xl'
                       >
                         <p className='w-3/16 text-md m-1 flex border-b border-emerald-900 font-genos font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
                           {item.description}

@@ -1,14 +1,6 @@
 import '@/styles/globals.css'
 
-import {
-  fontGeist,
-  fontHeading,
-  fontSans,
-  fontUrban,
-  genosFont,
-  headingFont,
-  logoFont
-} from '@/assets/fonts'
+import { fontHeading, fontOrbit, fontSans, genosFont, headingFont, logoFont } from '@/assets/fonts'
 import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider } from 'next-themes'
 
@@ -34,8 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable,
           headingFont.variable,
           fontHeading.variable,
-          fontGeist.variable,
-          fontUrban.variable,
+          fontOrbit.variable,
           logoFont.variable,
           genosFont.variable
         )}

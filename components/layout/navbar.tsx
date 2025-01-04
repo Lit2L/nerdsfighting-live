@@ -1,6 +1,7 @@
 'use client'
 
 import { useContext } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -40,24 +41,25 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`fixed top-0 z-40 flex w-full justify-center bg-background/60 backdrop-blur-xl transition-all ${
-        scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b'
-      }`}
+      className={`{ scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b' } fixed top-0 z-40 flex h-24 w-full justify-center bg-background/60 backdrop-blur-xl transition-all`}
     >
-      <MaxWidthWrapper
-        className='flex h-20 items-center justify-between py-4'
-        large={documentation}
-      >
+      <MaxWidthWrapper className='flex h-24 items-center justify-between' large={documentation}>
         <div className='mt-3 flex gap-6 md:gap-10'>
-          <Link
-            href='/'
-            className='flex size-16 flex-col items-center rounded-xl border-4 text-center'
-          >
-            <Logo />
-            <span className='text-gradient_greens font-urban text-xs font-thin'>
-              {siteConfig.name}
-            </span>
-          </Link>
+          <div className='w-full'>
+            <Link href='/' className='m-1 w-28 text-center'>
+              <Image
+                src='/logoNF.png'
+                alt='Nerds Kickboxing Club'
+                width={75}
+                height={75}
+                priority
+                className='rounded-full shadow-2xl shadow-[#121212]/70'
+              />
+              <p className='text-gradient_greens font-orbitron -translate-x-2 text-center text-xs font-bold'>
+                {siteConfig.name}
+              </p>
+            </Link>
+          </div>
 
           {links && links.length > 0 ? (
             <nav className='hidden gap-6 md:flex'>
@@ -105,7 +107,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
               className='hidden rounded-sm border-4 px-2 md:block'
             >
-              <span className='text-gradient_greens font-urban text-lg font-medium tracking-wide'>
+              <span className='text-gradient_greens font-orbitron text-lg font-medium tracking-wide'>
                 {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
               </span>
             </Link>

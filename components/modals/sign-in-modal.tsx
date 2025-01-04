@@ -21,7 +21,7 @@ function SignInModal({
     <Modal showModal={showSignInModal} setShowModal={setShowSignInModal}>
       <div className='relative -z-10 w-full bg-transparent'>
         <div className='flex flex-col items-center justify-center space-y-3 border-b bg-background px-4 py-6 pt-8 text-center md:px-16'>
-          <h3 className='text-gradient_greens font-urban text-2xl font-bold'>Welcome Back!</h3>
+          <h3 className='text-gradient_greens font-orbitron text-2xl font-bold'>Welcome Back!</h3>
           <Logo />
           <p className='text-gradient_greens text-sm'>Login to your {siteConfig.name} Account!</p>
 

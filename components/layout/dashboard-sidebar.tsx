@@ -178,7 +178,7 @@ export function MobileSheetSidebar({ links }: DashboardSidebarProps) {
               <nav className='flex flex-1 flex-col gap-y-8 p-6 text-lg font-medium'>
                 <Link href='#' className='flex items-center gap-2 text-lg font-semibold'>
                   <Icons.logo className='size-6' />
-                  <span className='font-urban text-xl font-bold'>{siteConfig.name}</span>
+                  <span className='font-orbitron text-xl font-bold'>{siteConfig.name}</span>
                 </Link>
 
                 <ProjectSwitcher large />

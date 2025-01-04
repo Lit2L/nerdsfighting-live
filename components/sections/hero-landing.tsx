@@ -15,40 +15,38 @@ export default async function HeroLanding() {
   return (
     <section
       id='hero'
-      className='relative flex min-h-screen w-full flex-col items-center justify-center space-y-20'
+      className='relative mx-auto flex min-h-screen flex-col items-center justify-between pt-20'
     >
       <div className='bgImage' />
+      <div className='flex flex-col items-center justify-center pt-6 md:pt-16'>
+        {/* TOP */}
 
-      {/* TOP */}
+        <div className='flex w-full flex-col items-center gap-6'>
+          <Badge className='md:text-md font-orbitron w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center text-[9px] font-bold uppercase tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
+            New Muay Thai & Kickboxing Training Gym
+          </Badge>
+          <GradualSpacing
+            className='text-gradient_greens font-orbitron font-bold uppercase tracking-widest'
+            text='Nerds Fighting'
+          />
+        </div>
 
-      <div className='flex h-1/4 w-full flex-col items-center'>
-        <Badge className='md:text-md w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-urban text-[9px] font-bold uppercase tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
-          New Muay Thai & Kickboxing Training Gym
-        </Badge>
-
-        <GradualSpacing
-          className='text-gradient_greens pt-3 text-center font-urban font-bold uppercase tracking-widest md:mt-6'
-          text='Nerds Fighting'
-        />
-      </div>
-      {/* MIDDLE */}
-      <div className='flex h-1/4 w-full flex-col items-center'>
-        <div className='mx-auto my-6 flex size-40 flex-col md:size-80 2xl:size-72'>
-          <p className='text-center font-urban text-xs text-muted-foreground md:text-sm'>
+        {/* MIDDLE */}
+        <div className=''>
+          <p className='font-orbitron text-center text-xs text-muted-foreground md:text-sm'>
             Fueled by Ambition
           </p>
           <Logo />
-          <p className='text-center font-urban text-xs text-muted-foreground md:text-sm'>
+          <p className='font-orbitron text-center text-xs text-muted-foreground md:text-sm'>
             Forged in Repetition
           </p>
         </div>
-      </div>
 
-      {/* BOTTOM */}
-      <div className='mx-auto h-1/3 w-full items-center'>
-        <AnimatedJoinButton />
-
-        {/* <FlipWordsComponent /> */}
+        {/* BOTTOM */}
+        <div className='mt-12 w-full'>
+          <AnimatedJoinButton />
+          {/* <FlipWordsComponent /> */}
+        </div>
       </div>
     </section>
   )

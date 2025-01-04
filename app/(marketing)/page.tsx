@@ -1,4 +1,5 @@
 import { infos } from '@/config/landing'
+import { Holographic } from '@/components/Holographic'
 import BentoGrid from '@/components/sections/bentogrid'
 import Features from '@/components/sections/features'
 import HeroLanding from '@/components/sections/hero-landing'
@@ -26,6 +27,7 @@ export default function IndexPage() {
       {/* <BentoGrid /> */}
       {/* <InfoLanding data={infos[0]} reverse={true} /> */}
       {/* <InfoLanding data={infos[1]} /> */}
+      <Holographic />
     </>
   )
 }

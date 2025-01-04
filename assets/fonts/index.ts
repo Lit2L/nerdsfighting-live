@@ -1,9 +1,4 @@
-import {
-  Black_Ops_One,
-  Inter as FontSans,
-  Genos as GenosFont,
-  Orbitron as Urbanist
-} from 'next/font/google'
+import { Black_Ops_One, Inter as FontSans, Genos as GenosFont, Orbitron } from 'next/font/google'
 import localFont from 'next/font/local'
 
 export const fontSans = FontSans({
@@ -11,19 +6,14 @@ export const fontSans = FontSans({
   variable: '--font-sans'
 })
 
-export const fontUrban = Urbanist({
+export const fontOrbit = Orbitron({
   subsets: ['latin'],
-  variable: '--font-urban'
+  variable: '--font-orbitron'
 })
 
 export const fontHeading = localFont({
   src: './CalSans-SemiBold.woff2',
   variable: '--font-heading'
-})
-
-export const fontGeist = localFont({
-  src: './GeistVF.woff2',
-  variable: '--font-geist'
 })
 
 export const headingFont = Black_Ops_One({

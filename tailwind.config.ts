@@ -26,7 +26,7 @@ const config = {
         heading: ['var(--font-heading)', ...fontFamily.sans],
         logo: ['var(--font-logo)', ...fontFamily.sans],
         genos: ['var(--font-genos)', ...fontFamily.sans],
-        urban: ['var(--font-urban)', ...fontFamily.sans]
+        orbitron: ['var(--font-orbitron)', ...fontFamily.sans]
       },
       colors: {
         border: 'hsl(var(--border))',

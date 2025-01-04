@@ -35,7 +35,7 @@ export function FlipWordsComponent() {
   return (
     <div className='flex w-full flex-col items-center justify-center gap-6 px-4'>
       <div className='mx-auto flex w-full items-center justify-center'>
-        <p className='text-center font-urban text-sm font-bold text-emerald-400 dark:text-emerald-500'>
+        <p className='font-orbitron text-center text-sm font-bold text-emerald-400 dark:text-emerald-500'>
           +++
         </p>
         <FlipWords words={words} />
