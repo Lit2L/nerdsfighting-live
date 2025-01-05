@@ -13,12 +13,13 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Train In Flowstate',
+      title: 'Find Your Flow',
       subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
-        'Enter a state of complete presence & focus.',
-        'Dance your way into Mastering movement.',
-        'Flow with Grace & Fluidity that Balance Power and Rhythm.'
+        'Learn to be present.',
+        'Master The Art of Fighting by Dancing with it.',
+        'Move with Balance, Power and Rhythm.'
+
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
       image: '/_static/photos/privatecoach.png'
@@ -43,10 +44,10 @@ export function TrainingCards() {
         // 'Become an example of a modern day warrior without compromising your work, studies, or family life.',
         // 'Get Fit, Get Strong, Look Good & Feel Fresh.',
         'Perfect for working professionals, students & parents.',
-        'Keep fit, work the body, sharpen your mind while developing your fighting abilities.',
-        'Signal your confidence to the rest of world without having to say a thing.'
+        'Keep fit, look good, sharpen the mind while having some serious fun.',
+        'Benefit from training like a fighter without compromising your work, studies, or family life.'
       ],
-      image: '/_static/photos/private.jpg'
+      image: '/_static/photos/nerds-team.jpeg'
     },
     // {
     //   title: 'Physical Mastery',
@@ -82,11 +83,11 @@ export function TrainingCards() {
     //   image: '/_static/photos/privatecoach.png'
     // },
     {
-      title: 'Find Inner Balance',
+      title: 'Find Your Balance',
       subtitle: 'Channel Energy into Growth and Transformation',
       description: [
-        'Balance your mind, body, and spirit.',
-        'Release stress & tension held inside.',
+        'Balance your body, mind, and spirit.',
+        'Give yourself a time and place to release.',
         // 'Cultivate self-control through practice and discipline.',
         // 'Discover the balance between aggression and calmness.',
         'Finish training feeling peaceful.'
@@ -104,12 +105,12 @@ export function TrainingCards() {
     //   image: '/_static/photos/analysis.png'
     // },
     {
-      title: 'Connect and Bond with Teammates',
+      title: 'Our Way',
       subtitle: 'Join a Tribe That Inspires Growth',
       description: [
-        'Join a tribe of like-minded people who support and encourage each other.',
-        'Build meaningful friendships cemented through hard training.',
-        'You never forget the people you grow with.'
+        'Join a team of like-minded people who support and encourage each other.',
+        `Learn to be a good teammate, Be part of a strong family.`
+        // 'You never forget the people you grow with.'
       ],
       image: '/_static/photos/gauntlet1.png'
     },
@@ -123,17 +124,15 @@ export function TrainingCards() {
     //   ],
     //   image: '/_static/photos/nerds-handson.png'
     // },
-    // {
-    //   title: 'Choose Your Path',
-    //   description: [
-    //     'Fun and Engaging Classes designed to be enjoyable while keeping you motivated and challenged.',
-    //     'Live a Healthy Lifestyle and Increase Longevity',
-    //     'Test Your Skills and Compete ',
-    //     'Look Good, Feel Good, and Be Confident',
-    //     'Grow at your own pace'
-    //   ],
-    //   image: '/_static/photos/nerds-handson.png'
-    // },
+    {
+      title: 'Be Different',
+      description: [
+        'Less than 1% of the population trains in martial arts.',
+        'Even fewer train in Muay Thai.',
+        'Equip yourself with skill set that sets you apart.'
+      ],
+      image: '/_static/photos/nerds-handson.png'
+    },
     {
       title: 'Video Analysis',
       description: [
@@ -142,7 +141,7 @@ export function TrainingCards() {
         'Reinforces proper technique and helps develop better habits.'
       ],
       image: '/_static/photos/analysis.png'
-    },
+    }
     // {
     //   title: 'Physical Mastery',
     //   subtitle: 'Build Strength, Endurance, and Agility',
@@ -154,17 +153,17 @@ export function TrainingCards() {
     //   image: '/_static/photos/gauntlet1.png'
     // },
 
-    {
-      title: 'Some Journeys Redefine the Traveler',
-      description: [
-        'Adding Muay Thai Training to your lifestyle is an evolutional journey where you will be continuously updating your software.',
-        'You may inevitably notice changes in how you look, think, feel, speak and carry yourself.'
-        // 'Muay Thai & Martial Arts  to your life will evolve you in ways you never thought possible.'
-        //  how stand , think, feel and how you speak.',
-        // 'Where Art Meets Science, Violence Makes Peace, Strategy Becomes Technique, and Dance Meets Discipline',
-      ],
-      image: '/_static/photos/mitts.jpg'
-    }
+    // {
+    //   title: 'Some Journeys Redefine the Traveler',
+    //   description: [
+    //     'Adding Muay Thai Training to your lifestyle is an evolutional journey where you will be continuously updating your software.',
+    //     'You may inevitably notice changes in how you look, think, feel, speak and carry yourself.'
+    //     // 'Muay Thai & Martial Arts  to your life will evolve you in ways you never thought possible.'
+    //     //  how stand , think, feel and how you speak.',
+    //     // 'Where Art Meets Science, Violence Makes Peace, Strategy Becomes Technique, and Dance Meets Discipline',
+    //   ],
+    //   image: '/_static/photos/mitts.jpg'
+    // }
   ]
   return (
     <section id='training' className='relative mx-auto w-full max-w-full pt-20'>
@@ -172,8 +171,12 @@ export function TrainingCards() {
       <MaxWidthWrapper>
         <HeaderSection label='' title='Training' subtitle='' />
       </MaxWidthWrapper>
-      <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin'>
-        Be a Live Peacefully
+      <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
+        Have Fun & Be Safe
+        <br />
+        {/* <span className='text-sm'>
+          If you want to live in peace, then you evil something to be worried about.
+        </span> */}
       </p>
       <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
         <div className='relative grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>

@@ -6,14 +6,14 @@ import { HeaderSection } from '@/components/shared/header-section'
 export default function Testimonials() {
   return (
     <section id='testimonials' className='w-full bg-[#27272a]'>
-      <div className='font-genos container my-24 flex max-w-6xl flex-col gap-10 rounded-lg bg-neutral-800/30 py-24 shadow-2xl shadow-gray-800 dark:bg-[radial-gradient(circle_350px_at_50%_350px,#14443780,transparent)] sm:gap-y-16 md:columns-2'>
+      <div className='container my-24 flex max-w-6xl flex-col gap-10 rounded-lg bg-neutral-800/30 py-24 font-genos shadow-2xl shadow-gray-800 dark:bg-[radial-gradient(circle_350px_at_50%_350px,#14443780,transparent)] sm:gap-y-16 md:columns-2'>
         <HeaderSection
           label='Testimonials'
           title='What Our Members Say'
-          subtitle='We love and appreciate your reviews! Thank you!'
+          // subtitle='We love and appreciate your reviews! Thank you!'
         />
 
-        <div className='font-genos columns-1 gap-5 space-y-5 bg-[radial-gradient(circle_400px_at_50%_375px,#18181880,transparent)] py-24 dark:bg-[radial-gradient(circle_350px_at_50%_350px,#14443750,transparent)] md:columns-2'>
+        <div className='columns-1 gap-5 space-y-5 bg-[radial-gradient(circle_400px_at_50%_375px,#18181880,transparent)] py-24 font-genos dark:bg-[radial-gradient(circle_350px_at_50%_350px,#14443750,transparent)] md:columns-2'>
           {testimonials.map((item) => (
             <div className='break-inside-avoid' key={item.name}>
               <div className='relative rounded-xl bg-muted/80'>
