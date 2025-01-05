@@ -57,7 +57,7 @@ const MinimalCardTitle = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      'text-md font-orbitron m-1 rounded-md bg-[#303030] p-3 text-center font-bold tracking-widest text-[#f5f5f5]',
+      'm-1 rounded-md bg-[#303030] p-3 text-center font-orbitron text-sm font-bold tracking-widest text-[#f5f5f5]',
       className
     )}
     {...props}
@@ -72,7 +72,7 @@ const MinimalCardDescription = React.forwardRef<
   <p
     ref={ref}
     className={cn(
-      'font-orbitron rounded-lg px-6 py-2 text-xs font-bold capitalize text-neutral-200',
+      'text-md rounded-lg px-6 py-2 font-genos font-semibold tracking-wider text-neutral-200',
       className
     )}
     {...props}

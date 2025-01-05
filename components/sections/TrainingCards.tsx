@@ -13,11 +13,11 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Find Your Flow',
+      title: 'Flow State',
       subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
         'Learn to be present.',
-        'Master The Art of Fighting by Dancing with it.',
+        'Martial Arts is about learning how to express yourself through your movement.',
         'Move with Balance, Power and Rhythm.'
 
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
@@ -25,7 +25,7 @@ export function TrainingCards() {
       image: '/_static/photos/privatecoach.png'
     },
     {
-      title: 'For Real People, Living Real Lives',
+      title: 'Designed For You',
       // Forged in Repetition/Cemented in Repetition/Consistency is Key/Repetition is the Mother of Skill/Repetition is the Father of Learning/
       // title: 'A Training Style & Philosophy for Everyone people',
       // 'Safe, Modern, Dynamic & Effective Training for Everyone',
@@ -43,9 +43,9 @@ export function TrainingCards() {
         // 'Train like a fighter and Release that built-up stress, tension and anxiety.',
         // 'Become an example of a modern day warrior without compromising your work, studies, or family life.',
         // 'Get Fit, Get Strong, Look Good & Feel Fresh.',
-        'Perfect for working professionals, students & parents.',
-        'Keep fit, look good, sharpen the mind while having some serious fun.',
-        'Benefit from training like a fighter without compromising your work, studies, or family life.'
+        'Created for All walks of Life.',
+        'Designed to be accessible to working professionals, students or parents.',
+        'Get fit, look good & exercise your mind while having some serious fun.'
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
@@ -83,16 +83,16 @@ export function TrainingCards() {
     //   image: '/_static/photos/privatecoach.png'
     // },
     {
-      title: 'Find Your Balance',
+      title: 'Find Balance',
       subtitle: 'Channel Energy into Growth and Transformation',
       description: [
         'Balance your body, mind, and spirit.',
-        'Give yourself a time and place to release.',
+        'Release stresses and anxieties held inside and leave feeling light and ready for everything.',
         // 'Cultivate self-control through practice and discipline.',
         // 'Discover the balance between aggression and calmness.',
-        'Finish training feeling peaceful.'
+        'Leave workouts feeling zen.'
       ],
-      image: '/_static/photos/privatecoach.png'
+      image: '/_static/photos/111111.png'
     },
     // {
     //   title: 'Spiritual Connection',
