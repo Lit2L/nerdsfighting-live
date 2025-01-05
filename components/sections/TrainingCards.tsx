@@ -1,5 +1,3 @@
-import { sub } from 'date-fns'
-
 import {
   MinimalCard,
   MinimalCardDescription,
@@ -13,19 +11,35 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
+      title: 'Reset and Rebalance',
+      subtitle: 'Channel Energy into Growth and Transformation',
+      description: [
+        'Cultivating your Muay Thai practice means always having a means to channel your energy into growth and balance.',
+        'Let go of built-up stress, tension, and anxiety.',
+        'Leave workouts feeling zen.'
+        // 'Cultivate self-control through practice and discipline.',
+        // 'Discover the balance between aggression and calmness.',
+      ],
+      image: '/_static/photos/111111.png'
+    },
+    {
       title: 'Flow State',
-      subtitle: 'Find Your Rhythm, Unlock Your Potential',
+      // subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
         'Learn to be present.',
-        'Martial Arts is about learning how to express yourself through your movement.',
-        'Move with Balance, Power and Rhythm.'
+        'Find your rhythm and unlock more potential.',
+        // 'Overcome fear, doubt and distractions.',
+        // 'Martial Arts is about mastering yourself.',
+        'Engage in dance of Muay Thai  flowing with your partners in sparring but feeling like a dance instead of a life or death situation. '
+
+        // 'Practice the Dance of Muay Thai while in your flow state watch yourself grow. Develop balance with every move you make.'
 
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
       image: '/_static/photos/privatecoach.png'
     },
     {
-      title: 'Designed For You',
+      title: 'Made For You',
       // Forged in Repetition/Cemented in Repetition/Consistency is Key/Repetition is the Mother of Skill/Repetition is the Father of Learning/
       // title: 'A Training Style & Philosophy for Everyone people',
       // 'Safe, Modern, Dynamic & Effective Training for Everyone',
@@ -82,18 +96,7 @@ export function TrainingCards() {
     //   ],
     //   image: '/_static/photos/privatecoach.png'
     // },
-    {
-      title: 'Find Balance',
-      subtitle: 'Channel Energy into Growth and Transformation',
-      description: [
-        'Balance your body, mind, and spirit.',
-        'Release stresses and anxieties held inside and leave feeling light and ready for everything.',
-        // 'Cultivate self-control through practice and discipline.',
-        // 'Discover the balance between aggression and calmness.',
-        'Leave workouts feeling zen.'
-      ],
-      image: '/_static/photos/111111.png'
-    },
+
     // {
     //   title: 'Spiritual Connection',
     //   subtitle: 'Find Harmony and Purpose in Your Life',
@@ -105,10 +108,10 @@ export function TrainingCards() {
     //   image: '/_static/photos/analysis.png'
     // },
     {
-      title: 'Our Way',
+      title: 'The Way',
       subtitle: 'Join a Tribe That Inspires Growth',
       description: [
-        'Join a team of like-minded people who support and encourage each other.',
+        'Work together as a team to achieve your goals.',
         `Learn to be a good teammate, Be part of a strong family.`
         // 'You never forget the people you grow with.'
       ],
@@ -169,7 +172,7 @@ export function TrainingCards() {
     <section id='training' className='relative mx-auto w-full max-w-full pt-20'>
       <div className='bgTraining'></div>
       <MaxWidthWrapper>
-        <HeaderSection label='' title='Training' subtitle='' />
+        <HeaderSection label='' title='The Way' subtitle='' />
       </MaxWidthWrapper>
       <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
         Have Fun & Be Safe
