@@ -22,7 +22,7 @@ export default async function HeroLanding() {
         {/* TOP */}
 
         <div className='flex w-full flex-col items-center gap-6'>
-          <Badge className='md:text-md font-orbitron w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center text-[9px] font-bold uppercase tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
+          <Badge className='md:text-md w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold uppercase tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
             New Muay Thai & Kickboxing Training Gym
           </Badge>
           <GradualSpacing
@@ -33,11 +33,11 @@ export default async function HeroLanding() {
 
         {/* MIDDLE */}
         <div className=''>
-          <p className='font-orbitron text-center text-xs text-muted-foreground md:text-sm'>
+          <p className='text-center font-orbitron text-xs text-muted-foreground md:text-sm'>
             Fueled by Ambition
           </p>
           <Logo />
-          <p className='font-orbitron text-center text-xs text-muted-foreground md:text-sm'>
+          <p className='text-center font-orbitron text-xs text-muted-foreground md:text-sm'>
             Forged in Repetition
           </p>
         </div>

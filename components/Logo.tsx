@@ -9,7 +9,7 @@ function Logo() {
         width={400}
         height={400}
         priority
-        className='rounded-full shadow-2xl shadow-[#121212]/70'
+        className='shadow-[#121212]10 rounded-full shadow-2xl dark:shadow-[#121212]/70'
       />
     </div>
   )

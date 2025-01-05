@@ -16,15 +16,16 @@ export function TrainingCards() {
       title: 'Train In Flowstate',
       subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
-        'Enter a state of complete focus and presence.',
-        'Dance into the Mastery of your own movements.',
-        'Move with Grace & Fluid Movements that Balance Power and Rhythm.',
-        'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
+        'Enter a state of complete presence & focus.',
+        'Dance your way into Mastering movement.',
+        'Flow with Grace & Fluidity that Balance Power and Rhythm.'
+        // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
       image: '/_static/photos/privatecoach.png'
     },
     {
-      title: 'Training for Real Lives, for Real People',
+      title: 'For Real People, Living Real Lives',
+      // Forged in Repetition/Cemented in Repetition/Consistency is Key/Repetition is the Mother of Skill/Repetition is the Father of Learning/
       // title: 'A Training Style & Philosophy for Everyone people',
       // 'Safe, Modern, Dynamic & Effective Training for Everyone',
       //'Inclusive Environment: Perfect for professionals, students, and parents—train without compromising your work, studies, or family life.',
@@ -32,10 +33,18 @@ export function TrainingCards() {
       // 'Supportive group of martial artists that train together',
       // 'Peak performance training involves calisthenics, drills, strength conditioning, and optional group sparring'
       description: [
-        'Safety First: Our training methods are designed to protect the brain and increase health and longevity.',
-        'Training for Everyone: The Busy, The Stressed, The Dreamers, The Protectors, The Health & Fitness Seekers.',
-        'Not just for Pro Fighters, Our style of training is for the everyday person striving to be their best.',
-        'Train with a purpose, pursue a excellence and show up to work or school without head injuries.'
+        // 'Our philosophy is to give our students the type of training that will give them the confidence to tackle whatever comes their way.',
+        // 'When you show up for training of your own will, you are building a habit of discipline that will carry over into other areas of your life.',
+        // 'Blends modern training methods and sports science with  traditional practices of Muay Thai.',
+        // 'Training for Everyone: The Busy, The Stressed, The Dreamers, The Protectors, The Health & Fitness Seekers.',
+        //'Martial Arts should increase your health and longevity, not compromise it.',
+        //'Designed Training that protects your brain cells and ability to think.',
+        // 'Train like a fighter and Release that built-up stress, tension and anxiety.',
+        // 'Become an example of a modern day warrior without compromising your work, studies, or family life.',
+        // 'Get Fit, Get Strong, Look Good & Feel Fresh.',
+        'Perfect for working professionals, students & parents.',
+        'Keep fit, work the body, sharpen your mind while developing your fighting abilities.',
+        'Signal your confidence to the rest of world without having to say a thing.'
       ],
       image: '/_static/photos/private.jpg'
     },
@@ -73,13 +82,14 @@ export function TrainingCards() {
     //   image: '/_static/photos/privatecoach.png'
     // },
     {
-      title: 'Emotional Balance',
+      title: 'Find Inner Balance',
       subtitle: 'Channel Energy into Growth and Transformation',
       description: [
-        'Release stress and boost confidence.',
-        'Cultivate self-control and inner peace.',
-        'Discover the balance between aggression and calmness.',
-        'ExperienceZen of Aggression and Calmness'
+        'Balance your mind, body, and spirit.',
+        'Release stress & tension held inside.',
+        // 'Cultivate self-control through practice and discipline.',
+        // 'Discover the balance between aggression and calmness.',
+        'Finish training feeling peaceful.'
       ],
       image: '/_static/photos/privatecoach.png'
     },
@@ -93,26 +103,26 @@ export function TrainingCards() {
     //   ],
     //   image: '/_static/photos/analysis.png'
     // },
-    // {
-    //   title: 'Community and Connection',
-    //   subtitle: 'Join a Tribe That Inspires Growth',
-    //   description: [
-    //     'Train with supportive and like-minded individuals.',
-    //     'Build meaningful friendships forged through the shared experience created through training.',
-    //     'You never forget the people that helped you grow.'
-    //   ],
-    //   image: '/_static/photos/gauntlet1.png'
-    // },
     {
-      title: 'Maximize Your Time & Money',
+      title: 'Connect and Bond with Teammates',
+      subtitle: 'Join a Tribe That Inspires Growth',
       description: [
-        "You aren't learning anything new or challenging.",
-        'You arent aquiring new skills or mastering other skills.',
-        'Lifting weights and running on a treadmill is boring and ineffective.',
-        'Leave your workout stressfree, energized, accomplished and ready to tackle anything.'
+        'Join a tribe of like-minded people who support and encourage each other.',
+        'Build meaningful friendships cemented through hard training.',
+        'You never forget the people you grow with.'
       ],
-      image: '/_static/photos/nerds-handson.png'
+      image: '/_static/photos/gauntlet1.png'
     },
+    // {
+    //   title: 'Maximize Your Time & Money',
+    //   description: [
+    //     "You aren't learning anything new or challenging.",
+    //     'You arent aquiring new skills or mastering other skills.',
+    //     'Lifting weights and running on a treadmill is boring and ineffective.',
+    //     'Leave your workout stressfree, energized, accomplished and ready to tackle anything.'
+    //   ],
+    //   image: '/_static/photos/nerds-handson.png'
+    // },
     // {
     //   title: 'Choose Your Path',
     //   description: [
@@ -143,21 +153,15 @@ export function TrainingCards() {
     //   ],
     //   image: '/_static/photos/gauntlet1.png'
     // },
-    // {
-    //   title: 'Kickboxing',
-    //   description: [
-    //     'Increase Power & Speed in your strikes.',
-    //     'Gain a sizable advantage over opponents by learning how to move strategically around your opponents.',
-    //     'Off-balance your opponents with rhythm and proper weight shifting in your footwork.',
-    //     'Learn how to evade, block, slip against attacks and land effective counter-attacks.'
-    //   ],
-    //   image: '/_static/photos/private.jpg'
-    // },
+
     {
-      title: 'Muay Thai: A Journey of Discovery',
+      title: 'Some Journeys Redefine the Traveler',
       description: [
-        'Where Art Meets Science, Violence Makes Peace, Strategy Becomes Technique, and Dance Meets Discipline',
-        'Adding Muay Thai & Martial Arts training to your life will evolve you in ways you never thought possible.'
+        'Adding Muay Thai Training to your lifestyle is an evolutional journey where you will be continuously updating your software.',
+        'You may inevitably notice changes in how you look, think, feel, speak and carry yourself.'
+        // 'Muay Thai & Martial Arts  to your life will evolve you in ways you never thought possible.'
+        //  how stand , think, feel and how you speak.',
+        // 'Where Art Meets Science, Violence Makes Peace, Strategy Becomes Technique, and Dance Meets Discipline',
       ],
       image: '/_static/photos/mitts.jpg'
     }
@@ -168,7 +172,7 @@ export function TrainingCards() {
       <MaxWidthWrapper>
         <HeaderSection label='' title='Training' subtitle='' />
       </MaxWidthWrapper>
-      <p className='font-orbitron mx-auto py-6 text-center text-xl font-thin'>
+      <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin'>
         Be a Live Peacefully
       </p>
       <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
