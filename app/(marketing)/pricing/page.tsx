@@ -47,7 +47,7 @@ export default async function PricingPage() {
   }
 
   return (
-    <div className='relative flex flex-col gap-16 py-8 md:py-8'>
+    <div className='relative flex min-h-screen flex-col items-center justify-center'>
       {/* <Image
         src='/bg10.png'
         alt='bg'
@@ -57,8 +57,8 @@ export default async function PricingPage() {
       <div className='bgPricing blur-md'></div>
       <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} />
       <hr className='container' />
-      <ComparePlans />
-      <PricingFaq />
+      {/* <ComparePlans /> */}
+      {/* <PricingFaq /> */}
     </div>
   )
 }

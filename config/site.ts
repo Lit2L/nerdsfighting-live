@@ -13,8 +13,8 @@ export const siteConfig: SiteConfig = {
   locationName: 'Williams MMA Academy',
   ogImage: `${site_url}/_static/og.jpg`,
   links: {
-    twitter: 'https://twitter.com/miickasmt',
-    github: 'https://github.com/mickasmt/next-saas-stripe-starter'
+    twitter: 'https://twitter.com/',
+    github: 'https://nerdsfighting.com'
   },
   mailSupport: 'larryl@nerdsfighting.com'
 }
@@ -25,6 +25,8 @@ export const footerLinks: SidebarNavItem[] = [
     items: [
       { title: 'Home', href: '/#' },
       { title: 'Pricing', href: '/pricing' },
+      { title: 'Schedule', href: '/schedule' },
+      { title: 'Contact', href: '/contact' },
       { title: 'Blog', href: '/#blog' }
       // { title: 'Terms', href: '/terms' },
       // { title: 'Privacy', href: '/privacy' }
