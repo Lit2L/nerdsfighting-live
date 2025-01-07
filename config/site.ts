@@ -23,10 +23,11 @@ export const footerLinks: SidebarNavItem[] = [
   {
     title: 'Nerds Fighting Gym',
     items: [
-      { title: 'Home', href: '#' },
-      { title: 'Blog', href: '#' },
-      { title: 'Terms', href: '/terms' },
-      { title: 'Privacy', href: '/privacy' }
+      { title: 'Home', href: '/#' },
+      { title: 'Pricing', href: '/pricing' },
+      { title: 'Blog', href: '/#blog' }
+      // { title: 'Terms', href: '/terms' },
+      // { title: 'Privacy', href: '/privacy' }
     ]
   }
   // {

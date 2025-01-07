@@ -12,13 +12,14 @@ import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { useScroll } from '@/hooks/use-scroll'
 import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetHeader } from '@/components/ui/sheet'
 import { Skeleton } from '@/components/ui/skeleton'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { DocsSearch } from '@/components/docs/search'
 import { ModalContext } from '@/components/modals/providers'
+import { Cart } from '@/components/products/cart'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
-
-import Logo from '../Logo'
 
 interface NavBarProps {
   scroll?: boolean
@@ -55,7 +56,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 priority
                 className='rounded-full shadow-2xl shadow-[#121212]/70'
               />
-              <p className='text-gradient_greens font-orbitron -translate-x-2 text-center text-xs font-bold'>
+              <p className='text-gradient_greens -translate-x-2 text-center font-orbitron text-xs font-bold'>
                 {siteConfig.name}
               </p>
             </Link>
@@ -82,7 +83,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </nav>
           ) : null}
         </div>
-
+        <div className='ml-auto flex items-center gap-2'>
+          {/* <SearchBar className='hidden sm:block' /> */}
+          <Cart />
+        </div>
         <div className='flex items-center space-x-3'>
           {/* right header for docs */}
           {documentation ? (
@@ -105,7 +109,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           {session ? (
             <Link
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
-              className='hidden rounded-sm border-4 px-2 md:block'
+              className='hidden rounded-sm px-2 md:block'
             >
               <span className='text-gradient_greens font-orbitron text-lg font-medium tracking-wide'>
                 {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
@@ -116,7 +120,6 @@ export function NavBar({ scroll = false }: NavBarProps) {
               className='hidden items-center gap-2 px-5 text-[#548f6f] md:flex'
               variant='outline'
               size='sm'
-              rounded='lg'
               onClick={() => setShowSignInModal(true)}
             >
               <Icons.user className='size-5' />

@@ -8,7 +8,7 @@ export const marketingConfig: MarketingConfig = {
     },
     {
       title: 'Blog',
-      href: '/#'
+      href: '/'
     },
     {
       title: 'Documentation',

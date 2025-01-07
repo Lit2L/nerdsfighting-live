@@ -1,5 +1,7 @@
-import { infos } from '@/config/landing'
-import { Holographic } from '@/components/Holographic'
+import { ProductList } from '@/components/product-list'
+import { getProducts } from '@/components/products'
+import AboutMe from '@/components/sections/about-me'
+import AboutUs from '@/components/sections/about-us'
 import BentoGrid from '@/components/sections/bentogrid'
 import Features from '@/components/sections/features'
 import HeroLanding from '@/components/sections/hero-landing'
@@ -12,17 +14,20 @@ import {
   InfiniteSliderVertical
 } from '@/components/Slider'
 
-export default function IndexPage() {
+export default async function IndexPage() {
   return (
     <>
       <HeroLanding />
+      {/* <AboutUs /> */}
+      <TrainingCards />
+      {/* <AboutMe /> */}
+      <Testimonials />
+      <Schedule />
       {/* <InfiniteSliderHoverSpeed /> */}
       {/* <InfiniteSliderVertical /> */}
       {/* <PreviewLanding /> */}
       {/* <Features /> */}
-      <TrainingCards />
-      <Testimonials />
-      <Schedule />
+
       {/* <Powered /> */}
       {/* <BentoGrid /> */}
       {/* <InfoLanding data={infos[0]} reverse={true} /> */}

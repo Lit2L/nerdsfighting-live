@@ -27,7 +27,6 @@ export function BillingFormButton({ year, offer, subscriptionPlan }: BillingForm
   return (
     <Button
       variant={userOffer ? 'default' : 'outline'}
-      rounded='full'
       className='w-full'
       disabled={isPending}
       onClick={stripeSessionAction}

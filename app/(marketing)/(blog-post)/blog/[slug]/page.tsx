@@ -84,8 +84,7 @@ export default async function PostPage({
               className={cn(
                 buttonVariants({
                   variant: 'outline',
-                  size: 'sm',
-                  rounded: 'lg'
+                  size: 'sm'
                 }),
                 'h-8'
               )}

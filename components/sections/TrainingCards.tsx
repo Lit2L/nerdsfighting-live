@@ -5,6 +5,7 @@ import {
   MinimalCardTitle
 } from '@/components/ui/minimal-card'
 
+import { FlipWordsComponent } from '../FlipWordsComponent'
 import { HeaderSection } from '../shared/header-section'
 import MaxWidthWrapper from '../shared/max-width-wrapper'
 
@@ -12,25 +13,22 @@ export function TrainingCards() {
   const cards = [
     {
       title: 'Reset and Rebalance',
-      subtitle: 'Channel Energy into Growth and Transformation',
       description: [
-        'Cultivating your Muay Thai practice means always having a means to channel your energy into growth and balance.',
-        'Let go of built-up stress, tension, and anxiety.',
-        'Leave workouts feeling zen.'
-        // 'Cultivate self-control through practice and discipline.',
-        // 'Discover the balance between aggression and calmness.',
+        'A perfect outlet to release stress, tension, and anxiety.',
+        // 'Channel energy into growth and transformation',
+        'Leave workouts feeling grounded & Zen.'
       ],
       image: '/_static/photos/111111.png'
     },
     {
-      title: 'Flow State',
+      title: 'Find Your Flow State',
       // subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
         'Learn to be present.',
-        'Find your rhythm and unlock more potential.',
+        'Find your rhythm and balance.'
         // 'Overcome fear, doubt and distractions.',
         // 'Martial Arts is about mastering yourself.',
-        'Engage in dance of Muay Thai  flowing with your partners in sparring but feeling like a dance instead of a life or death situation. '
+        // 'Flow your way into smooth, movements with purpose and power.'
 
         // 'Practice the Dance of Muay Thai while in your flow state watch yourself grow. Develop balance with every move you make.'
 
@@ -39,27 +37,19 @@ export function TrainingCards() {
       image: '/_static/photos/privatecoach.png'
     },
     {
-      title: 'Made For You',
-      // Forged in Repetition/Cemented in Repetition/Consistency is Key/Repetition is the Mother of Skill/Repetition is the Father of Learning/
-      // title: 'A Training Style & Philosophy for Everyone people',
-      // 'Safe, Modern, Dynamic & Effective Training for Everyone',
-      //'Inclusive Environment: Perfect for professionals, students, and parents—train without compromising your work, studies, or family life.',
-      //        'Blends modern training methods and sports science with  traditional practices of Muay Thai.'
-      // 'Supportive group of martial artists that train together',
-      // 'Peak performance training involves calisthenics, drills, strength conditioning, and optional group sparring'
+      title: 'Excellent for Beginners & Hobbyists',
       description: [
+        ,
         // 'Our philosophy is to give our students the type of training that will give them the confidence to tackle whatever comes their way.',
         // 'When you show up for training of your own will, you are building a habit of discipline that will carry over into other areas of your life.',
-        // 'Blends modern training methods and sports science with  traditional practices of Muay Thai.',
-        // 'Training for Everyone: The Busy, The Stressed, The Dreamers, The Protectors, The Health & Fitness Seekers.',
+
         //'Martial Arts should increase your health and longevity, not compromise it.',
         //'Designed Training that protects your brain cells and ability to think.',
-        // 'Train like a fighter and Release that built-up stress, tension and anxiety.',
         // 'Become an example of a modern day warrior without compromising your work, studies, or family life.',
         // 'Get Fit, Get Strong, Look Good & Feel Fresh.',
-        'Created for All walks of Life.',
-        'Designed to be accessible to working professionals, students or parents.',
-        'Get fit, look good & exercise your mind while having some serious fun.'
+        'For working professionals, students, parents, or anyone looking for something new.',
+        'Safe and Controlled Environment.',
+        'Get fit while having fun learning important skills.'
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
@@ -108,11 +98,10 @@ export function TrainingCards() {
     //   image: '/_static/photos/analysis.png'
     // },
     {
-      title: 'The Way',
-      subtitle: 'Join a Tribe That Inspires Growth',
+      title: 'For Us',
       description: [
         'Work together as a team to achieve your goals.',
-        `Learn to be a good teammate, Be part of a strong family.`
+        `Lift others towards their goals, while they lift you towards yours.`
         // 'You never forget the people you grow with.'
       ],
       image: '/_static/photos/gauntlet1.png'
@@ -174,13 +163,11 @@ export function TrainingCards() {
       <MaxWidthWrapper>
         <HeaderSection label='' title='The Way' subtitle='' />
       </MaxWidthWrapper>
-      <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
-        Have Fun & Be Safe
-        <br />
-        {/* <span className='text-sm'>
-          If you want to live in peace, then you evil something to be worried about.
-        </span> */}
-      </p>
+      {/* <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
+        Grow Strong, Be Confident, Live Peacefully
+
+      </p> */}
+      <FlipWordsComponent />
       <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
         <div className='relative grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>
           {cards.map((card, index) => (

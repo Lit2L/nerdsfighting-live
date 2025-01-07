@@ -6,6 +6,7 @@ import { ThemeProvider } from 'next-themes'
 
 import { cn, constructMetadata } from '@/lib/utils'
 import { Toaster } from '@/components/ui/sonner'
+import { Tooltip, TooltipProvider } from '@/components/ui/tooltip'
 import { Analytics } from '@/components/analytics'
 import ModalProvider from '@/components/modals/providers'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
@@ -38,7 +39,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <ModalProvider>{children}</ModalProvider>
+            <TooltipProvider delayDuration={0}>
+              <ModalProvider>{children}</ModalProvider>
+            </TooltipProvider>
             <Analytics />
             <Toaster richColors closeButton />
             <TailwindIndicator />
