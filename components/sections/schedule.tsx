@@ -78,7 +78,7 @@ export function Schedule() {
                   className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
                   <Image
-                    src='/bg15.png'
+                    src='/_static/bg15.png'
                     alt='bg'
                     layout='fill'
                     objectFit='cover'

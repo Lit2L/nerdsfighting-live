@@ -6,10 +6,9 @@ import { getUserSubscriptionPlan } from '@/lib/subscription'
 import { constructMetadata } from '@/lib/utils'
 import { ComparePlans } from '@/components/pricing/compare-plans'
 import { PricingCards } from '@/components/pricing/pricing-cards'
-import { PricingFaq } from '@/components/pricing/pricing-faq'
 
 export const metadata = constructMetadata({
-  title: 'Pricing – SaaS Starter',
+  title: 'Pricing – NERDS Fighting',
   description: 'Explore our subscription plans.'
 })
 
@@ -47,9 +46,9 @@ export default async function PricingPage() {
   }
 
   return (
-    <div className='relative flex min-h-screen flex-col items-center justify-center'>
+    <div className='relative flex min-h-screen w-full flex-col justify-center'>
       {/* <Image
-        src='/bg10.png'
+        src='/_static/bg10.png'
         alt='bg'
         layout='fill'
         className='absolute -z-10 object-contain opacity-10 blur-sm'

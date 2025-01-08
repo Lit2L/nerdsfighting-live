@@ -1,5 +1,3 @@
-import { ProductList } from '@/components/product-list'
-import { getProducts } from '@/components/products'
 import AboutMe from '@/components/sections/about-me'
 import AboutUs from '@/components/sections/about-us'
 import BentoGrid from '@/components/sections/bentogrid'

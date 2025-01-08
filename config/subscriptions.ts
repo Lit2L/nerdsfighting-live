@@ -2,37 +2,31 @@ import { PlansRow, SubscriptionPlan } from 'types'
 import { env } from '@/env.mjs'
 
 export const pricingData: SubscriptionPlan[] = [
-  {
-    title: 'Starter',
-    name: 'Drop-In',
-    description: 'For Beginners',
-    benefits: [
-      'Drop in for a single class',
-      'Cardio, strength, and flexibility',
-      'Claim your spot in class anytime'
-    ],
-    limitations: ['Access to one class only', 'No access to online resources'],
-    prices: {
-      single: 30,
-      triple: 85,
-      five: 125,
-      monthly: 0,
-      yearly: 0
-    },
-    stripeIds: {
-      single: env.NEXT_PUBLIC_STRIPE_STARTER_SINGLE_PLAN_ID,
-      triple: env.NEXT_PUBLIC_STRIPE_STARTER_TRIPLE_PLAN_ID,
-      five: env.NEXT_PUBLIC_STRIPE_STARTER_FIVE_PLAN_ID,
-      monthly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      yearly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID
-    }
-  },
+  // {
+  //   title: 'Starter',
+  //   name: 'Drop-In',
+  //   description: 'For Beginners',
+  //   benefits: [
+  //     'Drop in for a single class',
+  //     'Cardio, strength, and flexibility',
+  //     'Claim your spot in class anytime'
+  //   ],
+  //   limitations: ['Access to one class only', 'No access to online resources'],
+  //   prices: {
+  //     monthly: 0,
+  //     yearly: 0
+  //   },
+  //   stripeIds: {
+  //     monthly: null,
+  //     yearly: null
+  //   }
+  // },
   {
     title: 'Pro',
     name: 'NERDS Membership',
     description: 'Become a NERD',
     benefits: [
-      'Unlimited Access to Muay Thai Kickboxing Classes',
+      'Access to all Cardio Kickboxing & Muay Thai Classes',
       'Online access to account management',
       'Detailed Martial Arts Instructions',
       'Strength and Conditioning',
@@ -41,49 +35,37 @@ export const pricingData: SubscriptionPlan[] = [
     ],
     limitations: ['No Private Lessons included'],
     prices: {
-      single: 0,
-      triple: 0,
-      five: 0,
       monthly: 100,
       yearly: 1200
     },
     stripeIds: {
-      single: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      triple: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      five: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
       monthly: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
       yearly: env.NEXT_PUBLIC_STRIPE_PRO_YEARLY_PLAN_ID
     }
-  },
-  {
-    title: 'Business',
-    name: 'NERD SUPERBOOST Plan',
-    description: 'For the Motivated NERDS',
-    benefits: [
-      'Included 4 Private Lessons per Month',
-      'Unlimited Access to Muay Thai Kickboxing Classes',
-      'Online access to account management',
-      'Detailed Martial Arts Instructions',
-      'Strength and Conditioning',
-      'Sparring and Technique',
-      'Exclusive video analysis on technique and strategy.'
-    ],
-    limitations: [],
-    prices: {
-      single: 0,
-      triple: 0,
-      five: 0,
-      monthly: 250,
-      yearly: 2400
-    },
-    stripeIds: {
-      single: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      triple: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      five: env.NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PLAN_ID,
-      monthly: env.NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PLAN_ID,
-      yearly: env.NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PLAN_ID
-    }
   }
+  // {
+  //   title: 'Business',
+  //   name: 'NERD SUPERBOOST Plan',
+  //   description: 'For the Motivated NERDS',
+  //   benefits: [
+  //     'Included 4 Private Lessons per Month',
+  //     'Unlimited Access to Muay Thai Kickboxing Classes',
+  //     'Online access to account management',
+  //     'Detailed Martial Arts Instructions',
+  //     'Strength and Conditioning',
+  //     'Sparring and Technique',
+  //     'Exclusive video analysis on technique and strategy.'
+  //   ],
+  //   limitations: [],
+  //   prices: {
+  //     monthly: 250,
+  //     yearly: 2400
+  //   },
+  //   stripeIds: {
+  //     monthly: env.NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PLAN_ID,
+  //     yearly: env.NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PLAN_ID
+  //   }
+  // }
 ]
 
 export const plansColumns = ['starter', 'pro', 'business', 'enterprise'] as const

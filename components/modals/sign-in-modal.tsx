@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, useCallback, useMemo, useState } from 'react'
+import Image from 'next/image'
 import { signIn } from 'next-auth/react'
 
 import { siteConfig } from '@/config/site'
@@ -19,15 +20,23 @@ function SignInModal({
 
   return (
     <Modal showModal={showSignInModal} setShowModal={setShowSignInModal}>
-      <div className='relative -z-10 w-full bg-transparent'>
-        <div className='flex flex-col items-center justify-center space-y-3 border-b bg-background px-4 py-6 pt-8 text-center md:px-16'>
+      <div className='relative -z-10 w-full'>
+        <div className='flex flex-col items-center justify-center space-y-3 border-4 border-b bg-background py-12 text-center'>
           <h3 className='text-gradient_greens font-orbitron text-2xl font-bold'>Welcome Back!</h3>
-          <Logo />
+          <div className='relative z-0 size-40 py-9'>
+            <Image
+              src='/_static/logo-1.png'
+              alt='Logo'
+              width={200}
+              height={200}
+              className='absolute z-10 rounded-full'
+            />
+          </div>
           <p className='text-gradient_greens text-sm'>Login to your {siteConfig.name} Account!</p>
 
-          <p className='text-sm text-white/90'>
+          {/* <p className='text-sm text-white/90'>
             Get Updates, Blog Articles, Progress Tracker, News, and Special Offers
-          </p>
+          </p> */}
         </div>
 
         <div className='z-20 flex flex-col space-y-4 bg-secondary/50 px-4 py-8 md:px-16'>

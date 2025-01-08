@@ -4,7 +4,7 @@ function Logo() {
   return (
     <div className='mx-auto w-56 md:w-96'>
       <Image
-        src='/logoNF.png'
+        src='/_static/logoNF.png'
         alt='Nerds Kickboxing Club'
         width={400}
         height={400}

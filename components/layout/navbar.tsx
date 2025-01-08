@@ -17,7 +17,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { DocsSearch } from '@/components/docs/search'
 import { ModalContext } from '@/components/modals/providers'
-import { Cart } from '@/components/products/cart'
+// import { Cart } from '@/components/products/cart'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
@@ -49,7 +49,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           <div className='w-full'>
             <Link href='/' className='m-1 w-28 text-center'>
               <Image
-                src='/logoNF.png'
+                src='/_static/logoNF.png'
                 alt='Nerds Kickboxing Club'
                 width={75}
                 height={75}
@@ -85,7 +85,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
         </div>
         <div className='ml-auto flex items-center gap-2'>
           {/* <SearchBar className='hidden sm:block' /> */}
-          <Cart />
+          {/* <Cart /> */}
         </div>
         <div className='flex items-center space-x-3'>
           {/* right header for docs */}

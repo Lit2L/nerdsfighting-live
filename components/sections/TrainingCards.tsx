@@ -158,7 +158,7 @@ export function TrainingCards() {
     // }
   ]
   return (
-    <section id='training' className='relative mx-auto w-full max-w-full pt-20'>
+    <section id='training' className='relative mx-auto w-full max-w-full py-24'>
       <div className='bgTraining'></div>
       <MaxWidthWrapper>
         <HeaderSection label='' title='The Way' subtitle='' />
@@ -167,9 +167,10 @@ export function TrainingCards() {
         Grow Strong, Be Confident, Live Peacefully
 
       </p> */}
-      <FlipWordsComponent />
+
       <div className='flex min-h-[600px] flex-col justify-center space-y-4 rounded-lg p-4'>
-        <div className='relative grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>
+        <FlipWordsComponent />
+        <div className='relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
           {cards.map((card, index) => (
             <MinimalCard key={index}>
               <MinimalCardTitle>{card.title}</MinimalCardTitle>

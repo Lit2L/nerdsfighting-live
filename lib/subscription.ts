@@ -1,7 +1,5 @@
 // @ts-nocheck
 // TODO: Fix this when we turn strict mode on.
-import { redirect } from 'next/navigation'
-
 import { UserSubscriptionPlan } from 'types'
 import { pricingData } from '@/config/subscriptions'
 import { prisma } from '@/lib/db'
@@ -23,7 +21,7 @@ export async function getUserSubscriptionPlan(userId: string): Promise<UserSubsc
   })
 
   if (!user) {
-    redirect('/login')
+    throw new Error('User not found')
   }
 
   // Check if user is on a paid plan.
