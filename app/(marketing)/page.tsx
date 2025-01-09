@@ -48,13 +48,15 @@ export default async function IndexPage() {
   return (
     <>
       <HeroLanding />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <TrainingCards />
       {/* <AboutMe /> */}
       <Testimonials />
-      {products.map((product) => (
-        <Product {...product} key={product.id} />
-      ))}
+      {/* <div className='grid w-full grid-cols-3 place-items-center'>
+        {products.map((product) => (
+          <Product {...product} key={product.id} />
+        ))}
+      </div> */}
       <Schedule />
       {/* <InfiniteSliderHoverSpeed /> */}
       {/* <InfiniteSliderVertical /> */}
