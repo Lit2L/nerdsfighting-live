@@ -12,10 +12,12 @@ export default function AboutUs() {
           <div className='flex w-full flex-col items-center justify-between md:flex-row'>
             <div className='w-full space-y-8 lg:w-1/2'>
               <h2 className='text-4xl font-bold tracking-tight'>About Us</h2>
-              <p className='text-2xl font-light text-gray-600'>
+              <p className='text-2xl font-light text-gray-400'>
                 Train Like a Fighter, Get Fit for Life
               </p>
-              <p className='text-lg tracking-wide text-gray-500'>MUAY THAI · BOXING · KICKBOXING</p>
+              <p className='text-gradient_pinks pl-6 text-lg tracking-wide text-gray-500'>
+                MUAY THAI · BOXING · KICKBOXING
+              </p>
               <Button asChild variant='outline' size='lg' className='rounded-none'>
                 <Link href='/learn-more'>Learn More</Link>
               </Button>
@@ -26,28 +28,31 @@ export default function AboutUs() {
                 alt='MMA Gym'
                 width={400}
                 height={400}
-                className='w-full rounded-full rounded-lg object-contain md:h-[00px]'
+                className='w-full rounded-full object-contain md:h-[350px]'
               />
             </div>
           </div>
         </div>
 
-        <div className='grid gap-16 lg:grid-cols-2'>
-          <div className='space-y-4'>
+        <div className='w-full justify-around lg:grid-cols-2'>
+          <div className='w-1/2 space-y-4'>
             <h3 className='text-2xl font-semibold'>OUR STORY</h3>
             <p className='text-md leading-8 text-gray-400'>
-              Welcome to{' '}
               <span className='text-gradient_greens font-orbitron text-xl font-bold'>
-                Nerds Fighting!{' '}
+                Nerds Fighting{' '}
               </span>
               {''}
-              OC&apos;s newest and most innovative Martial Arts and Fitness club! Whether
-              you&apos;re a fitness enthusiast or an aspiring martial artist, we are here to help
-              you achieve your goals. Try out one of our Free kickboxing classes and find out how to
-              be a NERD today!
+              is the result of terrified nerds who discovered their power through Martial Arts &
+              Muay Thai Kickboxing. Decades of training, competing and coaching lead us to create a
+              training style that protects your brain while adapting your body slowly to the demands
+              of Martial Arts training. <br />
+              <br />
+              Whether you&apos;re a fitness enthusiast or an aspiring martial artist or fighter, we
+              are here to help you achieve your goals. Try out one of our Free kickboxing classes
+              and find out how to be a NERD today!
             </p>
           </div>
-          <div className='space-y-4'>
+          <div className='w-1/2 space-y-4'>
             {/* <h3 className='text-2xl font-semibold'> */}
             {/* The{' '} */}
             {/* <span className='text-gradient_greens font-orbitron text-2xl font-bold'>
