@@ -9,6 +9,7 @@ import { Toaster } from '@/components/ui/sonner'
 import { Tooltip, TooltipProvider } from '@/components/ui/tooltip'
 import { Analytics } from '@/components/analytics'
 import ModalProvider from '@/components/modals/providers'
+import Hydration from '@/components/products/Hydration'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 
 interface RootLayoutProps {
@@ -21,17 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en' suppressHydrationWarning>
       <head />
-      <body
-        className={cn(
-          'min-h-screen bg-background font-sans antialiased',
-          fontSans.variable,
-          headingFont.variable,
-          fontHeading.variable,
-          fontOrbit.variable,
-          logoFont.variable,
-          genosFont.variable
-        )}
-      >
+      <Hydration>
         <SessionProvider>
           <ThemeProvider
             attribute='class'
@@ -47,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <TailwindIndicator />
           </ThemeProvider>
         </SessionProvider>
-      </body>
+      </Hydration>
     </html>
   )
 }
