@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import priceFormat from '@/utils/priceFormat'
+import { priceFormat } from '@/utils/priceFormat'
 
 import { SearchParamTypes } from '@/types/SearchParamTypes'
 import AddCartBtn from '@/components/products/addCartBtn'
@@ -7,13 +7,13 @@ import AddCartBtn from '@/components/products/addCartBtn'
 export default async function ProductPage({ searchParams }: SearchParamTypes) {
   // console.log('searchParams: ', searchParams);
   return (
-    <div className='flex max-w-4xl flex-col gap-8 md:flex-row'>
+    <div className='flex min-h-screen w-full flex-col items-center justify-center gap-8 md:flex-row'>
       <Image
         src={searchParams.image}
         alt={searchParams.name}
         width={600}
         height={600}
-        className='h-96 w-full rounded-lg object-cover md:h-[500px]'
+        className='size-[500px] rounded-lg object-cover'
         priority={true}
       />
 

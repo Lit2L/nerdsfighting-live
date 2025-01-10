@@ -39,17 +39,9 @@ export function TrainingCards() {
     {
       title: 'Excellent for Beginners & Hobbyists',
       description: [
-        ,
-        // 'Our philosophy is to give our students the type of training that will give them the confidence to tackle whatever comes their way.',
-        // 'When you show up for training of your own will, you are building a habit of discipline that will carry over into other areas of your life.',
-
-        //'Martial Arts should increase your health and longevity, not compromise it.',
-        //'Designed Training that protects your brain cells and ability to think.',
-        // 'Become an example of a modern day warrior without compromising your work, studies, or family life.',
-        // 'Get Fit, Get Strong, Look Good & Feel Fresh.',
-        'For working professionals, students, parents, or anyone looking for something new.',
+        'Working professionals, students, parents, or anyone looking for something new.',
         'Safe and Controlled Environment.',
-        'Get fit while having fun learning important skills.'
+        'Get fit while having fun learning important life skills.'
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
@@ -98,7 +90,7 @@ export function TrainingCards() {
     //   image: '/_static/photos/analysis.png'
     // },
     {
-      title: 'For Us',
+      title: 'Team Environment',
       description: [
         'Work together as a team to achieve your goals.',
         `Lift others towards their goals, while they lift you towards yours.`
@@ -126,14 +118,22 @@ export function TrainingCards() {
       image: '/_static/photos/nerds-handson.png'
     },
     {
-      title: 'Video Analysis',
+      title: 'Having Fun',
       description: [
-        'Experienced coach analyzes your technique',
-        'Teaches body mechanics and pinpoints areas for improvement',
-        'Reinforces proper technique and helps develop better habits.'
+        'Play is the highest form of research.',
+        'Turn fear into a game and watch yourself grow.'
       ],
-      image: '/_static/photos/analysis.png'
+      image: '/_static/photos/game.png'
     }
+    // {
+    //   title: 'Video Analysis',
+    //   description: [
+    //     'Experienced coach analyzes your technique',
+    //     'Teaches body mechanics and pinpoints areas for improvement',
+    //     'Reinforces proper technique and helps develop better habits.'
+    //   ],
+    //   image: '/_static/photos/analysis.png'
+    // }
     // {
     //   title: 'Physical Mastery',
     //   subtitle: 'Build Strength, Endurance, and Agility',

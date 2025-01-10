@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import priceFormat from '@/utils/priceFormat'
+import { priceFormat } from '@/utils/priceFormat'
 
 import { ProductType } from '@/types/ProductType'
 

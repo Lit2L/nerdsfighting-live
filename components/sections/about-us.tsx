@@ -19,16 +19,16 @@ export default function AboutUs() {
                 MUAY THAI · BOXING · KICKBOXING
               </p>
               <Button asChild variant='outline' size='lg' className='rounded-none'>
-                <Link href='/learn-more'>Learn More</Link>
+                <Link href='/pricing'>Learn More</Link>
               </Button>
             </div>
-            <div className='rounded-full opacity-90'>
+            <div className='opacity-90'>
               <Image
-                src='/_static/photos/collage.png'
+                src='/_static/photos/nerd-collage2.png'
                 alt='MMA Gym'
-                width={400}
-                height={400}
-                className='w-full rounded-full object-contain md:h-[350px]'
+                width={300}
+                height={300}
+                className='hidden w-full object-cover md:inline-block'
               />
             </div>
           </div>
@@ -38,18 +38,18 @@ export default function AboutUs() {
           <div className='w-1/2 space-y-4'>
             <h3 className='text-2xl font-semibold'>OUR STORY</h3>
             <p className='text-md leading-8 text-gray-400'>
-              <span className='text-gradient_greens font-orbitron text-xl font-bold'>
+              <span className='text-gradient_greens font-genos text-xl font-bold'>
                 Nerds Fighting{' '}
               </span>
               {''}
-              is the result of terrified nerds who discovered their power through Martial Arts &
-              Muay Thai Kickboxing. Decades of training, competing and coaching lead us to create a
-              training style that protects your brain while adapting your body slowly to the demands
-              of Martial Arts training. <br />
+              is the result of terrified nerds who discovered their power through Muay Thai
+              Kickboxing & Martial Arts. Decades of training, competing and coaching has lead to a
+              training style that protects your brain while allowing your body to adapt naturally to
+              the demands of Martial Arts training. <br />
               <br />
               Whether you&apos;re a fitness enthusiast or an aspiring martial artist or fighter, we
-              are here to help you achieve your goals. Try out one of our Free kickboxing classes
-              and find out how to be a NERD today!
+              are here to help you achieve your goals. Try our Free kickboxing class and see for
+              yourself!
             </p>
           </div>
           <div className='w-1/2 space-y-4'>

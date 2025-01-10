@@ -17,9 +17,10 @@ import { Skeleton } from '@/components/ui/skeleton'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { DocsSearch } from '@/components/docs/search'
 import { ModalContext } from '@/components/modals/providers'
-// import { Cart } from '@/components/products/cart'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
+
+import Cart from '../products/Cart'
 
 interface NavBarProps {
   scroll?: boolean

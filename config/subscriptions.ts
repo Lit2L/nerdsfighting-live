@@ -26,16 +26,15 @@ export const pricingData: SubscriptionPlan[] = [
     name: 'NERDS Membership',
     description: 'Become a NERD',
     benefits: [
+      'No long term commitments, pause or cancel anytime with a one month notice',
       'Access to all Cardio Kickboxing & Muay Thai Classes',
       'Online access to account management',
-      'Detailed Martial Arts Instructions',
-      'Strength and Conditioning',
-      'Sparring and Technique',
-      'Exclusive video analysis on technique and strategy.'
+      'Healthy rewarding lifestyle',
+      'Get and stay flexible, strong, and sharp'
     ],
-    limitations: ['No Private Lessons included'],
+    limitations: ['Access only to Muay Thai & Kickboxing Classes'],
     prices: {
-      monthly: 100,
+      monthly: 125,
       yearly: 1200
     },
     stripeIds: {
