@@ -115,7 +115,7 @@ export function TrainingCards() {
         'Even fewer train in Muay Thai.',
         'Equip yourself with skill set that sets you apart.'
       ],
-      image: '/_static/photos/nerds-handson.png'
+      image: '/_static/photos/2.png'
     },
     {
       title: 'Having Fun',

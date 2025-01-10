@@ -38,7 +38,7 @@ export default function AboutUs() {
           <div className='w-1/2 space-y-4'>
             <h3 className='text-2xl font-semibold'>OUR STORY</h3>
             <p className='text-md leading-8 text-gray-400'>
-              <span className='text-gradient_greens font-genos text-xl font-bold'>
+              <span className='text-gradient_greens font-orbitron text-2xl font-bold uppercase tracking-wide'>
                 Nerds Fighting{' '}
               </span>
               {''}
