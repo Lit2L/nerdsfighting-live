@@ -161,7 +161,7 @@ export function TrainingCards() {
     <section id='training' className='relative mx-auto w-full max-w-full py-24'>
       <div className='bgTraining'></div>
       <MaxWidthWrapper>
-        <HeaderSection label='' title='The Way' subtitle='' />
+        <HeaderSection label='' title='Init Together' subtitle='' />
       </MaxWidthWrapper>
       {/* <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
         Grow Strong, Be Confident, Live Peacefully
