@@ -25,6 +25,7 @@ export const footerLinks: SidebarNavItem[] = [
     items: [
       { title: 'Home', href: '/#' },
       { title: 'Pricing', href: '/pricing' },
+      { title: 'About', href: '/about' },
       { title: 'Schedule', href: '/schedule' },
       { title: 'Contact', href: '/contact' },
       { title: 'Blog', href: '/#blog' }

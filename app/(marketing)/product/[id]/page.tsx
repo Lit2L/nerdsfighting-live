@@ -5,7 +5,7 @@ import { SearchParamTypes } from '@/types/SearchParamTypes'
 import AddCartBtn from '@/components/products/addCartBtn'
 
 export default async function ProductPage({ searchParams }: SearchParamTypes) {
-  // console.log('searchParams: ', searchParams);
+  console.log('searchParams: ', searchParams)
   return (
     <div className='flex min-h-screen w-full flex-col items-center justify-center gap-8 md:flex-row'>
       <Image
@@ -20,7 +20,7 @@ export default async function ProductPage({ searchParams }: SearchParamTypes) {
       <article className='flex flex-col'>
         <div>
           <h1 className='py-2 text-2xl font-medium'>{searchParams.name}</h1>
-          {/* <p className="py-2">{searchParams.description}</p> */}
+          <p className='py-2'>{searchParams.description}</p>
           <p className='py-2'>{searchParams.features}</p>
           <p className='bg-base-200 w-fit rounded px-2 py-2 text-sm'>
             {searchParams.unit_amount && priceFormat(searchParams.unit_amount)}

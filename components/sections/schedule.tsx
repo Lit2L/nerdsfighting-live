@@ -1,29 +1,40 @@
 import Image from 'next/image'
 import { Calendar } from 'lucide-react'
-import { GiPunchingBag } from 'react-icons/gi'
 import { MdSportsMartialArts } from 'react-icons/md'
 
 import { HeaderSection } from '@/components/shared/header-section'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
-import { Holographic } from '../Holographic'
 import { Card, CardTitle } from '../ui/card'
 import { Separator } from '../ui/separator'
 
 const classes = [
   {
     id: 1,
-    title: 'Tuesday',
+    title: 'Monday',
     description: 'Cardio Kickboxing',
     attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
-    schedule: [{ id: 1, day: 'Tues', time: '6:00am - 7:15am' }]
+    schedule: [{ id: 1, day: 'Monday', time: '6:00am - 7:15am' }]
   },
 
   {
     id: 2,
-    title: 'Thursday',
+    title: 'Tuesday',
     description: 'Cardio Kickboxing',
     attributes: 'Conditioning, Cardio, Kickboxing, Heavy Bag, Focus Mitts.',
+    schedule: [
+      {
+        id: 1,
+        day: 'Tuesday',
+        time: '6:00am - 7:15am'
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: 'Thursday',
+    description: 'Cardio Kickboxing',
+    attributes: 'Conditioning, Heavy Bag, Focus Mitts.',
     schedule: [
       {
         id: 1,
@@ -33,27 +44,21 @@ const classes = [
     ]
   },
   {
-    id: 3,
-    title: 'Friday',
-    description: 'Cardio Kickboxing',
-    attributes: 'Conditioning, Heavy Bag, Focus Mitts.',
-    schedule: [
-      {
-        id: 1,
-        day: 'Friday',
-        time: '6:00am - 7:15am'
-      }
-    ]
-  },
-  {
     id: 4,
-    title: 'Saturday',
+    title: 'Friday',
     description: 'Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Saturday', time: '8:00am - 9:30am' }]
+    schedule: [{ id: 1, day: 'Friday', time: '6:00am - 7:30am' }]
   },
   {
     id: 5,
+    title: 'Saturday',
+    description: 'Sparring, Muay Thai',
+    attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
+    schedule: [{ id: 1, day: 'Saturday', time: '6:00am - 7:30am' }]
+  },
+  {
+    id: 6,
     title: 'Sunday',
     description: 'Sparring, Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
@@ -65,7 +70,7 @@ export function Schedule() {
   return (
     <section id='schedule' className='relative w-full'>
       {/* <Image src='/bg1.png' alt='bg' layout='fill' className='absolute -z-10 opacity-10' /> */}
-      <div className='bgSchedule'></div>
+      <div className='bgSchedule' />
       <div className='container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 font-genos dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />

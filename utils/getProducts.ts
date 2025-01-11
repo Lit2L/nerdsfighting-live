@@ -1,9 +1,12 @@
 import Stripe from 'stripe'
 
+import { env } from '@/env.mjs'
+
 export default async function getProducts() {
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+  const stripe = new Stripe(env.STRIPE_SECRET_KEY!, {
     apiVersion: '2024-04-10'
   })
+
   const products = await stripe.products.list()
 
   const productWithPrices = await Promise.all(
