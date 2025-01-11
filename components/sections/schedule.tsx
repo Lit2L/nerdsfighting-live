@@ -50,7 +50,7 @@ const classes = [
     title: 'Saturday',
     description: 'Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Saturday', time: '7:00am - 8:00am' }]
+    schedule: [{ id: 1, day: 'Saturday', time: '8:00am - 9:30am' }]
   },
   {
     id: 5,
