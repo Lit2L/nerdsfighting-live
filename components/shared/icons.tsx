@@ -50,7 +50,6 @@ export const Icons = {
   ellipsis: MoreVertical,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
-      aria-hidden='true'
       focusable='false'
       data-prefix='fab'
       data-icon='github'
@@ -67,7 +66,6 @@ export const Icons = {
   ),
   google: ({ ...props }: LucideProps) => (
     <svg
-      aria-hidden='true'
       focusable='false'
       data-prefix='fab'
       data-icon='google'
@@ -84,7 +82,6 @@ export const Icons = {
   ),
   nextjs: ({ ...props }: LucideProps) => (
     <svg
-      aria-hidden='true'
       focusable='false'
       data-prefix='fab'
       data-icon='nextjs'
@@ -119,7 +116,6 @@ export const Icons = {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 24 24'
-      aria-hidden='true'
       focusable='false'
       data-prefix='fab'
       data-icon='twitter'

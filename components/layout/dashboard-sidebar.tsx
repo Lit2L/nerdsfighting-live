@@ -66,7 +66,7 @@ export function DashboardSidebar({ links }: DashboardSidebarProps) {
             )}
           >
             <div className='flex h-full max-h-screen flex-1 flex-col gap-2'>
-              <div className='flex h-14 w-full items-center justify-center border-4 font-bold uppercase lg:h-[60px]'>
+              <div className='flex h-14 w-full items-center justify-center border font-bold uppercase lg:h-[60px]'>
                 {isSidebarExpanded ? 'nerds fighting' : null}
 
                 <Button

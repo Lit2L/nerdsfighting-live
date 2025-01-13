@@ -21,7 +21,7 @@ export default function Product({
         pathname: `/product/${id}`,
         query: { id, name, image, unit_amount, description, features }
       }}
-      className='overflow-hidden rounded-lg border shadow-sm'
+      className='overflow-hidden rounded-lg border-2 border-white/30 p-3 shadow-sm'
     >
       <div className='overflow-hidden'>
         <Image

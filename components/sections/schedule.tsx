@@ -9,13 +9,13 @@ import { Card, CardTitle } from '../ui/card'
 import { Separator } from '../ui/separator'
 
 const classes = [
-  {
-    id: 1,
-    title: 'Monday',
-    description: 'Cardio Kickboxing',
-    attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
-    schedule: [{ id: 1, day: 'Monday', time: '6:00am - 7:15am' }]
-  },
+  // {
+  //   id: 1,
+  //   title: 'Monday',
+  //   description: 'Cardio Kickboxing',
+  //   attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
+  //   schedule: [{ id: 1, day: 'Monday', time: '6:00am - 7:15am' }]
+  // },
 
   {
     id: 2,
@@ -46,7 +46,7 @@ const classes = [
   {
     id: 4,
     title: 'Friday',
-    description: 'Muay Thai',
+    description: 'Friday Fun Kickboxing ',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
     schedule: [{ id: 1, day: 'Friday', time: '6:00am - 7:30am' }]
   },
@@ -75,7 +75,7 @@ export function Schedule() {
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />
 
-          <div className='mt-9 flex flex-wrap justify-center gap-6'>
+          <div className='mx-12 mt-9 flex flex-wrap justify-center gap-12 p-6'>
             {classes &&
               classes.map((item) => (
                 <Card
@@ -114,7 +114,7 @@ export function Schedule() {
                             key={schedule.time}
                             className='flex w-full items-center justify-between py-1'
                           >
-                            <span className='w-1/16 text-md font-semibold text-white dark:text-gray-300'>
+                            <span className='w-1/16 text-lg font-bold text-white dark:text-gray-300'>
                               {schedule.time}
                             </span>
                           </div>

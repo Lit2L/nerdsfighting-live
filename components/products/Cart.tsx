@@ -1,18 +1,21 @@
 'use client'
 
 import Image from 'next/image'
+import emptyBasket from '@/public/shopping-cart-empty.png'
 import { priceFormat } from '@/utils/priceFormat'
 import { useCartStore } from '@/zustand/store'
 import { AnimatePresence, motion } from 'framer-motion'
+import { CgClose } from 'react-icons/cg'
 import { IoAddCircle, IoRemoveCircle } from 'react-icons/io5'
+import { TbSquareRoundedMinus, TbSquareRoundedPlus } from 'react-icons/tb'
 
 import Checkout from './Checkout'
 import OrderConfirmed from './OrderConfirmed'
 
 export default function Cart() {
   const cartStore = useCartStore()
-
-  //Total Price
+  console.log('<Cart>: ', cartStore)
+  // Reduce to get total price:
   const totalPrice = cartStore.cart.reduce((acc, item) => {
     return acc + item.unit_amount! * item.quantity!
   }, 0)
@@ -23,108 +26,111 @@ export default function Cart() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={() => cartStore.toggleCart()}
-      className='fixed left-0 top-0 h-screen w-full bg-black/20'
+      className='fixed bottom-0 right-0 top-0 z-50 h-screen w-1/2 bg-emerald-500/25 backdrop-blur-sm'
     >
-      {/* Cart */}
-      <motion.div
+      {/* Shopping Panel */}
+      <motion.section
         layout
         onClick={(e) => e.stopPropagation()}
-        className='bg-base-200 absolute right-0 top-0 h-screen w-full overflow-y-scroll p-12 lg:w-2/5'
+        className='absolute right-0 top-0 h-screen w-8/12 overflow-y-scroll bg-pink-800 p-12 shadow-md lg:w-2/5'
       >
+        {/* Conditional Headings */}
         {cartStore.onCheckout === 'cart' && (
-          <button onClick={() => cartStore.toggleCart()} className='pb-12 text-sm font-bold'>
-            Back to store 🏃
-          </button>
+          <div className='mb-12 flex items-center justify-between'>
+            <h1 className='text-2xl font-bold'>Your shopping cart</h1>
+            <CgClose
+              aria-hidden='true'
+              className='h-6 w-6 cursor-pointer'
+              onClick={() => cartStore.toggleCart()}
+            />
+          </div>
         )}
         {cartStore.onCheckout === 'checkout' && (
-          <button onClick={() => cartStore.setCheckout('cart')} className='pb-12 text-sm font-bold'>
-            Check your cart 🛒
-          </button>
+          <div className='mb-12 flex items-center justify-between'>
+            <h1 className='text-2xl font-bold'>Check your cart</h1>
+            <CgClose
+              className='h-6 w-6 cursor-pointer'
+              onClick={() => cartStore.setCheckout('cart')}
+            />
+          </div>
         )}
-        {/* Cart Items */}
+
+        {/* Items in Cart */}
         {cartStore.onCheckout === 'cart' && (
           <>
             {cartStore.cart.map((item) => (
-              <motion.div
-                layout
+              /* Each Item */
+              <motion.article
                 key={item.id}
-                className='bg-base-100 my-4 flex gap-4 rounded-lg p-4'
+                layout
+                className='bg-base-200 mt-3 flex gap-4 rounded-lg p-4'
               >
                 <Image
-                  className='h-24 rounded-md'
+                  className='h-24 w-24 rounded-full object-cover shadow'
                   src={item.image}
                   alt={item.name}
-                  width={120}
-                  height={120}
+                  width={110}
+                  height={110}
+                  priority
                 />
-                <div>
-                  <h2>{item.name}</h2>
-                  {/* Update quantity of a product */}
-                  <div className='flex gap-2'>
-                    <h2>Quantity: {item.quantity}</h2>
-                    <button
-                      onClick={() =>
-                        cartStore.removeProduct({
-                          id: item.id,
-                          image: item.image,
-                          name: item.name,
-                          unit_amount: item.unit_amount,
-                          quantity: item.quantity
-                        })
-                      }
-                    >
-                      <IoRemoveCircle />
+                <motion.div className='flex flex-col'>
+                  <h2 className='text-sm font-semibold'>{item.name}</h2>
+                  <div className='flex items-center gap-2'>
+                    <h2 className='text-sm'>Qty: {item.quantity}</h2>
+                    <button onClick={() => cartStore.removeProduct(item)}>
+                      <TbSquareRoundedMinus className='h-3 w-3 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-red-500 hover:drop-shadow-md' />
                     </button>
-                    <button
-                      onClick={() =>
-                        cartStore.addProduct({
-                          id: item.id,
-                          image: item.image,
-                          name: item.name,
-                          unit_amount: item.unit_amount,
-                          quantity: item.quantity
-                        })
-                      }
-                    >
-                      <IoAddCircle />
+                    <button onClick={() => cartStore.addProduct(item)}>
+                      <TbSquareRoundedPlus className='h-3 w-3 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-green-500 hover:drop-shadow-md' />
                     </button>
                   </div>
-
-                  <p className='text-sm'>{item.unit_amount && priceFormat(item.unit_amount)}</p>
-                </div>
-              </motion.div>
+                  <h2 className='mt-auto text-sm'>
+                    {item.unit_amount && priceFormat(item.unit_amount)}
+                  </h2>
+                </motion.div>
+              </motion.article>
             ))}
           </>
         )}
-        {/* Checkout and total */}
+
+        {/* Total */}
         {cartStore.cart.length > 0 && cartStore.onCheckout === 'cart' ? (
           <motion.div layout>
-            <p>Total: {priceFormat(totalPrice)}</p>
+            <p className='mt-6 py-2'>
+              <span className='font-semibold'>Total:</span> {priceFormat(totalPrice)}
+            </p>
             <button
               onClick={() => cartStore.setCheckout('checkout')}
-              className='mt-4 w-full rounded-md bg-primary py-2 text-white'
+              className='my-4 w-full border p-1'
             >
               Checkout
             </button>
           </motion.div>
         ) : null}
+
         {/* Checkout Form */}
         {cartStore.onCheckout === 'checkout' && <Checkout />}
         {cartStore.onCheckout === 'success' && <OrderConfirmed />}
-        <AnimatePresence>
-          {!cartStore.cart.length && cartStore.onCheckout === 'cart' && (
-            <motion.div
-              animate={{ scale: 1, rotateZ: 0, opacity: 0.75 }}
-              initial={{ scale: 0.5, rotateZ: -10, opacity: 0 }}
-              exit={{ scale: 0.5, rotateZ: -10, opacity: 0 }}
-              className='flex flex-col items-center gap-12 pt-56 text-2xl font-medium opacity-75'
-            >
-              <h1>Uhhh ohhh...it&apos;s empty 😢</h1>
-              <Image src='/basket.png' alt='empty cart' width={200} height={200} />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+
+        {/* Empty Cart Status */}
+        {cartStore.cart.length === 0 && cartStore.onCheckout === 'cart' && (
+          <motion.div
+            initial={{ scale: 0.5, rotateZ: -10, opacity: 0 }}
+            animate={{ scale: 1, rotateZ: 0, opacity: 0.75 }}
+            className='flex h-[90%] w-full flex-col items-center justify-center gap-2'
+          >
+            <Image
+              src={emptyBasket}
+              alt='Empty basket'
+              width={200}
+              height={200}
+              priority
+              className='object-cover'
+            />
+            <h2 className='text-lg font-semibold'>Ohh no its empty :(</h2>
+          </motion.div>
+        )}
+      </motion.section>
     </motion.div>
   )
 }

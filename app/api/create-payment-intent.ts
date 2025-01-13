@@ -8,7 +8,7 @@ import { AddCartType } from '@/types/AddCartType'
 // import { PrismaClient } from '@prisma/client';
 import { prisma } from '@/lib/db'
 
-const stripe = new Stripe(env.STRIPE_SECRET_KEY as string, {
+const stripe = new Stripe(env.STRIPE_API_KEY as string, {
   // Setting the Stripe API version to be used.
   apiVersion: '2024-04-10'
 })

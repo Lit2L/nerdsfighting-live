@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 export default function AboutMe() {
   return (
-    <section className='relative w-full border-4 py-24'>
+    <section className='relative w-full py-24'>
       <div className='bgAboutMe' />
       <div className='container mx-auto max-w-6xl px-4'>
         <div className='mb-24 flex flex-col items-center gap-16 lg:flex-row'>

@@ -18,9 +18,17 @@ export default function AddCartBtn({ id, name, image, unit_amount, quantity }: A
   }
 
   return (
-    <div className='mt-auto pt-2'>
-      <button onClick={handleAddToCart} className='btn btn-primary' disabled={added}>
-        {!added ? <span>Add to cart </span> : <span>Adding to cart</span>}
+    <div className='mt-auto pt-6'>
+      <button
+        onClick={handleAddToCart}
+        className='bg-black/50 p-3 shadow-sm shadow-white/70 transition-all duration-300 hover:border-double hover:font-bold hover:shadow-none'
+        disabled={added}
+      >
+        {!added ? (
+          <span className='text-gradient_greens tracking-wider'>Add to Cart </span>
+        ) : (
+          <span className='text-gradient_pinks tracking-wider'>Adding to Cart</span>
+        )}
       </button>
     </div>
   )

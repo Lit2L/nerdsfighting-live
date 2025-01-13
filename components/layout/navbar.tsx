@@ -4,7 +4,10 @@ import { useContext } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
+import { useCartStore } from '@/zustand/store'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
+import { FiShoppingCart } from 'react-icons/fi'
 
 import { docsConfig } from '@/config/docs'
 import { marketingConfig } from '@/config/marketing'
@@ -31,7 +34,12 @@ export function NavBar({ scroll = false }: NavBarProps) {
   const scrolled = useScroll(50)
   const { data: session, status } = useSession()
   const { setShowSignInModal } = useContext(ModalContext)
-
+  const cartStore = useCartStore()
+  const handleBlurOut = () => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+  }
   const selectedLayout = useSelectedLayoutSegment()
   const documentation = selectedLayout === 'docs'
 
@@ -86,8 +94,26 @@ export function NavBar({ scroll = false }: NavBarProps) {
         </div>
         <div className='ml-auto flex items-center gap-2'>
           {/* <SearchBar className='hidden sm:block' /> */}
-          {/* <Cart /> */}
+          <ul className='mx-9 flex items-center justify-center gap-8'>
+            <li className='relative cursor-pointer text-3xl' onClick={() => cartStore.toggleCart()}>
+              <FiShoppingCart />
+              <AnimatePresence>
+                {/* Required condition when a component is removed from React tree */}
+                {cartStore.cart.length > 0 && (
+                  <motion.span
+                    animate={{ scale: 1 }}
+                    initial={{ scale: 0 }}
+                    exit={{ scale: 0 }}
+                    className='absolute bottom-4 left-4 flex size-6 items-center justify-center rounded-full bg-primary text-[16px] font-bold text-pink-700 shadow-md'
+                  >
+                    {cartStore.cart.length}
+                  </motion.span>
+                )}
+              </AnimatePresence>
+            </li>
+          </ul>
         </div>
+
         <div className='flex items-center space-x-3'>
           {/* right header for docs */}
           {documentation ? (
@@ -130,6 +156,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
             <Skeleton className='hidden h-9 w-28 rounded-full lg:flex' />
           )}
         </div>
+        <AnimatePresence>
+          {/* Required condition when a component is removed from React tree */}
+          {cartStore.isOpen && <Cart />}
+        </AnimatePresence>
       </MaxWidthWrapper>
     </header>
   )

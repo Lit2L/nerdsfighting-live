@@ -29,6 +29,18 @@ const config = {
         orbitron: ['var(--font-orbitron)', ...fontFamily.sans]
       },
       colors: {
+        main: '#88aaee',
+        overlay: 'rgba(0,0,0,0.8)', // background color overlay for alert dialogs, modals, etc.
+
+        // light mode
+        bg: '#dfe5f2',
+        text: '#000',
+
+        // dark mode
+        darkBg: '#272933',
+        darkText: '#eeefe9',
+        darkBorder: '#000',
+        secondaryBlack: '#212121',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -64,11 +76,25 @@ const config = {
         }
       },
       borderRadius: {
+        base: '5px',
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
-
+      boxShadow: {
+        light: '4px 4px 0px 0px #000',
+        dark: '4px 4px 0px 0px #000'
+      },
+      translate: {
+        boxShadowX: '4px',
+        boxShadowY: '4px',
+        reverseBoxShadowX: '-4px',
+        reverseBoxShadowY: '-4px'
+      },
+      fontWeight: {
+        base: '500',
+        heading: '700'
+      },
       keyframes: {
         'text-gradient': {
           to: {
