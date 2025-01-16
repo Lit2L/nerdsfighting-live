@@ -17,7 +17,7 @@ export function ImageSliders() {
     '/_static/photos/group-pose.jpeg'
   ]
   return (
-    <ImagesSlider className='h-[40rem] border-4' images={images}>
+    <ImagesSlider className='h-72 md:h-[30rem]' images={images}>
       <motion.div
         initial={{
           opacity: 0,

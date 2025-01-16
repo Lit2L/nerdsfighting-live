@@ -6,38 +6,48 @@ import { Button } from '@/components/ui/button'
 import { ImageSliders } from '../ImagesSlider'
 import { HeaderSection } from '../shared/header-section'
 import MaxWidthWrapper from '../shared/max-width-wrapper'
-import { AspectRatio } from '../ui/aspect-ratio'
 
 export default function AboutUs() {
   return (
-    <section className='relative my-24 w-full'>
+    <section className='relative w-full py-20'>
       <MaxWidthWrapper>
         <HeaderSection label='' title='About Us' subtitle='Why Train With Nerds?' />
       </MaxWidthWrapper>
-      <div className='bgAboutUs' />
-      <div className='flex w-full flex-col border-4 text-center'>
-        <ImageSliders />
+      <div className='bgAboutUs blur-sm' />
+      <div className='flex w-full flex-col-reverse pt-6 lg:flex-row lg:p-6'>
+        <div className='flex w-full flex-col space-y-6 p-12 lg:w-1/2'>
+          <h3 className='text-left font-orbitron text-2xl font-bold'>NERDS FIGHTING</h3>
+          <p className='font-orbitron text-[10px] font-bold leading-6 tracking-wide text-gray-200 md:text-sm md:leading-8'>
+            {/* <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
+              Nerds Fighting{' '}
+            </span> */}
+            At Nerds Fighting, we don&apos;t just teach martial arts
+            <br /> We craft warriors. <br />
+            <br />
+            Our holistic approach to training blends the art of eight limbs with mindfulness,
+            effective training, and self-mastery for the ring, street, and life.
+            <br />
+            <br />
+            Transform your life by transforming your belief in yourself. Confidence, focus, and
+            readiness aren&apos;t just results—they&apos;re life skills you&apos;ll carry with you
+            everywhere. Gain the edge you need for success—in the gym, at work, or anywhere in life.
+            <br />
+            <br />
+            Because anything can happen, you deserve to be ready.
+            <br /> Life is better when you know how to fight.
+          </p>
+        </div>
+        <div className='w-full lg:w-1/2'>
+          <ImageSliders />
 
-        <p className='text-gradient_pinks pl-6 text-lg tracking-wide text-gray-500'>
-          MUAY THAI · BOXING · KICKBOXING
-        </p>
+          <p className='text-gradient_pinks text-md text-center font-bold tracking-tight'>
+            MUAY THAI · BOXING · KICKBOXING
+          </p>
+        </div>
         {/* <Button asChild variant='outline' size='lg' className='rounded-none'>
                 <Link href='/pricing'>Learn More</Link>
               </Button> */}
       </div>
-      <div className='border-4'>
-        <h3 className='text-2xl font-semibold'>OUR STORY</h3>
-        <p className='font-genos text-xl font-semibold leading-8 tracking-tight text-gray-300'>
-          At{' '}
-          <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
-            Nerds Fighting{' '}
-          </span>
-          {''}
-          we believe everyone has untapped potential. Our training is more than fitness—it’s about
-          pushing beyond your perceived limits, giving you the tools to dominate wherever you go.
-          You’re not here to be ordinary. Train like it.
-        </p>
-      </div>{' '}
     </section>
   )
 }

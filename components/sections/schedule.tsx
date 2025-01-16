@@ -62,7 +62,7 @@ const classes = [
     title: 'Sunday',
     description: 'Sparring, Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Sunday', time: '6:00am - 7:30am' }]
+    schedule: [{ id: 1, day: 'Sunday', time: '7:00am - 9:30am' }]
   }
 ]
 
@@ -70,7 +70,7 @@ export function Schedule() {
   return (
     <section id='schedule' className='relative w-full'>
       {/* <Image src='/bg1.png' alt='bg' layout='fill' className='absolute -z-10 opacity-10' /> */}
-      <div className='bgSchedule' />
+      <div className='bgSchedule blur-sm' />
       <div className='container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 font-genos dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />
@@ -80,14 +80,14 @@ export function Schedule() {
               classes.map((item) => (
                 <Card
                   key={item.id}
-                  className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-xl shadow-neutral-500/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
+                  className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-2xl shadow-neutral-300/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
                   <Image
                     src='/_static/bg15.png'
                     alt='bg'
                     layout='fill'
                     objectFit='cover'
-                    className='absolute z-0 opacity-5 blur-[1px]'
+                    className='absolute z-0 opacity-5 blur-[2px]'
                   />
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>

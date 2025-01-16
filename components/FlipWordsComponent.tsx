@@ -4,13 +4,18 @@ import { FlipWords } from '@/components/ui/flip-words'
 
 export function FlipWordsComponent() {
   const words = [
-    'Burn Calories Fast - 1000/hr',
-    'Relieve Stress & Anxiety',
-    'Develop Unshakable Confidence',
-    'Functional Strength Workouts',
-    'Get Fit, Get Strong & Live Long',
+    'Burn Calories Fast +1000/Workout',
+    'Relieve Stress',
+    'Unshakable Confidence',
+    'Functional Strength',
+    'Mental Sharpness & Focus',
+    'Increased Energy',
+    'Full Body Fitness',
+    'Smart Effective Training',
+    'Brain-First Approach',
     'Become A Protector',
-    'Engage In Fun Group Workouts'
+    'Group Workouts',
+    'Supportive Community'
   ]
 
   return (

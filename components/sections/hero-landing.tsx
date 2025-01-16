@@ -8,7 +8,7 @@ export default async function HeroLanding() {
   return (
     <section
       id='hero'
-      className='relative flex min-h-screen w-full flex-col items-center justify-center gap-20 space-y-6'
+      className='relative flex min-h-screen w-full flex-col items-center justify-center gap-20 space-y-6 py-24'
     >
       <div className='bgImage' />
 
@@ -19,7 +19,7 @@ export default async function HeroLanding() {
           Muay Thai Kickboxing Gym
         </Badge>
         <GradualSpacing
-          className='text-gradient_greens font-orbitron font-bold uppercase tracking-widest'
+          className='text-gradient_greens tracking-tightest font-logo font-bold uppercase'
           text='Nerds Fighting'
         />
       </div>
@@ -28,16 +28,13 @@ export default async function HeroLanding() {
       <div className='w-full transition-all duration-300'>
         <div className='mx-auto w-full text-center text-muted-foreground'>
           {/* <p className=''>Train Like Fighters</p> */}
-          <p className='text-center font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+          <p className='text-center font-orbitron text-[8px] font-semibold capitalize tracking-tight text-muted-foreground'>
             Strategy
           </p>
         </div>
         <div className='grid grid-cols-3 place-items-center transition-all duration-300'>
           <div className='w-full text-right'>
-            {/* <p className='w-full text-center font-orbitron text-sm font-semibold  text-muted-foreground'>
-              Discover The Power of Strategy, Intelligence, and Discipline
-            </p> */}
-            <p className='w-full text-right font-orbitron text-xs font-semibold capitalize text-muted-foreground md:text-sm'>
+            <p className='w-full text-right font-orbitron text-[8px] capitalize tracking-tighter text-muted-foreground'>
               Intelligence
             </p>
           </div>
@@ -45,13 +42,13 @@ export default async function HeroLanding() {
             <Logo />
           </div>
           <div className='w-full'>
-            <p className='text-left font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+            <p className='text-left font-orbitron text-[8px] font-semibold capitalize tracking-tight text-muted-foreground'>
               Discipline
             </p>
           </div>
         </div>
         <div className='w-full text-center text-muted-foreground'>
-          <p className='text-center font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+          <p className='text-center font-orbitron text-[8px] font-semibold capitalize tracking-tight text-muted-foreground'>
             Performance
           </p>
         </div>

@@ -46,13 +46,13 @@ export function TrainingCards() {
       image: '/_static/photos/privatecoach.png'
     },
     {
-      title: 'Excellent for Beginners & Hobbyists',
+      title: 'All Skill Levels Welcome',
       description: [
         'Working professionals, students, parents, or anyone looking for something new.',
         'Safe and Controlled Environment.',
         'Get fit while having fun learning important life skills.'
       ],
-      image: '/_static/photos/nerds-team.jpeg'
+      image: '/_static/photos/gauntlet1.png'
     },
     {
       title: 'Teamwork & Camaraderie',
@@ -61,7 +61,7 @@ export function TrainingCards() {
         `Lift others towards their goals, while they lift you towards yours.`
         // 'You never forget the people you grow with.'
       ],
-      image: '/_static/photos/gauntlet1.png'
+      image: '/_static/photos/nerds-team.jpeg'
     },
 
     {
@@ -76,10 +76,11 @@ export function TrainingCards() {
 
   return (
     <section id='training' className='relative mx-auto w-full max-w-full py-24'>
-      <div className='bgTraining'></div>
       <MaxWidthWrapper>
         <HeaderSection label='' title='Init Together' subtitle='' />
       </MaxWidthWrapper>
+      <div className='bgTraining blur-sm' />
+
       {/* <p className='mx-auto py-6 text-center font-orbitron text-xl font-thin tracking-widest'>
         Grow Strong, Be Confident, Live Peacefully
 
