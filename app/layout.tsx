@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 
-import { fontHeading, fontOrbit, fontSans, genosFont, headingFont, logoFont } from '@/assets/fonts'
 import { SessionProvider } from 'next-auth/react'
 import { ThemeProvider } from 'next-themes'
 
