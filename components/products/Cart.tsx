@@ -26,13 +26,13 @@ export default function Cart() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={() => cartStore.toggleCart()}
-      className='fixed bottom-0 right-0 top-0 z-50 h-screen w-1/2 bg-emerald-500/25 backdrop-blur-sm'
+      className='fixed bottom-0 right-0 top-0 z-50 h-screen w-full backdrop-blur-sm'
     >
       {/* Shopping Panel */}
       <motion.section
         layout
         onClick={(e) => e.stopPropagation()}
-        className='absolute right-0 top-0 h-screen w-8/12 overflow-y-scroll bg-pink-800 p-12 shadow-md lg:w-2/5'
+        className='absolute right-0 top-0 h-screen w-8/12 overflow-y-scroll bg-blue-700 p-12 shadow-md lg:w-2/5'
       >
         {/* Conditional Headings */}
         {cartStore.onCheckout === 'cart' && (
@@ -40,7 +40,7 @@ export default function Cart() {
             <h1 className='text-2xl font-bold'>Your shopping cart</h1>
             <CgClose
               aria-hidden='true'
-              className='h-6 w-6 cursor-pointer'
+              className='size-9 cursor-pointer'
               onClick={() => cartStore.toggleCart()}
             />
           </div>
@@ -49,7 +49,7 @@ export default function Cart() {
           <div className='mb-12 flex items-center justify-between'>
             <h1 className='text-2xl font-bold'>Check your cart</h1>
             <CgClose
-              className='h-6 w-6 cursor-pointer'
+              className='size-8 cursor-pointer'
               onClick={() => cartStore.setCheckout('cart')}
             />
           </div>
@@ -78,13 +78,13 @@ export default function Cart() {
                   <div className='flex items-center gap-2'>
                     <h2 className='text-sm'>Qty: {item.quantity}</h2>
                     <button onClick={() => cartStore.removeProduct(item)}>
-                      <TbSquareRoundedMinus className='h-3 w-3 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-red-500 hover:drop-shadow-md' />
+                      <TbSquareRoundedMinus className='size-6 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-red-500 hover:drop-shadow-md' />
                     </button>
                     <button onClick={() => cartStore.addProduct(item)}>
-                      <TbSquareRoundedPlus className='h-3 w-3 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-green-500 hover:drop-shadow-md' />
+                      <TbSquareRoundedPlus className='size-6 cursor-pointer transition duration-100 ease-in-out hover:scale-125 hover:text-green-500 hover:drop-shadow-md' />
                     </button>
                   </div>
-                  <h2 className='mt-auto text-sm'>
+                  <h2 className='text-md mt-auto font-bold tracking-wide'>
                     {item.unit_amount && priceFormat(item.unit_amount)}
                   </h2>
                 </motion.div>
@@ -96,12 +96,12 @@ export default function Cart() {
         {/* Total */}
         {cartStore.cart.length > 0 && cartStore.onCheckout === 'cart' ? (
           <motion.div layout>
-            <p className='mt-6 py-2'>
-              <span className='font-semibold'>Total:</span> {priceFormat(totalPrice)}
+            <p className='mt-6 py-2 font-bold'>
+              <span className='font-bold'>Total:</span> {priceFormat(totalPrice)}
             </p>
             <button
               onClick={() => cartStore.setCheckout('checkout')}
-              className='my-4 w-full border p-1'
+              className='my-4 w-full border p-1 font-bold'
             >
               Checkout
             </button>

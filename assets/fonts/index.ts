@@ -27,6 +27,11 @@ export const logoFont = localFont({
   variable: '--font-logo'
 })
 
+export const logoFont2 = localFont({
+  src: './NorthstarChrome.otf',
+  variable: '--font-logo2'
+})
+
 export const genosFont = GenosFont({
   subsets: ['latin'],
   variable: '--font-genos'

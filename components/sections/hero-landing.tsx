@@ -1,4 +1,5 @@
 import { AnimatedJoinButton } from '../AnimatedJoinButton'
+import { FlipWordsComponent } from '../FlipWordsComponent'
 import GradualSpacing from '../gradual-spacing'
 import Logo from '../Logo'
 import { Badge } from '../ui/badge'
@@ -7,38 +8,60 @@ export default async function HeroLanding() {
   return (
     <section
       id='hero'
-      className='relative mx-auto mt-20 flex h-full flex-col items-center justify-between py-20 md:min-h-screen'
+      className='relative flex min-h-screen w-full flex-col items-center justify-center gap-20 space-y-6'
     >
       <div className='bgImage' />
-      <div className='flex flex-col items-center justify-center pt-6 md:pt-16'>
-        {/* TOP */}
 
-        <div className='flex w-full flex-col items-center gap-16'>
-          <Badge className='md:text-md w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold uppercase tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
-            New Muay Thai & Kickboxing Training Gym
-          </Badge>
-          <GradualSpacing
-            className='text-gradient_greens font-orbitron font-bold uppercase tracking-widest'
-            text='Nerds Fighting'
-          />
-        </div>
+      {/* TOP */}
 
-        {/* MIDDLE */}
-        <div className=''>
-          <p className='text-center font-orbitron text-xs text-muted-foreground md:text-sm'>
-            Fueled by Ambition
-          </p>
-          <Logo />
-          <p className='text-center font-orbitron text-xs text-muted-foreground md:text-sm'>
-            Forged in Repetition
+      <div className='flex w-full flex-col items-center justify-center gap-12'>
+        <Badge className='md:text-md w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
+          Muay Thai Kickboxing Gym
+        </Badge>
+        <GradualSpacing
+          className='text-gradient_greens font-orbitron font-bold uppercase tracking-widest'
+          text='Nerds Fighting'
+        />
+      </div>
+
+      {/* MIDDLE */}
+      <div className='w-full transition-all duration-300'>
+        <div className='mx-auto w-full text-center text-muted-foreground'>
+          {/* <p className=''>Train Like Fighters</p> */}
+          <p className='text-center font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+            Strategy
           </p>
         </div>
-
-        {/* BOTTOM */}
-        <div className='mt-12 w-full'>
-          <AnimatedJoinButton />
-          {/* <FlipWordsComponent /> */}
+        <div className='grid grid-cols-3 place-items-center transition-all duration-300'>
+          <div className='w-full text-right'>
+            {/* <p className='w-full text-center font-orbitron text-sm font-semibold  text-muted-foreground'>
+              Discover The Power of Strategy, Intelligence, and Discipline
+            </p> */}
+            <p className='w-full text-right font-orbitron text-xs font-semibold capitalize text-muted-foreground md:text-sm'>
+              Intelligence
+            </p>
+          </div>
+          <div className='overflow-hidden'>
+            <Logo />
+          </div>
+          <div className='w-full'>
+            <p className='text-left font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+              Discipline
+            </p>
+          </div>
         </div>
+        <div className='w-full text-center text-muted-foreground'>
+          <p className='text-center font-orbitron text-xs font-semibold capitalize tracking-tight text-muted-foreground md:text-sm'>
+            Performance
+          </p>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className='flex w-full flex-col items-center justify-center gap-6'>
+        <FlipWordsComponent />
+        <AnimatedJoinButton />
+        {/* <FlipWordsComponent /> */}
       </div>
     </section>
   )

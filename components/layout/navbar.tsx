@@ -22,6 +22,7 @@ import { DocsSearch } from '@/components/docs/search'
 import { ModalContext } from '@/components/modals/providers'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 import Cart from '../products/Cart'
 
@@ -92,9 +93,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </nav>
           ) : null}
         </div>
-        <div className='ml-auto flex items-center gap-2'>
+        <div className='ml-auto flex items-center'>
           {/* <SearchBar className='hidden sm:block' /> */}
-          <ul className='mx-9 flex items-center justify-center gap-8'>
+          <ul className='flex w-36 items-center gap-6'>
             <li className='relative cursor-pointer text-3xl' onClick={() => cartStore.toggleCart()}>
               <FiShoppingCart />
               <AnimatePresence>
@@ -110,6 +111,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
                   </motion.span>
                 )}
               </AnimatePresence>
+            </li>
+            <li>
+              <ThemeToggle />
             </li>
           </ul>
         </div>
@@ -144,7 +148,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             </Link>
           ) : status === 'unauthenticated' ? (
             <Button
-              className='hidden items-center gap-2 px-5 text-[#548f6f] md:flex'
+              className='mx-3 hidden items-center gap-2 px-5 text-[#548f6f] md:flex'
               variant='outline'
               size='sm'
               onClick={() => setShowSignInModal(true)}
@@ -156,6 +160,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
             <Skeleton className='hidden h-9 w-28 rounded-full lg:flex' />
           )}
         </div>
+
         <AnimatePresence>
           {/* Required condition when a component is removed from React tree */}
           {cartStore.isOpen && <Cart />}

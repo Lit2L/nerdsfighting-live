@@ -1,15 +1,18 @@
 import type { Config } from 'tailwindcss'
 import { fontFamily } from 'tailwindcss/defaultTheme'
 
+const colors = require('tailwindcss/colors')
+
 const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette')
 
 const config = {
   darkMode: ['class'],
   content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './ui/**/*.{ts,tsx}',
-    './content/**/*.{md,mdx}'
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './ui/**/*.{js,ts,jsx,tsx,mdx}',
+    './content/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   future: {
     hoverOnlyWhenSupported: true
@@ -25,6 +28,7 @@ const config = {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         heading: ['var(--font-heading)', ...fontFamily.sans],
         logo: ['var(--font-logo)', ...fontFamily.sans],
+        logo2: ['var(--font-logo2)', ...fontFamily.sans],
         genos: ['var(--font-genos)', ...fontFamily.sans],
         orbitron: ['var(--font-orbitron)', ...fontFamily.sans]
       },
@@ -101,6 +105,10 @@ const config = {
             backgroundPosition: '200% center'
           }
         },
+        move: {
+          '0%': { transform: 'translateX(-200px)' },
+          '100%': { transform: 'translateX(200px)' }
+        },
         'accordion-down': {
           from: { height: '0' },
           to: { height: 'var(--radix-accordion-content-height)' }
@@ -171,11 +179,18 @@ const config = {
 
         // Fade in and out
         'fade-in': 'fade-in 0.4s',
-        'fade-out': 'fade-out 0.4s'
+        'fade-out': 'fade-out 0.4s',
+
+        // Move left and right
+        move: 'move 5s linear infinite'
       }
     }
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')]
+  plugins: [
+    require('tailwindcss-animate'),
+    require('@tailwindcss/typography'),
+    addVariablesForColors
+  ]
 } satisfies Config
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

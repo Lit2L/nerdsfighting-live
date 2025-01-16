@@ -14,8 +14,8 @@ interface GradualSpacingProps {
 
 export default function GradualSpacing({
   text,
-  duration = 5,
-  delayMultiple = 0.08,
+  duration = 6,
+  delayMultiple = 0.1,
   framerProps = {
     hidden: { opacity: 0, x: -10 },
     visible: { opacity: 1, x: 0 }
@@ -33,7 +33,10 @@ export default function GradualSpacing({
             exit='hidden'
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
-            className={cn('text-xl drop-shadow-sm sm:text-4xl md:text-5xl lg:text-7xl', className)}
+            className={cn(
+              'text-4xl drop-shadow-2xl transition-all duration-300 sm:text-5xl md:text-6xl lg:text-7xl',
+              className
+            )}
           >
             {char === '' ? <span>&nbsp;</span> : char}
           </motion.h1>

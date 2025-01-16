@@ -61,6 +61,7 @@ export default async function IndexPage() {
         ))}
       </div>
       <Schedule />
+
       {/* <InfiniteSliderHoverSpeed /> */}
       {/* <InfiniteSliderVertical /> */}
       {/* <PreviewLanding /> */}

@@ -1,20 +1,20 @@
 'use client'
 
 import { ReactNode, useEffect, useState } from 'react'
-import { fontHeading, fontOrbit, fontSans, genosFont, headingFont, logoFont } from '@/assets/fonts'
+import {
+  fontHeading,
+  fontOrbit,
+  fontSans,
+  genosFont,
+  headingFont,
+  logoFont,
+  logoFont2
+} from '@/assets/fonts'
 
 import { cn } from '@/lib/utils'
 import { useTheme } from '@/hooks/use-theme'
 
-// ZUSTAND: HYDRATE COMPONENT TO HANDLE CLIENT-SIDE RENDERING (STEP 4) ⭐️
-// This component prevents client-specific code from running on the server and
-// causing a mismatch between pre-rendered server-rendered and client-rendered
-// markup. It does this by rendering its `children` (client-specific code) only
-// after the component has "mounted" on the client (i.e. after hydration).
-
-// Because our Zustand implementation is a client-side state management library,
-// we use this component to prevent Zustand-related state (like a `isOpen` state
-// of the cartStore) from causing hydration errors if they don't sync up.
+import { ThemeProvider } from '../theme-provider'
 
 interface Props {
   children: ReactNode
@@ -44,10 +44,13 @@ export default function Hydration({ children }: Props) {
             fontHeading.variable,
             fontOrbit.variable,
             logoFont.variable,
+            logoFont2.variable,
             genosFont.variable
           )}
         >
-          {children}
+          <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+            {children}
+          </ThemeProvider>
         </body>
       )}
     </>

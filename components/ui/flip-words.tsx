@@ -69,7 +69,7 @@ export const FlipWords = ({
           position: 'absolute'
         }}
         className={cn(
-          'md:text-md font-orbitron relative z-50 inline-block rounded-full px-2 text-left text-sm lg:text-lg',
+          'md:text-md relative z-50 inline-block px-2 text-left font-orbitron text-sm font-bold tracking-wider lg:text-lg',
           className
         )}
         key={currentWord}
@@ -81,7 +81,7 @@ export const FlipWords = ({
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             transition={{
               delay: index * 0.08,
-              duration: 0.4
+              duration: 1.5
             }}
             className=''
           >

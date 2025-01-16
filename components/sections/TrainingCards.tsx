@@ -12,10 +12,19 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Reset and Rebalance',
+      title: 'Gain an Edge',
+      description: [
+        'Less than 1% train in Martial Arts.',
+        'Carry the benefits of training into your daily life.',
+        'Real confidence comes from knowing you can handle yourself in any situation.'
+      ],
+      image: '/_static/photos/2.png'
+    },
+    {
+      title: 'Stress Relief & Mental Clarity',
       description: [
         'A perfect outlet to release stress, tension, and anxiety.',
-        // 'Channel energy into growth and transformation',
+        'Rebalace & recharge',
         'Leave workouts feeling grounded & Zen.'
       ],
       image: '/_static/photos/111111.png'
@@ -45,52 +54,8 @@ export function TrainingCards() {
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
-    // {
-    //   title: 'Physical Mastery',
-    //   subtitle: 'Build Strength, Endurance, and Agility',
-    //   description: [
-    //     'Sculpt your body with high-intensity training.',
-    //     'Improve coordination and reflexes',
-    //     'Enhance cardiovascular health and endurance'
-    //   ],
-    //   image: '/_static/photos/gauntlet1.png'
-    // },
-    // {
-    //   title: 'Mental Clarity',
-    //   subtitle: 'Sharpen Focus and Cultivate Resilience',
-    //   description: [
-    //     'Improve your focus and concentration.',
-    //     'Learn to stay calm under pressure.',
-    //     'Build mental discipline through consistent practice.',
-    //     'Develop resilience to overcome physical and mental challenges.'
-    //   ],
-    //   image: '/_static/photos/nerds-handson.png'
-    // },
-    // {
-    //   title: 'Balance & Accessibility',
-    //   subtitle:
-    //     'Training that fits into your life, whether juggling work, school, family, or other commitments',
-    //   description: [
-    //     'Release stress and boost confidence.',
-    //     'Cultivate self-control and inner peace.',
-    //     'Discover the balance between aggression and calmness.',
-    //     'ExperienceZen of Aggression and Calmness'
-    //   ],
-    //   image: '/_static/photos/privatecoach.png'
-    // },
-
-    // {
-    //   title: 'Spiritual Connection',
-    //   subtitle: 'Find Harmony and Purpose in Your Life',
-    //   description: [
-    //     'Connect with your inner self and the world around you.',
-    //     'Discover the power of meditation and mindfulness.',
-    //     'Experience the joy of living in the present moment.'
-    //   ],
-    //   image: '/_static/photos/analysis.png'
-    // },
     {
-      title: 'Team Environment',
+      title: 'Teamwork & Camaraderie',
       description: [
         'Work together as a team to achieve your goals.',
         `Lift others towards their goals, while they lift you towards yours.`
@@ -98,65 +63,17 @@ export function TrainingCards() {
       ],
       image: '/_static/photos/gauntlet1.png'
     },
-    // {
-    //   title: 'Maximize Your Time & Money',
-    //   description: [
-    //     "You aren't learning anything new or challenging.",
-    //     'You arent aquiring new skills or mastering other skills.',
-    //     'Lifting weights and running on a treadmill is boring and ineffective.',
-    //     'Leave your workout stressfree, energized, accomplished and ready to tackle anything.'
-    //   ],
-    //   image: '/_static/photos/nerds-handson.png'
-    // },
+
     {
-      title: 'Be Different',
-      description: [
-        'Less than 1% of the population trains in martial arts.',
-        'Even fewer train in Muay Thai.',
-        'Equip yourself with skill set that sets you apart.'
-      ],
-      image: '/_static/photos/2.png'
-    },
-    {
-      title: 'Having Fun',
+      title: 'Play Based Learning',
       description: [
         'Play is the highest form of research.',
-        'Turn fear into a game and watch yourself grow.'
+        'Learn through challenges and mental games.'
       ],
       image: '/_static/photos/game.png'
     }
-    // {
-    //   title: 'Video Analysis',
-    //   description: [
-    //     'Experienced coach analyzes your technique',
-    //     'Teaches body mechanics and pinpoints areas for improvement',
-    //     'Reinforces proper technique and helps develop better habits.'
-    //   ],
-    //   image: '/_static/photos/analysis.png'
-    // }
-    // {
-    //   title: 'Physical Mastery',
-    //   subtitle: 'Build Strength, Endurance, and Agility',
-
-    //   description: [
-    //     'Supportive group of martial artists that train together',
-    //     'Peak performance training involves calisthenics, drills, strength conditioning, and optional group sparring'
-    //   ],
-    //   image: '/_static/photos/gauntlet1.png'
-    // },
-
-    // {
-    //   title: 'Some Journeys Redefine the Traveler',
-    //   description: [
-    //     'Adding Muay Thai Training to your lifestyle is an evolutional journey where you will be continuously updating your software.',
-    //     'You may inevitably notice changes in how you look, think, feel, speak and carry yourself.'
-    //     // 'Muay Thai & Martial Arts  to your life will evolve you in ways you never thought possible.'
-    //     //  how stand , think, feel and how you speak.',
-    //     // 'Where Art Meets Science, Violence Makes Peace, Strategy Becomes Technique, and Dance Meets Discipline',
-    //   ],
-    //   image: '/_static/photos/mitts.jpg'
-    // }
   ]
+
   return (
     <section id='training' className='relative mx-auto w-full max-w-full py-24'>
       <div className='bgTraining'></div>
