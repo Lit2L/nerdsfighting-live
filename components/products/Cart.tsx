@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import emptyBasket from '@/public/shopping-cart-empty.png'
-import { priceFormat } from '@/utils/priceFormat'
+import priceFormat from '@/utils/priceFormat'
 import { useCartStore } from '@/zustand/store'
 import { AnimatePresence, motion } from 'framer-motion'
 import { CgClose } from 'react-icons/cg'

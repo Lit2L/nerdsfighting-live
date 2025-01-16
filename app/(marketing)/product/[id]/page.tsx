@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { priceFormat } from '@/utils/priceFormat'
+import priceFormat from '@/utils/priceFormat'
 
 import { SearchParamTypes } from '@/types/SearchParamType'
 import AddCartBtn from '@/components/products/AddCartBtn'

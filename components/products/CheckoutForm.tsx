@@ -1,7 +1,7 @@
 'use client'
 
 import { FormEvent, useEffect, useState } from 'react'
-import { priceFormat } from '@/utils/priceFormat'
+import priceFormat from '@/utils/priceFormat'
 import { useCartStore } from '@/zustand/store'
 import { PaymentElement, useElements, useStripe } from '@stripe/react-stripe-js'
 
