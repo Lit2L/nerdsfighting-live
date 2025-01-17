@@ -144,15 +144,21 @@ body {
   height: 300px;
 }
 
+.text-gradient_greenies {
+  background: linear-gradient(110deg, #548f6f 30%, hsl(98 78 72) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .text-gradient_greens {
-  background: linear-gradient(90deg, #548f6f 50%, hsl(98 78 72) 100%);
+  background: linear-gradient(170deg, #548f6f 60%, hsl(240 100 100) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient_yellows {
-  background: linear-gradient(90deg, #e01b6e 50%, hsl(198 78 72) 100%);
+  background: linear-gradient(90deg, #00af66 50%, hsl(170 9 52));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -174,7 +180,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-image: url('/_static/mt-bg.png');
+  background-image: url('/_static/backgrounds/mt-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,7 +188,7 @@ body {
 }
 
 .bgAboutUs {
-  background-image: url('/_static/bgCheckers.png');
+  background-image: url('/_static/backgrounds/bgCheckers.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,7 +202,7 @@ body {
 }
 
 .bgAboutMe {
-  background-image: url('/_static/bg15.png');
+  background-image: url('/_static/backgrounds/bg15.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -210,7 +216,7 @@ body {
 }
 
 .bgModal {
-  background-image: url('/_static/bg12.png');
+  background-image: url('/_static/backgrounds/bg12.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -224,7 +230,7 @@ body {
 }
 
 .bgSchedule {
-  background-image: url('/_static/bg1.png');
+  background-image: url('/_static/backgrounds/bg1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +244,7 @@ body {
 }
 
 .bgPricing {
-  background-image: url('/_static/bg10.png');
+  background-image: url('/_static/backgrounds/bg10.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +257,7 @@ body {
   bottom: 0;
 }
 .bgTraining {
-  background-image: url('/_static/bg2.png');
+  background-image: url('/_static/backgrounds/bg2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
