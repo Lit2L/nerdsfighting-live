@@ -32,7 +32,7 @@ export function ImageSliders() {
         }}
         className='z-50 flex flex-col items-center justify-center'
       >
-        <motion.p className='bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-4 text-center text-xl font-bold text-transparent md:text-6xl'>
+        <motion.p className='bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-4 text-center text-xl font-bold text-transparent md:text-5xl'>
           We&apos;re Nerds, and we Fight Smarter
         </motion.p>
         <button className='relative mx-auto mt-4 rounded-full border border-emerald-500/20 bg-emerald-300/10 px-4 py-2 text-center text-white backdrop-blur-sm'>

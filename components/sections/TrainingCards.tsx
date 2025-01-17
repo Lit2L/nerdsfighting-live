@@ -12,20 +12,20 @@ import MaxWidthWrapper from '../shared/max-width-wrapper'
 export function TrainingCards() {
   const cards = [
     {
-      title: 'Gain an Edge',
+      title: 'Get the Edge',
       description: [
         'Less than 1% train in Martial Arts.',
-        'Carry the benefits of training into your daily life.',
-        'Real confidence comes from knowing you can handle yourself in any situation.'
+        'Carry the amazing benefits of training into your daily life.',
+        'True confidence comes from knowing you can handle yourself wherever you are.'
       ],
       image: '/_static/photos/2.png'
     },
     {
-      title: 'Stress Relief & Mental Clarity',
+      title: 'Find Your Balance',
       description: [
-        'A perfect outlet to release stress, tension, and anxiety.',
-        'Rebalace & recharge',
-        'Leave workouts feeling grounded & Zen.'
+        'Therapeutic & Spiritual Balance.',
+        'Best outlet for releasing stress, tension, and anxiety.',
+        'Experience the Mental Peace & Clarity after workout.'
       ],
       image: '/_static/photos/111111.png'
     },
@@ -33,33 +33,37 @@ export function TrainingCards() {
       title: 'Find Your Flow State',
       // subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
-        'Learn to be present.',
-        'Find your rhythm and balance.'
-        // 'Overcome fear, doubt and distractions.',
-        // 'Martial Arts is about mastering yourself.',
-        // 'Flow your way into smooth, movements with purpose and power.'
-
-        // 'Practice the Dance of Muay Thai while in your flow state watch yourself grow. Develop balance with every move you make.'
-
+        'Significantly enhance your focus, precision, reaction times and overall enjoyment.',
+        'Enhance your sparring and fighting skills, dynamic movement, and rhthym.',
+        'Flow your way into the rhthym and dance of Muay Thai'
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
       image: '/_static/photos/privatecoach.png'
     },
+    // {
+    //   title: 'All Skill Levels Welcome',
+    //   description: [
+    //     'Working professionals, students, parents, or anyone looking for something new.',
+    //     'Safe and Controlled Environment.',
+    //     'Get fit while having fun learning important life skills.'
+    //   ],
+    //   image: '/_static/photos/gauntlet1.png'
+    // },
     {
-      title: 'All Skill Levels Welcome',
+      title: 'We Welcome Everyone',
       description: [
-        'Working professionals, students, parents, or anyone looking for something new.',
+        'Working professionals, students, parents, nerds and anyone looking for a challenge.',
         'Safe and Controlled Environment.',
         'Get fit while having fun learning important life skills.'
       ],
       image: '/_static/photos/gauntlet1.png'
     },
     {
-      title: 'Teamwork & Camaraderie',
+      title: 'Fun Group Sessions',
       description: [
         'Work together as a team to achieve your goals.',
-        `Lift others towards their goals, while they lift you towards yours.`
-        // 'You never forget the people you grow with.'
+        'Learn to hold thai-pads, boxing mitts, and much more.',
+        'For people thrive in team environments.'
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
@@ -68,7 +72,8 @@ export function TrainingCards() {
       title: 'Play Based Learning',
       description: [
         'Play is the highest form of research.',
-        'Learn through challenges and mental games.'
+        'Learn to control your emotions during intense situations.',
+        'Allows fighters to explore, experiment, and discover without injury.'
       ],
       image: '/_static/photos/game.png'
     }
@@ -77,7 +82,7 @@ export function TrainingCards() {
   return (
     <section id='training' className='relative mx-auto w-full max-w-full py-24'>
       <MaxWidthWrapper>
-        <HeaderSection label='' title='Init Together' subtitle='' />
+        <HeaderSection label='' title='Our Training' subtitle='' />
       </MaxWidthWrapper>
       <div className='bgTraining blur-sm' />
 

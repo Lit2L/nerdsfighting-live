@@ -17,7 +17,7 @@ export default function AboutUs() {
       <div className='flex w-full flex-col-reverse pt-6 lg:flex-row lg:p-6'>
         <div className='flex w-full flex-col space-y-6 p-12 lg:w-1/2'>
           <h3 className='text-left font-orbitron text-2xl font-bold'>NERDS FIGHTING</h3>
-          <p className='font-orbitron text-[10px] font-bold leading-6 tracking-wide text-gray-200 md:text-sm md:leading-8'>
+          <p className='font-orbitron text-[10px] font-bold leading-6 tracking-wider text-gray-200 md:text-[12px]'>
             {/* <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
               Nerds Fighting{' '}
             </span> */}
@@ -33,8 +33,10 @@ export default function AboutUs() {
             everywhere. Gain the edge you need for success—in the gym, at work, or anywhere in life.
             <br />
             <br />
-            Because anything can happen, you deserve to be ready.
-            <br /> Life is better when you know how to fight.
+            Too many people go through life without ever realizing their true self. A warrior spirit
+            lays dormant inside you. Our mission to awaken that spirit and complete your
+            transformation.
+            {/* <br /> Life is better when you know how to fight. */}
           </p>
         </div>
         <div className='w-full lg:w-1/2'>
