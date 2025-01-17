@@ -145,7 +145,7 @@ body {
 }
 
 .text-gradient_greenies {
-  background: linear-gradient(110deg, #548f6f 30%, hsl(98 78 72) 100%);
+  background: linear-gradient(165deg, #548f6f 50%, hsl(8 78 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -165,7 +165,7 @@ body {
 }
 
 .text-gradient_pinks {
-  background: linear-gradient(90deg, #e01b6e 50%, hsl(198 78 72) 100%);
+  background: linear-gradient(20deg, #e01b6e 100%, hsl(28 178 72) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

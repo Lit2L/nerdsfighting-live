@@ -50,11 +50,11 @@ export function TrainingCards() {
     //   image: '/_static/photos/gauntlet1.png'
     // },
     {
-      title: 'We Welcome Everyone',
+      title: 'No Bully Zone',
       description: [
-        'Working professionals, students, parents, nerds and anyone looking for a challenge.',
-        'Safe and Controlled Environment.',
-        'Get fit while having fun learning important life skills.'
+        'No Bullys, and Egos are checked at the door.',
+        'We are a family-friendly gym.',
+        'Safe and Controlled Environment.'
       ],
       image: '/_static/photos/gauntlet1.png'
     },

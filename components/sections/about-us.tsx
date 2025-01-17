@@ -21,30 +21,30 @@ export default function AboutUs() {
             {/* <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
               Nerds Fighting{' '}
             </span> */}
-            At Nerds Fighting, we don&apos;t just teach martial arts
-            <br /> We craft warriors. <br />
+            At Nerds Fighting, We Develop Modern-day Warriors. <br />
             <br />
             Our holistic approach to training blends the art of eight limbs with mindfulness,
             effective training, and self-mastery for the ring, street, and life.
             <br />
             <br />
-            Transform your life by transforming your belief in yourself. Confidence, focus, and
-            readiness aren&apos;t just results—they&apos;re life skills you&apos;ll carry with you
-            everywhere. Gain the edge you need for success—in the gym, at work, or anywhere in life.
+            Transform your life by evolving the way you see yourself. Strength, striking ability and
+            confident aren&apos;t just outcomes of our training, they&apos;re life skills
+            you&apos;ll carry with you everywhere. Gain the tools you need to succeed-in the gym, at
+            work, or anywhere in life knowing you have the power to overcome any obstacle.
             <br />
             <br />
-            Too many people go through life without ever realizing their true self. A warrior spirit
-            lays dormant inside you. Our mission to awaken that spirit and complete your
-            transformation.
+            Too many of us pass through life without realizing what we&apos;re capable of. A warrior
+            spirit lies dormant within you. Our mission to awaken that spirit and guide you through
+            a journey of transformation.
             {/* <br /> Life is better when you know how to fight. */}
           </p>
         </div>
         <div className='w-full lg:w-1/2'>
           <ImageSliders />
 
-          <p className='text-gradient_pinks text-md text-center font-bold tracking-tight'>
+          {/* <p className='text-gradient_pinks text-md text-center font-bold tracking-tight'>
             MUAY THAI · BOXING · KICKBOXING
-          </p>
+          </p> */}
         </div>
         {/* <Button asChild variant='outline' size='lg' className='rounded-none'>
                 <Link href='/pricing'>Learn More</Link>

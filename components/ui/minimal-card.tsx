@@ -12,7 +12,7 @@ const MinimalCard = React.forwardRef<
     ref={ref}
     className={cn(
       'rounded-[20px] p-2 transition-colors',
-      'bg-[#191919]/50',
+      'bg-[#181818]/80',
       'shadow-[0_1px_1px_rgba(0,0,0,0.05),0_1px_1px_rgba(255,252,240,0.5)_inset,0_0_0_1px_hsla(0,0%,100%,0.1)_inset,0_0_1px_rgba(28,27,26,0.5)]',
       'dark:shadow-[0_1px_rgba(255,255,255,0.03)_inset,0_0_0_1px_rgba(255,255,255,0.03)_inset,0_0_1px_rgba(0,0,0,0.1),0_2px_rgba(0,0,0,0.1),0_4px_rgba(0,0,0,0.1),0_8px_rgba(0,0,0,0.1)]',
       className
