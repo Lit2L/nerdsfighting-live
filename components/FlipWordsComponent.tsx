@@ -9,13 +9,11 @@ export function FlipWordsComponent() {
     'Unshakable Confidence',
     'Functional Strength',
     'Mental Sharpness & Focus',
-    'Increased Energy',
     'Full Body Fitness',
     'Smart Effective Training',
-    'Brain-First Approach',
-    'Become A Protector',
-    'Group Workouts',
-    'Supportive Community'
+    'Brain-Friendly Training',
+    'Fun Group Workouts',
+    'Supportive Team Environment'
   ]
 
   return (

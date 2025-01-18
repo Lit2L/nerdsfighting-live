@@ -8,14 +8,14 @@ export default async function HeroLanding() {
   return (
     <section
       id='hero'
-      className='relative flex min-h-screen w-full flex-col items-center justify-center gap-20 space-y-6 py-24'
+      className='relative flex w-full flex-col items-center justify-center gap-6 space-y-3 pb-36 pt-28 md:pt-40'
     >
       <div className='bgImage' />
 
       {/* TOP */}
 
-      <div className='flex w-full flex-col items-center justify-center gap-12'>
-        <Badge className='md:text-md w-[17rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold tracking-wide text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
+      <div className='flex w-full flex-col items-center justify-center gap-6 md:gap-6'>
+        <Badge className='md:text-md w-[16rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold tracking-wider text-white shadow-lg shadow-[#548f6f] md:w-[17rem] md:w-[20rem] md:tracking-widest'>
           Muay Thai Kickboxing Gym
         </Badge>
         <GradualSpacing
@@ -55,7 +55,7 @@ export default async function HeroLanding() {
       </div>
 
       {/* BOTTOM */}
-      <div className='flex w-full flex-col items-center justify-center gap-6'>
+      <div className='flex w-full flex-col items-center justify-center gap-6 md:gap-9'>
         <FlipWordsComponent />
         <AnimatedJoinButton />
         {/* <FlipWordsComponent /> */}
