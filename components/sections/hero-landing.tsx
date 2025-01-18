@@ -15,7 +15,7 @@ export default async function HeroLanding() {
       {/* TOP */}
 
       <div className='flex w-full flex-col items-center justify-center gap-6 md:gap-6'>
-        <Badge className='md:text-md w-[16rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold tracking-wider text-white shadow-lg shadow-[#548f6f] md:w-[17rem] md:w-[20rem] md:tracking-widest'>
+        <Badge className='md:text-md w-[16rem] bg-gradient-to-r from-[#548f6f] via-black/90 to-[#e01b6e]/60 p-1 text-center font-orbitron text-[9px] font-bold tracking-wider text-white shadow-lg shadow-[#548f6f] md:w-[20rem] md:tracking-widest'>
           Muay Thai Kickboxing Gym
         </Badge>
         <GradualSpacing
