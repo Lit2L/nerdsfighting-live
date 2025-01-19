@@ -33,9 +33,9 @@ export function TrainingCards() {
       title: 'Find Your Flow State',
       // subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
-        'Significantly enhance your focus, precision, reaction times and overall enjoyment.',
-        'Enhance your sparring and fighting skills, dynamic movement, and rhthym.',
-        'Flow your way into the rhthym and dance of Muay Thai'
+        'Sharpen your focus, precision, reaction times while flowing.',
+        'Dance in the art of Muay Thai to move your body dynamically with cadence and rythym.',
+        'Flow from one move into the next one gracefully.'
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
       image: '/_static/photos/privatecoach.png'
@@ -52,9 +52,9 @@ export function TrainingCards() {
     {
       title: 'No Bully Zone',
       description: [
-        'No Bullys, and Egos are checked at the door.',
-        'We are a family-friendly gym.',
-        'Safe and Controlled Environment.'
+        'Egos are checked. No Bullying or Drama Tolerated.',
+        'Safe and Controlled Environment.',
+        'Learn important life skills without the fear of being bullied.'
       ],
       image: '/_static/photos/gauntlet1.png'
     },
@@ -63,7 +63,7 @@ export function TrainingCards() {
       description: [
         'Work together as a team to achieve your goals.',
         'Learn to hold thai-pads, boxing mitts, and much more.',
-        'For people thrive in team environments.'
+        'Meet other Nerds and nerd-out!'
       ],
       image: '/_static/photos/nerds-team.jpeg'
     },
@@ -71,16 +71,17 @@ export function TrainingCards() {
     {
       title: 'Play Based Learning',
       description: [
-        'Play is the highest form of research.',
-        'Learn to control your emotions during intense situations.',
-        'Allows fighters to explore, experiment, and discover without injury.'
+        // 'Learn to control your emotions during intense situations.',
+        'Play and dance in the magic of Muay Thai until it becomes a part of you.',
+        'Explore, practice, and implement safely.',
+        'Play is the highest form of research.'
       ],
       image: '/_static/photos/game.png'
     }
   ]
 
   return (
-    <section id='training' className='relative mx-auto w-full max-w-full py-24'>
+    <section id='training' className='relative mx-auto w-full max-w-full px-6 py-24'>
       <MaxWidthWrapper>
         <HeaderSection label='' title='Our Training' subtitle='' />
       </MaxWidthWrapper>

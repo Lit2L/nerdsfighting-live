@@ -11,7 +11,7 @@ export function ImageSliders() {
     '/_static/photos/2.png',
     '/_static/photos/privatecoach.png',
     '/_static/photos/nerds-team.jpeg',
-    // '/_static/photos/analysis.png',
+    // '/_static/photos/gauntlet-group.png',
     '/_static/photos/gauntlet1.png',
     '/_static/photos/padska.png',
     '/_static/photos/group-pose.jpeg'

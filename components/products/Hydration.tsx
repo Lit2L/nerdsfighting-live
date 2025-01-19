@@ -48,7 +48,7 @@ export default function Hydration({ children }: Props) {
             genosFont.variable
           )}
         >
-          <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
             {children}
           </ThemeProvider>
         </body>

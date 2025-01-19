@@ -8,7 +8,7 @@ export default async function HeroLanding() {
   return (
     <section
       id='hero'
-      className='relative flex w-full flex-col items-center justify-center gap-6 space-y-3 pb-36 pt-28 md:pt-40'
+      className='relative flex min-h-screen w-full flex-col items-center justify-center gap-6 space-y-3'
     >
       <div className='bgImage' />
 

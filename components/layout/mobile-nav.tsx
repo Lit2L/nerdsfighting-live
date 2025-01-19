@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils'
 import { DocsSidebarNav } from '@/components/docs/sidebar-nav'
 import { Icons } from '@/components/shared/icons'
 
-import { ModeToggle } from './mode-toggle'
+// import { ModeToggle } from './mode-toggle'
 
 export function NavMobile() {
   const { data: session } = useSession()
@@ -129,11 +129,11 @@ export function NavMobile() {
         ) : null}
 
         <div className='mt-5 flex items-center justify-end space-x-4'>
-          <Link href={siteConfig.links.github} target='_blank' rel='noreferrer'>
+          {/* <Link href={siteConfig.links.github} target='_blank' rel='noreferrer'>
             <Icons.gitHub className='size-6' />
             <span className='sr-only'>GitHub</span>
-          </Link>
-          <ModeToggle />
+          </Link> */}
+          {/* <ModeToggle /> */}
         </div>
       </nav>
     </>

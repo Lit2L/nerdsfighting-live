@@ -23,12 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head />
       <Hydration>
         <SessionProvider>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='dark'
-            enableSystem
-            disableTransitionOnChange
-          >
+          <ThemeProvider attribute='class' defaultTheme='dark' disableTransitionOnChange>
             <TooltipProvider delayDuration={0}>
               <ModalProvider>{children}</ModalProvider>
             </TooltipProvider>

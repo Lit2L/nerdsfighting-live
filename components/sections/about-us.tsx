@@ -21,16 +21,21 @@ export default function AboutUs() {
             {/* <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
               Nerds Fighting{' '}
             </span> */}
-            At Nerds Fighting, We Develop Modern-day Warriors. <br />
+            {/* At Nerds Fighting, We train modern-day warriors. <br /> */}
+            {/* investing in yourself by staying active is normally on hold for family, social-life,
+            school, work etc. We want to maximize your time with by With all the ways to stay active
+            today. */}
+            Do you want to maximize your gym time? Want to try a hobby that will keep you active
+            while learning one of the most effective martial arts in the world? We all have a life
+            outside the gym and we want you to return to that life injury-free. Our holistic
+            approach to training blends the art of eight limbs with mindfulness, effective training,
+            and self-mastery for the ring, street, and life.
             <br />
-            Our holistic approach to training blends the art of eight limbs with mindfulness,
-            effective training, and self-mastery for the ring, street, and life.
             <br />
-            <br />
-            Transform your life by evolving the way you see yourself. Strength, striking ability and
-            confident aren&apos;t just outcomes of our training, they&apos;re life skills
-            you&apos;ll carry with you everywhere. Gain the tools you need to succeed-in the gym, at
-            work, or anywhere in life knowing you have the power to overcome any obstacle.
+            Transform your life by transforming how you see yourself. Strength, striking abilities
+            and confidence aren&apos;t just outcomes of our training, They&apos;re the type of
+            skills and tools that you&apos;ll be grateful to have when you need them. Tackling
+            obstacles after a nerd workout will seem like a walk in the park.
             <br />
             <br />
             Too many of us pass through life without realizing what we&apos;re capable of. A warrior

@@ -49,10 +49,10 @@ export function NavBar({ scroll = false }: NavBarProps) {
 
   return (
     <header
-      className={`{ scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b' } fixed top-0 z-40 flex h-24 w-full justify-center bg-background/60 backdrop-blur-xl transition-all`}
+      className={`{ scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b' } fixed top-0 z-40 flex h-24 w-full items-center justify-center bg-background/60 backdrop-blur-xl transition-all`}
     >
       <MaxWidthWrapper className='flex h-24 items-center justify-between' large={documentation}>
-        <div className='mt-3 flex gap-6 md:gap-10'>
+        <div className='flex gap-6 md:gap-10'>
           <div className='w-full'>
             <Link href='/' className='m-1 w-28 text-center'>
               <Image

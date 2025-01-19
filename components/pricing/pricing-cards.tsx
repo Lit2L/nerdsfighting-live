@@ -134,7 +134,7 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           <ToggleGroup
             type='single'
             size='sm'
-            defaultValue={isYearly ? 'yearly' : 'monthly'}
+            defaultValue={isYearly ? 'monthly' : 'yearly'}
             onValueChange={toggleBilling}
             aria-label='toggle-year'
             className='h-9 overflow-hidden rounded-full border bg-background p-1 *:h-7 *:text-muted-foreground'
@@ -164,15 +164,14 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
 
         <p className='mt-3 text-balance text-center text-base text-muted-foreground'>
           Email{' '}
-          <a
+          <Link
             className='font-medium text-primary hover:underline'
-            href='mailto:support@saas-starter.com'
+            href='mailto:support@nerdsfighting.com'
           >
-            support@saas-starter.com
-          </a>{' '}
+            support@nerdsfighting.com
+          </Link>{' '}
           for to contact our support team.
           <br />
-          <strong>You can test the subscriptions and won&apos;t be charged.</strong>
         </p>
       </section>
     </MaxWidthWrapper>
