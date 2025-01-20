@@ -2,14 +2,14 @@ import Image from 'next/image'
 
 function Logo() {
   return (
-    <div className='w-72 py-0 md:py-6'>
+    <div className=''>
       <Image
-        src='/_static/logo-1.png'
+        src='/nerd-logo.png'
         alt='Nerds Kickboxing Club'
         width={400}
-        height={340}
+        height={400}
         priority
-        className='scale-75 rounded-full drop-shadow-2xl md:scale-100'
+        className='drop-shadow-xl'
       />
     </div>
   )

@@ -9,7 +9,7 @@ export function AnimatedJoinButton() {
     <Link
       href='https://calendly.com/spiderbear714/free-trial-class'
       className={cn(
-        'group flex h-8 w-64 scale-100 items-center rounded-md border-4 border-[#303030] bg-gradient-to-r from-[#e01b6e]/60 via-[#303030] to-[#548f6f] transition-all ease-in hover:scale-95 hover:cursor-pointer hover:border-double hover:bg-neutral-200 sm:h-9 md:w-72'
+        'group flex h-8 w-64 scale-100 items-center rounded-md border-4 border-[#303030] bg-gradient-to-r from-[#e01b6e]/60 via-[#303030] to-[#2d71b7] transition-all ease-in hover:scale-95 hover:cursor-pointer hover:border-double hover:bg-neutral-200 sm:h-9 md:w-72'
       )}
     >
       <AnimatedShinyText className='inline-flex items-center justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400'>

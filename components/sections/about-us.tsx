@@ -25,22 +25,46 @@ export default function AboutUs() {
             {/* investing in yourself by staying active is normally on hold for family, social-life,
             school, work etc. We want to maximize your time with by With all the ways to stay active
             today. */}
-            Do you want to maximize your gym time? Want to try a hobby that will keep you active
-            while learning one of the most effective martial arts in the world? We all have a life
-            outside the gym and we want you to return to that life injury-free. Our holistic
-            approach to training blends the art of eight limbs with mindfulness, effective training,
-            and self-mastery for the ring, street, and life.
+            The most amazing transformation you have yet to witness is your own. Step Into Your
+            Strength and Embrace Your Inner Fighter. <br />
+            <br />
+            At Nerds Fighting, we want to help you get stronger, more confident, and ready to take
+            on life&apos;s challenges — We believe fitness should be empowering, fun, and safe for
+            everyone.
+            {/* We use the magic of Muay-Thai Kickboxing as medium all while minimizing head impact at a bully-free, supportive
+            team environment.  */}
+            {/* Martial arts is the funnest way to Try a new hobby that will keep you active while learning one
+            of the most effective martial arts in the world? Worried about safety or getting hurt?
+            We set-out to create a gym culture of effective training techniques, focused on the
+            things that work, why they work and how to apply them. */}
+            {/* strategy and brain-safety. We&apos;ve put in our years at training gyms with barely
+            interested instructors, hour-long heavy-bag classes and so on. We kept what works and
+            discared what isn&apos;t necessary. Muay Thai training is best enjoyed when you
+            aren&apos;t in danger of getting hurt. */}
+            {/* Your mind and your body will need time to gradually change into the type of body needed elevate your Muay Thai skills as fast as you can handle
+            training safe continuous martial arts training for the soul with the right environment
+            and culture.  */}
             <br />
             <br />
-            Transform your life by transforming how you see yourself. Strength, striking abilities
+            {/* What Is Nerds Fighting?  */}
+            {/* It&apos;s more than just kickboxing fitness. It&apos;s the start of something new, a new
+            journey filled with challenges, obstacles, and milestones. It&apos;s a road that leads
+            to empowerment, where discipline, and confidence are unlocked through training. <br /> */}
+            <br />
+            Nerds Fighting brings you the powerful art of Muay Thai, designed to meet your fitness
+            and personal goals while ensuring safety and camaraderie. Our classes are tailored to
+            help individuals of all backgrounds to improve their fitness, develop life-skills, and
+            discover a version of themselves they never knew existed.
+            {/* Our holistic approach to training blends the art of eight limbs with mindful effective
+            training, and self-mastery for the ring, street, and life. */}
+            {/* Transform your life by transforming how you see yourself. Strength, striking abilities
             and confidence aren&apos;t just outcomes of our training, They&apos;re the type of
             skills and tools that you&apos;ll be grateful to have when you need them. Tackling
-            obstacles after a nerd workout will seem like a walk in the park.
+            obstacles after a nerd workout will seem like a walk in the park. */}
             <br />
             <br />
-            Too many of us pass through life without realizing what we&apos;re capable of. A warrior
-            spirit lies dormant within you. Our mission to awaken that spirit and guide you through
-            a journey of transformation.
+            {/* Too many people go without realizing what they&apos;re capable of. Our mission to awaken
+            that spirit and guide you through a journey of transformation. */}
             {/* <br /> Life is better when you know how to fight. */}
           </p>
         </div>

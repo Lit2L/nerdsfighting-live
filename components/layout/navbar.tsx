@@ -63,7 +63,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
                 priority
                 className='rounded-full shadow-2xl shadow-[#121212]/70'
               />
-              <p className='text-gradient_greens -translate-x-2 text-center font-orbitron text-xs font-bold'>
+              <p className='text-gradient_blues -translate-x-2 text-center font-orbitron text-xs font-bold'>
                 {siteConfig.name}
               </p>
             </Link>
@@ -115,13 +115,13 @@ export function NavBar({ scroll = false }: NavBarProps) {
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
               className='hidden rounded-sm px-2 md:block'
             >
-              <span className='text-gradient_greens font-orbitron text-lg font-medium tracking-wide'>
+              <span className='text-gradient_blues font-orbitron text-lg font-medium tracking-wide'>
                 {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
               </span>
             </Link>
           ) : status === 'unauthenticated' ? (
             <Button
-              className='mx-3 hidden items-center gap-2 px-5 text-[#548f6f] md:flex'
+              className='mx-3 hidden items-center gap-2 px-5 text-[#4c98ca] md:flex'
               variant='outline'
               size='sm'
               onClick={() => setShowSignInModal(true)}

@@ -60,9 +60,9 @@ const classes = [
   {
     id: 6,
     title: 'Sunday',
-    description: 'Sparring, Muay Thai',
+    description: 'Kickboxing',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Sunday', time: '7:00am - 9:30am' }]
+    schedule: [{ id: 1, day: 'Sunday', time: '7:00am - 8:30am' }]
   }
 ]
 
@@ -92,7 +92,7 @@ export function Schedule() {
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
-                      <h3 className='font-genos uppercase text-emerald-400 dark:text-green-300'>
+                      <h3 className='font-genos uppercase text-[#4c98ca] dark:text-[#4c98ca]'>
                         {item.title}
                       </h3>
                     </div>
@@ -105,11 +105,11 @@ export function Schedule() {
                         key={schedule.id}
                         className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-black p-3 shadow-xl'
                       >
-                        <p className='w-3/16 text-md m-1 flex border-b border-emerald-900 font-genos font-bold capitalize tracking-wide text-neutral-300/90 dark:text-green-500'>
+                        <p className='w-3/16 text-md dark:text-text-[#4c98ca] m-1 flex border-b border-[#4c98ca] font-genos font-bold capitalize tracking-wide text-neutral-300/90'>
                           {item.description}
                         </p>
                         <div className='flex items-center'>
-                          <Calendar className='w-1/16 mx-2 size-4 text-emerald-600 dark:text-emerald-500' />
+                          <Calendar className='w-1/16 mx-2 size-4 text-[#4c98ca] dark:text-[#4c98ca]' />
                           <div
                             key={schedule.time}
                             className='flex w-full items-center justify-between py-1'
