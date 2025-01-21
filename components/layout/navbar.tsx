@@ -23,6 +23,8 @@ import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 import { ThemeToggle } from '@/components/theme-toggle'
 
+import Logo from '../Logo'
+
 interface NavBarProps {
   scroll?: boolean
   large?: boolean
@@ -53,19 +55,9 @@ export function NavBar({ scroll = false }: NavBarProps) {
     >
       <MaxWidthWrapper className='flex h-24 items-center justify-between' large={documentation}>
         <div className='flex gap-6 md:gap-10'>
-          <div className='w-full'>
-            <Link href='/' className='m-1 w-28 text-center'>
-              <Image
-                src='/_static/logoNF.png'
-                alt='Nerds Kickboxing Club'
-                width={75}
-                height={75}
-                priority
-                className='rounded-full shadow-2xl shadow-[#121212]/70'
-              />
-              <p className='text-gradient_blues -translate-x-2 text-center font-orbitron text-xs font-bold'>
-                {siteConfig.name}
-              </p>
+          <div className='size-48'>
+            <Link href='/' className='text-center'>
+              <Logo />
             </Link>
           </div>
 

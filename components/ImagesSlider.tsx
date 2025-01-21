@@ -32,11 +32,11 @@ export function ImageSliders() {
         }}
         className='z-50 flex flex-col items-center justify-center'
       >
-        <motion.p className='bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-8 text-center text-xl font-bold text-transparent md:text-4xl'>
-          Welcome to <span className='text-gradient_greenies md:text-5xl'>Nerds Fighting </span>Gym
+        <motion.p className='bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text py-8 text-center text-xl text-transparent md:text-4xl'>
+          Welcome to <span className='text-gradient_blues md:text-5xl'>Nerds Fighting </span>Gym
         </motion.p>
         <button className='relative mx-auto mt-4 rounded-full border-2 border-zinc-500/30 bg-black/70 px-4 py-1 text-center text-white backdrop-blur-sm md:py-2'>
-          <p className='text-gradient_pinks text-center text-[10px] font-bold tracking-tight md:text-[12px]'>
+          <p className='text-gradient_pinks text-center text-[10px] tracking-wide md:text-[11px]'>
             MUAY THAI · BOXING · KICKBOXING · TRAINING
           </p>
           <div className='absolute inset-x-0 -bottom-px mx-auto h-px w-3/4 bg-gradient-to-r from-transparent via-zinc-400 to-transparent' />

@@ -4,11 +4,11 @@ import { cva, VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const badgeVariants = cva(
-  'border rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
+  'border rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
   {
     variants: {
       variant: {
-        default: 'bg-primary hover:bg-primary/80 border-transparent text-primary-foreground',
+        default: 'bg-primary hover:bg-primary/80 border-sky-900 text-primary-foreground',
         secondary:
           'bg-secondary hover:bg-secondary/80 border-transparent text-secondary-foreground',
         destructive:
