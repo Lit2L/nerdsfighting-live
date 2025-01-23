@@ -58,7 +58,7 @@
   }
 
   .dark {
-    --background: 0 0% 12%;
+    --background: 180 10 11%;
     --foreground: 0 0% 95%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -80,12 +80,11 @@
     --bg: #272933;
     --bw: #212121;
     --blank: #fff;
-    --border: #000;
     --text: #e6e6e6;
     --mtext: #000;
     --ring: #fff;
     --ring-offset: #000;
-
+    --blue-gradient: linear-gradient(to bottom right, #09203f, #537895);
     --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
     --chart-1: 271.5 81.3% 55.9%;
     --chart-2: 270 95% 75%;
@@ -139,14 +138,14 @@ body {
 }
 
 .text-gradient_blues {
-  background: linear-gradient(170deg, #4c98cadf 70%, hsl(240 100 100) 80%);
+  background: linear-gradient(170deg, #067bc2 50%, hsl(240 100 100) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient_yellows {
-  background: linear-gradient(90deg, #00af66 50%, hsl(170 9 52));
+  background: linear-gradient(90deg, #f2f2f2 20%, hsl(180 1 18));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -195,8 +194,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.05;
-  z-index: 1;
+  opacity: 0.03;
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;

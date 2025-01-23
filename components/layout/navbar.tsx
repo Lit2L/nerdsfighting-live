@@ -54,10 +54,16 @@ export function NavBar({ scroll = false }: NavBarProps) {
       className={`{ scroll ? (scrolled ? 'border-b' : 'bg-transparent') : 'border-b' } fixed top-0 z-40 flex h-24 w-full items-center justify-center bg-background/60 backdrop-blur-xl transition-all`}
     >
       <MaxWidthWrapper className='flex h-24 items-center justify-between' large={documentation}>
-        <div className='flex gap-6 md:gap-10'>
-          <div className='size-48'>
+        <div className='flex h-24 items-center justify-center gap-6 md:gap-10'>
+          <div className='scale-50'>
             <Link href='/' className='text-center'>
-              <Logo />
+              <Image
+                src='/_static/logoNF.png'
+                alt='Nerds Fighting'
+                width={184}
+                height={184}
+                priority
+              />
             </Link>
           </div>
 
