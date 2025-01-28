@@ -20,7 +20,7 @@ function SignInModal({
     <Modal showModal={showSignInModal} setShowModal={setShowSignInModal}>
       <div className='relative -z-10 w-full'>
         <div className='flex flex-col items-center justify-center space-y-3 border-b bg-background py-12 text-center'>
-          <h3 className='text-gradient_blues font-orbitron text-2xl font-bold'>Welcome Back!</h3>
+          <h3 className='text-gradient_greenies font-orbitron text-2xl font-bold'>Welcome Back!</h3>
           <div className='relative z-0 size-40 py-9'>
             <Image
               src='/_static/logo-1.png'

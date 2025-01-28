@@ -19,7 +19,7 @@ type InfiniteSliderProps = {
 export function InfiniteSlider({
   children,
   gap = 16,
-  duration = 25,
+  duration = 50,
   durationOnHover,
   direction = 'horizontal',
   reverse = false,

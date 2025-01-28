@@ -100,7 +100,7 @@ export const testimonials: TestimonialType[] = [
   {
     name: 'Mike T',
     job: 'Marketing Manager',
-    image: '/_static/avatars/shadcn.jpeg',
+    image: '/_static/photos/og.png',
     review: `Coach Larry is awesome. He breaks it down in simple yet effective techniques that builds confidence. What I like most about the class are the students. No ego, friendly, and fun.`
   },
   {
@@ -112,15 +112,15 @@ export const testimonials: TestimonialType[] = [
       Larry's built this space where you can geek out about technique like you're analyzing a Starcraft match, and then jump into sparring like you're Saenchai in a Muay Thai training camp. It's crazy--one minute you're talking Magic the Gathering, and the next you're trading kicks. What makes this place special is how it blends martial arts with nerd culture in a way that just works.
 
       Everyone, no matter their age or background, feels like they belong here. It's not just about getting in shape; it's about the community. If you want a place where you can be yourself, talk nerdy, and still train hard, Nerds Fighting is the spot. I highly recommend!`
-  }
+  },
 
-  // {
-  //   name: 'Michael Wilson',
-  //   job: 'Project Manager',
-  //   image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  //   review:
-  //     "I'm impressed by the quality of code and clear documentation of next-saas-stripe-starter. Kudos to the team!"
-  // },
+  {
+    name: 'Richard H.',
+    job: 'Engineer & Project Owner - Abundance Oasis',
+    image: '/_static/avatars/huygis.jpg',
+    review:
+      'Great way to learn self defense in an awesome engaging coach and small group of supportive friends.'
+  }
   // {
   //   name: 'Sophia Garcia',
   //   job: 'Data Analyst',

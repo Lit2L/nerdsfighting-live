@@ -38,13 +38,13 @@ export default function AboutMe() {
               Williams MMA Academy. For over 17 years I&apos;ve been on a journey of self-discover,
               training, competing in martia others because I believe in the power of martial arts to
               transform lives.
-              <span className='text-gradient_blues font-orbitron text-xl font-bold'>
+              <span className='text-gradient_greenies font-orbitron text-xl font-bold'>
                 Nerds Fighting!{' '}
               </span>
               {''} to share with the world I&apos;ve . gave me a chance to heal some to work My goal
               is to share to the world I love martial arts and almost everything about. Martial Arts
               gave me the outlet I needed to overcome
-              <span className='text-gradient_blues font-orbitron text-xl font-bold'>
+              <span className='text-gradient_greenies font-orbitron text-xl font-bold'>
                 Nerds Fighting!{' '}
               </span>
               {''}
@@ -58,7 +58,7 @@ export default function AboutMe() {
             <h3 className='text-2xl font-semibold'>OUR CODE</h3>
             <p className='leading-relaxed text-gray-600'>
               At{' '}
-              <span className='text-gradient_blues font-orbitron text-xl font-bold'>
+              <span className='text-gradient_greenies font-orbitron text-xl font-bold'>
                 Nerds Fighting!{' '}
               </span>
               {''}, growth drives everything we do. We believe in the power of working together,

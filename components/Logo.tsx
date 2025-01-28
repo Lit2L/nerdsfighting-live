@@ -3,12 +3,12 @@ import Image from 'next/image'
 function Logo() {
   return (
     <Image
-      src='/nerd-logo.png'
+      src='/_static/logo-1.png'
       alt='Nerds Kickboxing Club'
-      width={384}
-      height={384}
+      width={400}
+      height={400}
       priority
-      className='h-72 w-96 drop-shadow-xl'
+      className='w-96 rounded-full opacity-90 drop-shadow-2xl'
     />
   )
 }

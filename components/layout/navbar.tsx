@@ -58,7 +58,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
           <div className='scale-50'>
             <Link href='/' className='text-center'>
               <Image
-                src='/_static/logoNF.png'
+                src='/_static/logo-1.png'
                 alt='Nerds Fighting'
                 width={184}
                 height={184}
@@ -113,13 +113,13 @@ export function NavBar({ scroll = false }: NavBarProps) {
               href={session.user.role === 'ADMIN' ? '/admin' : '/dashboard'}
               className='hidden rounded-sm px-2 md:block'
             >
-              <span className='text-gradient_blues font-orbitron text-lg font-medium tracking-wide'>
+              <span className='text-gradient_greenies font-orbitron text-lg font-medium tracking-wide'>
                 {session.user.role === 'ADMIN' ? 'Admin' : 'Dashboard'}
               </span>
             </Link>
           ) : status === 'unauthenticated' ? (
             <Button
-              className='mx-3 hidden items-center gap-2 px-5 text-[#4c98ca] md:flex'
+              className='mx-3 hidden items-center gap-2 px-5 text-emerald-500 md:flex'
               variant='outline'
               size='sm'
               onClick={() => setShowSignInModal(true)}

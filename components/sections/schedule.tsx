@@ -5,17 +5,18 @@ import { MdSportsMartialArts } from 'react-icons/md'
 import { HeaderSection } from '@/components/shared/header-section'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 
+import Card07 from '../card-07'
 import { Card, CardTitle } from '../ui/card'
 import { Separator } from '../ui/separator'
 
 const classes = [
-  // {
-  //   id: 1,
-  //   title: 'Monday',
-  //   description: 'Cardio Kickboxing',
-  //   attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
-  //   schedule: [{ id: 1, day: 'Monday', time: '6:00am - 7:15am' }]
-  // },
+  {
+    id: 1,
+    title: 'Monday',
+    description: 'Cardio Kickboxing',
+    attributes: 'Conditioning, Cardio, Cardio Kickboxing, Heavy Bag, Focus Mitts.',
+    schedule: [{ id: 1, day: 'Monday', time: '6:00am - 7:15am' }]
+  },
 
   {
     id: 2,
@@ -43,24 +44,24 @@ const classes = [
       }
     ]
   },
-  {
-    id: 4,
-    title: 'Friday',
-    description: 'Friday Fun Kickboxing ',
-    attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Friday', time: '6:00am - 7:30am' }]
-  },
+  // {
+  //   id: 4,
+  //   title: 'Friday',
+  //   description: 'Friday Fun Kickboxing ',
+  //   attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
+  //   schedule: [{ id: 1, day: 'Friday', time: '6:00am - 7:30am' }]
+  // },
   {
     id: 5,
     title: 'Saturday',
     description: 'Sparring, Muay Thai',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
-    schedule: [{ id: 1, day: 'Saturday', time: '6:00am - 9:30am' }]
+    schedule: [{ id: 1, day: 'Saturday', time: '7:00am - 9:30am' }]
   },
   {
     id: 6,
     title: 'Sunday',
-    description: 'Kickboxing',
+    description: 'Muay Thai, Sparring',
     attributes: 'Muay Thai, Sparring, Technique, Heavy Bag, Mitts & Thai Pads.',
     schedule: [{ id: 1, day: 'Sunday', time: '7:00am - 8:30am' }]
   }
@@ -71,7 +72,7 @@ export function Schedule() {
     <section id='schedule' className='relative w-full'>
       {/* <Image src='/bg1.png' alt='bg' layout='fill' className='absolute -z-10 opacity-10' /> */}
       <div className='bgSchedule blur-sm' />
-      <div className='container bg-[radial-gradient(circle_400px_at_50%_375px,#181818,transparent)] py-32 font-genos dark:bg-[radial-gradient(circle_400px_at_50%_350px,#144437,transparent)]'>
+      <div className='container py-32 font-genos'>
         <MaxWidthWrapper>
           <HeaderSection label='Nerds Fighting' title='Class Schedule' subtitle='' />
 
@@ -82,17 +83,10 @@ export function Schedule() {
                   key={item.id}
                   className='relative flex h-52 w-64 flex-col rounded-xl border-zinc-700 p-3 shadow-2xl shadow-neutral-300/70 dark:bg-zinc-800 dark:shadow-neutral-800/70'
                 >
-                  <Image
-                    src='/_static/backgrounds/bg15.png'
-                    alt='bg'
-                    layout='fill'
-                    objectFit='cover'
-                    className='absolute z-0 opacity-5 blur-[2px]'
-                  />
                   <CardTitle className='p-1'>
                     <div className='flex items-center justify-between gap-3'>
                       <MdSportsMartialArts className='size-6 text-white' />
-                      <h3 className='font-genos uppercase text-[#4c98ca] dark:text-[#4c98ca]'>
+                      <h3 className='font-genos uppercase text-[#34f399] dark:text-[#34f399]'>
                         {item.title}
                       </h3>
                     </div>
@@ -105,11 +99,12 @@ export function Schedule() {
                         key={schedule.id}
                         className='flex w-full flex-col items-center gap-3 rounded-md border border-white/10 bg-black p-3 shadow-xl'
                       >
-                        <p className='w-3/16 text-md dark:text-text-[#4c98ca] m-1 flex border-b border-[#4c98ca] font-genos font-bold capitalize tracking-wide text-neutral-300/90'>
+                        <p className='w-3/16 text-md m-1 flex border-b border-white font-sans text-sm font-semibold capitalize tracking-widest text-neutral-300/90 dark:text-pink-100'>
                           {item.description}
                         </p>
+
                         <div className='flex items-center'>
-                          <Calendar className='w-1/16 mx-2 size-4 text-[#4c98ca] dark:text-[#4c98ca]' />
+                          <Calendar className='w-1/16 mx-2 size-4 text-[#34f399] dark:text-[#34f399]' />
                           <div
                             key={schedule.time}
                             className='flex w-full items-center justify-between py-1'

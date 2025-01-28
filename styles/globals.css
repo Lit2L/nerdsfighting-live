@@ -125,7 +125,7 @@ body {
 }
 
 .text-gradient_greenies {
-  background: linear-gradient(165deg, #548f6f 50%, hsl(8 78 0) 100%);
+  background: linear-gradient(155deg, #548f6f 50%, #fff5fe 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -165,13 +165,11 @@ body {
   right: 0;
   bottom: 0;
   z-index: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('/_static/backgrounds/bg-nerds-gradient.png');
   background-position: center;
-  background-size: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .bgImage {
@@ -180,7 +178,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
   background-image: url('/_static/backgrounds/mt-bg.png');
   background-position: center;
   background-size: cover;

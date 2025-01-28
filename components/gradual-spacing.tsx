@@ -23,7 +23,7 @@ export default function GradualSpacing({
   className
 }: GradualSpacingProps) {
   return (
-    <div className='flex justify-center md:space-x-1'>
+    <div className='flex justify-center tracking-widest md:space-x-1'>
       <AnimatePresence>
         {text.split('').map((char, i) => (
           <motion.h1
@@ -34,7 +34,7 @@ export default function GradualSpacing({
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
             className={cn(
-              'text-[28px] font-bold drop-shadow-2xl transition-all duration-300 sm:text-[40px] md:text-6xl lg:text-7xl',
+              'text-[36px] font-bold tracking-widest drop-shadow-2xl transition-all duration-300 sm:text-[40px] md:text-6xl md:tracking-tight lg:text-7xl',
               className
             )}
           >

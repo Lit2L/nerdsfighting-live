@@ -19,7 +19,7 @@ export function FlipWordsComponent() {
   return (
     <div className='flex w-full flex-col items-center justify-center'>
       <div className='mx-auto flex w-full items-center justify-center'>
-        <p className='text-md text-center font-genos font-bold text-sky-400 dark:text-sky-400'>
+        <p className='text-md text-center font-genos font-bold text-green-400 dark:text-green-400'>
           +++
         </p>
         <FlipWords words={words} />
