@@ -12,7 +12,7 @@ export default function AnimatedTestimonialsDemo() {
       quote: `Coach Larry is awesome. He breaks it down in simple yet effective techniques that builds confidence. What I like most about the class are the students. No ego, friendly, and fun.`,
       name: 'Mike T',
       designation: 'Data Analyst',
-      src: '/_static/photos/og.png'
+      src: '/_static/mobile/og.png'
     },
     {
       quote: `Larry's kickboxing classes at Nerds Fighting are seriously something else. He's got this way of breaking down martial arts that makes it super approachable for everyone. You walk in, and whether you're new or you've been doing this for years, you immediately feel welcome. The whole "meathead" stereotype? Yeah, that's not a thing here.
