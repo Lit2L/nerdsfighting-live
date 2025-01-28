@@ -57,13 +57,7 @@ export function NavBar({ scroll = false }: NavBarProps) {
         <div className='flex h-24 items-center justify-center gap-6 md:gap-10'>
           <div className='scale-50'>
             <Link href='/' className='text-center'>
-              <Image
-                src='/_static/logo-1.png'
-                alt='Nerds Fighting'
-                width={184}
-                height={184}
-                priority
-              />
+              <Image src='/logo-1.png' alt='Nerds Fighting' width={184} height={184} priority />
             </Link>
           </div>
 

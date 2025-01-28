@@ -16,33 +16,31 @@ export default function AboutUs() {
       <MaxWidthWrapper>
         <HeaderSection label='' title='About Us' subtitle='Why Train With Nerds?' />
       </MaxWidthWrapper>
-      <div className='bgAboutUs blur-md' />
+      <div className='bgAboutUs' />
       <div className='flex w-full flex-col-reverse items-center pt-6 lg:flex-row lg:p-6'>
         <div className='flex w-full flex-col space-y-6 p-12 lg:w-1/2'>
           <h3 className='text-left font-orbitron text-2xl font-bold'>NERDS FIGHTING</h3>
-          <p className='font-orbitron text-[10px] font-light leading-6 tracking-wider text-gray-200 md:text-[12px]'>
-            {/* <span className='font-logo2 text-2xl font-bold uppercase tracking-wide text-emerald-500'>
-              Nerds Fighting{' '}
-            </span> */}
+          <p className='font-orbitron text-[12px] font-light leading-6 tracking-wider text-gray-200 md:text-[16px]'>
             <span className='text-lg font-semibold text-pink-500/80'>
               Schedule a Free Trial Class Today!
             </span>
             <br />
             <br />
-            We believe fitness should be empowering, fun, and safe for everyone. We use the magic of
-            Muay Thai as a transformative tool to help you become a strong, confident and balanced
-            person ready to take on life’s challenges. <br />
+            We believe fitness should be empowering. Getting and staying in shape should be fun,
+            challenging and safe for everyone. In our opinion, there is nothing funner than
+            punching, kicking and kneeing your way into transforming into a strong, confident and
+            balanced person ready to take on life’s challenges. <br />
             <br />
             <br />
-            Nerds Fighting brings you the beautiful but demanding art of Muay Thai, designed to meet
-            your fitness and personal goals. Join the movement as we all rediscover our warrior
-            spirit. Our classes are tailored to help individuals of all backgrounds to improve their
-            fitness, striking skills, and find balance in their lives. <br />
+            Nerds Fighting brings you the beautiful but demanding art of Muay Thai Kickboxing,
+            designed to meet your fitness and personal goals. Join the movement as we all rediscover
+            our warrior spirit. Our classes are tailored to help individuals of all backgrounds
+            improve their fitness, striking skills, and find balance in their lives. <br />
             <br />
             <br />
           </p>
         </div>
-        <div className='h-[20rem] w-full lg:w-1/2'>
+        <div className='h-[26rem] w-full lg:w-1/2'>
           <ImageSliders />
 
           <Button asChild variant='outline' size='lg' className='rounded-none'>

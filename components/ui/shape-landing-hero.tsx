@@ -111,11 +111,11 @@ function HeroGeometric({
   }
 
   return (
-    <div className='relative flex min-h-screen w-full items-center justify-center overflow-hidden'>
-      <div className='absolute inset-0 bg-gradient-to-br from-emerald-500/[0.2] via-transparent to-rose-500/[0.05] blur-3xl' />
+    <div className='relative flex w-full items-center justify-center overflow-hidden pt-32 lg:min-h-screen'>
+      {/* <div className='absolute inset-0 bg-gradient-to-br from-emerald-500/[0.1] via-transparent to-rose-500/[0.05] blur-3xl' /> */}
       <div className='bgImage' />
-      <div className='absolute inset-0 overflow-hidden'>
-        {/* <ElegantShape
+      {/* <div className='absolute inset-0 overflow-hidden'> */}
+      {/* <ElegantShape
           delay={0.3}
           width={100}
           height={100}
@@ -131,7 +131,7 @@ function HeroGeometric({
           height={100}
           className='left-[-20%] top-[15%] md:left-[5%] md:top-[-30%]'
         /> */}
-        {/* <ElegantShape
+      {/* <ElegantShape
           delay={0.5}
           width={500}
           height={120}
@@ -147,7 +147,7 @@ function HeroGeometric({
           gradient='from-green-500/[0.1]'
           className='bottom-[5%] left-[5%] md:bottom-[10%] md:left-[10%]'
         /> */}
-        {/* <ElegantShape
+      {/* <ElegantShape
           delay={0.6}
           width={200}
           height={60}
@@ -163,16 +163,16 @@ function HeroGeometric({
           gradient='from-cyan-500/[0.15]'
           className='left-[20%] top-[5%] md:left-[15%] md:top-[10%]'
         /> */}
-      </div>
+      {/* </div> */}
 
-      <div className='container relative z-10 mx-auto px-4 md:px-6'>
-        <div className='mx-auto max-w-4xl text-center'>
+      <div className='container relative z-10 mx-auto border-4 px-4 md:px-6 lg:max-w-4xl'>
+        <div className='mx-auto flex flex-col border-4 text-center'>
           <motion.div
             custom={0}
             variants={fadeUpVariants}
             initial='hidden'
             animate='visible'
-            className='mb-8 inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.1] px-3 py-1 shadow-lg shadow-emerald-700/50 md:mb-12'
+            className='inline-flex items-center justify-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.1] px-3 py-1 shadow-lg shadow-emerald-700/50'
           >
             <Circle className='size-3 animate-pulse fill-pink-500/80' />
             <span className='text-sm font-semibold tracking-wide text-white/60'>{badge}</span>

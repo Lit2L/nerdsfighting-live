@@ -26,7 +26,7 @@ export default function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+        'Great way to learn self defense in an awesome engaging coach and small group of supportive friends.',
       name: 'Richard H.',
       designation: 'Engineer & Project Owner - Abundance Oasis',
       src: '/_static/avatars/huygis.jpg'

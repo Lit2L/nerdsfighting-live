@@ -23,7 +23,7 @@ function SignInModal({
           <h3 className='text-gradient_greenies font-orbitron text-2xl font-bold'>Welcome Back!</h3>
           <div className='relative z-0 size-40 py-9'>
             <Image
-              src='/_static/logo-1.png'
+              src='/logo-1.png'
               alt='Logo'
               width={200}
               height={200}

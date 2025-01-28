@@ -65,7 +65,7 @@ export function TrainingCards() {
         'Learn to hold thai-pads, boxing mitts, and much more.',
         'Meet other Nerds and nerd-out!'
       ],
-      image: '/_static/photos/nerds-team.jpeg'
+      image: '/_static/photos/nerds1.png'
     },
 
     {

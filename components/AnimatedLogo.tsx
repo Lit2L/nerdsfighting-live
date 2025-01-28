@@ -58,7 +58,7 @@ export function SmallCircularRevealHeadingDemo() {
         }
         size='sm'
       />
-      <div className='absolute top-0 translate-y-10 scale-75'>
+      <div className='absolute top-0 translate-y-2 scale-75'>
         <Logo />
       </div>
     </div>
