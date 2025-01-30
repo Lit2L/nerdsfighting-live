@@ -23,9 +23,8 @@ export function TrainingCards() {
     {
       title: 'Find Your Balance',
       description: [
-        'Therapeutic & Spiritual Balance.',
-        'Best outlet for releasing stress, tension, and anxiety.',
-        'Experience the Mental Peace & Clarity after workout.'
+        'Outlet to release stress, tension and anxiety levels.',
+        'Experience the after workout buzz.'
       ],
       image: '/_static/photos/111111.png'
     },
@@ -34,7 +33,7 @@ export function TrainingCards() {
       // subtitle: 'Find Your Rhythm, Unlock Your Potential',
       description: [
         'Sharpen your focus, precision, reaction times while flowing.',
-        'Dance in the art of Muay Thai to move your body dynamically with cadence and rythym.',
+        // 'Dance in the art of Muay Thai to move your body dynamically with cadence and rythym.',
         'Flow from one move into the next one gracefully.'
         // 'Experience the after-workout Buzz Mental Peace & Clarity that results from a connecting mind, body and soul.'
       ],
@@ -53,8 +52,8 @@ export function TrainingCards() {
       title: 'No Bully Zone',
       description: [
         'Egos are checked. No Bullying or Drama Tolerated.',
-        'Safe and Controlled Environment.',
-        'Learn important life skills without the fear of being bullied.'
+        'Safe and Controlled Environment.'
+        // 'Learn important life skills without the fear of being bullied.'
       ],
       image: '/_static/photos/gauntlet1.png'
     },
@@ -72,8 +71,8 @@ export function TrainingCards() {
       title: 'Play Based Learning',
       description: [
         // 'Learn to control your emotions during intense situations.',
-        'Play and dance in the magic of Muay Thai until it becomes a part of you.',
-        'Explore, practice, and implement safely.',
+        'Dance in the magic of Muay Thai until it becomes a part of you.',
+        // 'Explore, practice, and implement safely.',
         'Play is the highest form of research.'
       ],
       image: '/_static/photos/game.png'

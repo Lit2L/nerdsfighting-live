@@ -80,10 +80,10 @@ export const AnimatedTestimonials = ({
                   <Image
                     src={testimonial.src || '/placeholder.svg'}
                     alt={testimonial.name}
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     draggable={false}
-                    className='h-full w-full rounded-3xl object-cover object-center'
+                    className='size-72 rounded-3xl object-cover object-center'
                   />
                 </motion.div>
               ))}

@@ -6,14 +6,12 @@ export function FlipWordsComponent() {
   const words = [
     'Burn Calories Fast +1000/Workout',
     'Relieve Stress',
-    'Unshakable Confidence',
+    'Develop Striking Skills',
+    'Develop Defense',
     'Functional Strength',
     'Mental Sharpness & Focus',
-    'Full Body Fitness',
-    'Smart Effective Training',
-    'Brain-Friendly Training',
-    'Fun Group Workouts',
-    'Supportive Team Environment'
+    'Group Workouts',
+    'Team Environment'
   ]
 
   return (

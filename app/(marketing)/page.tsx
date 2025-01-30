@@ -1,4 +1,5 @@
 import AnimatedTestimonialsDemo from '@/components/AnimatedTestimonials'
+import { AnimatedPinLocation } from '@/components/Location'
 import AboutUs from '@/components/sections/about-us'
 import BentoGrid from '@/components/sections/bentogrid'
 import Features from '@/components/sections/features'
@@ -17,6 +18,7 @@ export default async function IndexPage() {
       <TrainingCards />
       {/* <Testimonials /> */}
       <Schedule />
+      <AnimatedPinLocation />
       {/* <Card07 /> */}
       {/* <PreviewLanding /> */}
       {/* <Features /> */}
