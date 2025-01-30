@@ -21,7 +21,7 @@ export default function AnimatedTestimonialsDemo() {
 
       Everyone, no matter their age or background, feels like they belong here. It's not just about getting in shape; it's about the community. If you want a place where you can be yourself, talk nerdy, and still train hard, Nerds Fighting is the spot. I highly recommend!`,
       name: 'Qua W.',
-      designation: 'Operations Director at CloudScale',
+      designation: 'Owner - Ayo Tree',
       src: '/_static/avatars/qua-yelp.jpg'
     },
     {

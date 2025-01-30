@@ -11,6 +11,7 @@ export function ImageSliders() {
     '/_static/photos/nerds_nov_w3.png',
     '/_static/photos/2.png',
     '/_static/photos/group2.png',
+    '/_static/photos/group3.png',
     '/_static/photos/group4.png',
     '/_static/photos/privatecoach.png',
     '/_static/photos/group8.png',
@@ -20,8 +21,6 @@ export function ImageSliders() {
     '/_static/photos/group6.jpg',
     '/_static/photos/group14.png',
     '/_static/photos/group15.png',
-    '/_static/photos/gauntlet4.png',
-    '/_static/photos/gauntlet1.png',
     '/_static/photos/mitts.jpg',
     '/_static/photos/nerds1.png',
     '/_static/photos/private.jpg',
@@ -30,7 +29,6 @@ export function ImageSliders() {
     '/_static/photos/padska.png',
     '/_static/photos/sparring1.png',
     '/_static/photos/sparring3.png',
-
     '/_static/photos/group-pose.jpeg',
     '/_static/photos/nov-nerds.png',
     '/_static/photos/jokes.png'
@@ -47,7 +45,7 @@ export function ImageSliders() {
           y: 0
         }}
         transition={{
-          duration: 0.6
+          duration: 1
         }}
         className='z-50 flex flex-col items-center justify-center'
       >

@@ -4,9 +4,7 @@ import { useContext } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
-import { AnimatePresence, motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
-import { FiShoppingCart } from 'react-icons/fi'
 
 import { docsConfig } from '@/config/docs'
 import { marketingConfig } from '@/config/marketing'
@@ -22,8 +20,6 @@ import { ModalContext } from '@/components/modals/providers'
 import { Icons } from '@/components/shared/icons'
 import MaxWidthWrapper from '@/components/shared/max-width-wrapper'
 import { ThemeToggle } from '@/components/theme-toggle'
-
-import Logo from '../Logo'
 
 interface NavBarProps {
   scroll?: boolean
@@ -57,7 +53,14 @@ export function NavBar({ scroll = false }: NavBarProps) {
         <div className='flex h-24 items-center justify-center gap-6 md:gap-10'>
           <div className='scale-50'>
             <Link href='/' className='text-center'>
-              <Image src='/logo-1.png' alt='Nerds Fighting' width={184} height={184} priority />
+              <Image
+                src='/logo-1.png'
+                alt='Nerds Fighting'
+                width={184}
+                height={184}
+                priority
+                className='rounded-full'
+              />
             </Link>
           </div>
 
