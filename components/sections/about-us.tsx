@@ -20,7 +20,7 @@ export default function AboutUs() {
       <div className='flex w-full flex-col-reverse items-center pt-6 lg:flex-row lg:p-6'>
         <div className='flex w-full flex-col space-y-6 p-12 lg:w-1/2'>
           <h3 className='text-left font-orbitron text-2xl font-bold'>NERDS FIGHTING</h3>
-          <p className='font-orbitron text-[12px] font-light leading-6 tracking-wider text-gray-200 md:text-[16px]'>
+          <p className='font-orbitron text-[12px] font-light leading-6 tracking-wider text-gray-200 md:text-[14px]'>
             <span className='text-lg font-semibold text-pink-500/80'>
               Schedule a Free Trial Class Today!
             </span>

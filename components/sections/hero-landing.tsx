@@ -2,6 +2,7 @@ import { AnimatedJoinButton } from '../AnimatedJoinButton'
 import { FlipWordsComponent } from '../FlipWordsComponent'
 import GradualSpacing from '../gradual-spacing'
 import Logo from '../Logo'
+import { DemoCircles } from '../ui/background-circles'
 import { Badge } from '../ui/badge'
 import { Spotlight } from '../ui/spotlight-new'
 

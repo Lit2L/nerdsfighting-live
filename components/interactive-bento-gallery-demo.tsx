@@ -19,18 +19,18 @@ const mediaItems = [
   },
   {
     id: 3,
-    type: 'image',
+    type: 'video',
     title: 'Forest Path',
     desc: 'Mystical forest trail',
-    url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e',
+    url: 'https://dribbble.s3.amazonaws.com/direct-uploads/dac7be6b-ff1a-450b-9611-291b3a0ba64f/sparring_timelapse_480.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5AEXTAZFDQMML4PJ%2F20250131%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250131T111003Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=3e7588dbce797a236e1d0b2c9710cc5aa44a0c93471cfbcf5cdb0bebe4bfff43',
     span: 'md:col-span-1 md:row-span-3 sm:col-span-2 sm:row-span-2 '
   },
   {
     id: 4,
-    type: 'image',
+    type: 'video',
     title: 'Falling Leaves',
     desc: 'Autumn scenery',
-    url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+    url: 'https://dribbble.s3.amazonaws.com/direct-uploads/dac7be6b-ff1a-450b-9611-291b3a0ba64f/sparring_timelapse_480.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5AEXTAZFDQMML4PJ%2F20250131%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250131T111003Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=3e7588dbce797a236e1d0b2c9710cc5aa44a0c93471cfbcf5cdb0bebe4bfff43',
     span: 'md:col-span-2 md:row-span-2 sm:col-span-1 sm:row-span-2 '
   },
   {

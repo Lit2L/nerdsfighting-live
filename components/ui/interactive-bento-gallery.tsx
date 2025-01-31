@@ -178,7 +178,7 @@ const GalleryModal = ({
             <AnimatePresence mode='wait'>
               <motion.div
                 key={selectedItem.id}
-                className='relative aspect-[16/9] h-auto max-h-[70vh] w-full max-w-[95%] overflow-hidden rounded-lg shadow-md sm:max-w-[85%] md:max-w-3xl'
+                className='relative aspect-[16/9] h-auto max-h-[90vh] w-full max-w-[95%] overflow-hidden rounded-lg shadow-md sm:max-w-[85%] md:max-w-3xl'
                 initial={{ y: 20, scale: 0.97 }}
                 animate={{
                   y: 0,
@@ -339,7 +339,7 @@ const InteractiveBentoGallery: React.FC<InteractiveBentoGalleryProps> = ({
           />
         ) : (
           <motion.div
-            className='grid auto-rows-[60px] grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-4'
+            className='grid auto-rows-[80px] grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-4'
             initial='hidden'
             animate='visible'
             exit='hidden'
