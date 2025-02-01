@@ -145,7 +145,7 @@ body {
 }
 
 .text-gradient_yellows {
-  background: linear-gradient(90deg, #f2f2f2 20%, hsl(180 1 18));
+  background: linear-gradient(60deg, #f2f2f2 20%, hsl(180 1 18));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -5,6 +5,9 @@ import Image from 'next/image'
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react'
 import { AnimatePresence, motion } from 'framer-motion'
 
+import { HeaderSection } from '../shared/header-section'
+import MaxWidthWrapper from '../shared/max-width-wrapper'
+
 type Testimonial = {
   quote: string
   name: string
@@ -44,6 +47,9 @@ export const AnimatedTestimonials = ({
   }
   return (
     <div className='mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12'>
+      <MaxWidthWrapper>
+        <HeaderSection label='What Our Members Are Saying' title='Testimonials' />
+      </MaxWidthWrapper>
       <div className='relative grid grid-cols-1 gap-20 md:grid-cols-2'>
         <div className=''>
           <div className='relative h-80 w-full'>

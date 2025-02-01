@@ -3,20 +3,21 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 
-import AnimatedTestimonialsDemo from '../AnimatedTestimonials'
 import { ImageSliders } from '../ImagesSlider'
 import { HeaderSection } from '../shared/header-section'
 import MaxWidthWrapper from '../shared/max-width-wrapper'
 import { InfiniteSliderVertical } from '../Slider'
 import { InfiniteSlider } from '../ui/infinite-slider'
+import AnimatedTestimonialsDemo from './AnimatedTestimonials'
 
 export default function AboutUs() {
   return (
     <section className='relative z-10 w-full py-20'>
+      <div className='absolute top-0 z-[-2] h-screen w-screen bg-[#181818] bg-[radial-gradient(#548f6f99_.1px,#181818_1px)] bg-[size:20px_20px]'></div>
       <MaxWidthWrapper>
         <HeaderSection label='' title='About Us' subtitle='Why Train With Nerds?' />
       </MaxWidthWrapper>
-      <div className='bgAboutUs' />
+      {/* <div className='bgAboutUs' /> */}
       <div className='flex w-full flex-col-reverse items-center pt-6 lg:flex-row lg:p-6'>
         <div className='flex w-full flex-col space-y-6 p-12 lg:w-1/2'>
           <h3 className='text-left font-orbitron text-2xl font-bold'>NERDS FIGHTING</h3>

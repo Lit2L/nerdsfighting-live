@@ -6,9 +6,9 @@ interface HeaderSectionProps {
 
 export function HeaderSection({ label, title, subtitle }: HeaderSectionProps) {
   return (
-    <div className='flex flex-col items-center text-center'>
+    <div className='flex flex-col items-center py-12 text-center'>
       {label ? <div className='mb-4 font-orbitron font-semibold'>{label}</div> : null}
-      <h2 className='text-gradient_greenies font-orbitron text-2xl font-semibold tracking-wide md:text-4xl lg:text-4xl'>
+      <h2 className='text-gradient_yellows font-orbitron text-2xl font-semibold tracking-wide md:text-4xl lg:text-4xl'>
         {title}
       </h2>
       {subtitle ? (

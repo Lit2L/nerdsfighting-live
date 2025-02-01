@@ -1,7 +1,7 @@
-import AnimatedTestimonialsDemo from '@/components/AnimatedTestimonials'
 import { CardDemo } from '@/components/CardBackgroundOverlay'
 import { BentoGridGalleryDemo } from '@/components/interactive-bento-gallery-demo'
 import AboutUs from '@/components/sections/about-us'
+import AnimatedTestimonialsDemo from '@/components/sections/AnimatedTestimonials'
 import BentoGrid from '@/components/sections/bentogrid'
 import Features from '@/components/sections/features'
 import HeroLanding from '@/components/sections/hero-landing'
